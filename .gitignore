@@ -1,0 +1,19 @@
+# build artifacts
+grasp
+src/*.o
+src/*.d
+
+# runtime artifacts (session persistence = runtime knowledge)
+sessions/
+
+# python caches
+__pycache__/
+*.pyc
+
+# editors
+.vscode/
+.idea/
+*.swp
+
+# generated reports
+reports/

@@ -1,0 +1,78 @@
+{
+  "id": "example",
+  "version": 1,
+  "entry": "n_start",
+  "nodes": [
+    {
+      "id": "n_start",
+      "desc": "start: greet",
+      "kind": "exec",
+      "cmd": "echo 'hello from grasp'"
+    },
+    {
+      "id": "n_plan",
+      "desc": "plan: pick a branch",
+      "kind": "exec",
+      "cmd": "echo 'plan: explore the graph branches'"
+    },
+    {
+      "id": "n_ask",
+      "desc": "ask: input your name",
+      "kind": "ask",
+      "prompt": "What would you like to do?"
+    },
+    {
+      "id": "n_explore",
+      "desc": "explore: print an unexplored-branch hint",
+      "kind": "exec",
+      "cmd": "echo 'explore more branches'"
+    },
+    {
+      "id": "n_fork",
+      "desc": "explore: print an unexplored-branch hint",
+      "kind": "fork"
+    },
+    {
+      "id": "n_done",
+      "desc": "end session",
+      "kind": "conclude",
+      "message": "task done"
+    }
+  ],
+  "edges": [
+    {
+      "from": "n_start",
+      "to": "n_plan"
+    },
+    {
+      "from": "n_start",
+      "to": "n_done",
+      "fallback": true
+    },
+    {
+      "from": "n_plan",
+      "to": "n_ask"
+    },
+    {
+      "from": "n_plan",
+      "to": "n_explore"
+    },
+    {
+      "from": "n_ask",
+      "to": "n_done"
+    },
+    {
+      "from": "n_explore",
+      "to": "n_fork"
+    },
+    {
+      "from": "n_explore",
+      "to": "n_done",
+      "fallback": true
+    },
+    {
+      "from": "n_fork",
+      "to": "n_done"
+    }
+  ]
+}
