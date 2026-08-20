@@ -29,9 +29,18 @@ The market lives at [void-universe-club.github.io/grasp-site/market.html](https:
 ## Build & test
 
 ```bash
+# CMake (recommended, cross-platform)
+cmake -S . -B build && cmake --build build      # Linux/macOS (g++/clang)
+cmake -S . -B build -G "Visual Studio 17 2022" -A x64
+cmake --build build --config Release            # Windows (MSVC)
+# MinGW: cmake -S . -B build -G "MinGW Makefiles"
+
+# plain Makefile (Linux/macOS only)
 make          # produces ./grasp
 make test     # end-to-end suite (uses a mock LLM server; no API key needed)
 ```
+
+All OS-specific code lives in `src/os.cpp` behind the `os::` API (`src/os.h`).
 
 ## Quick start (for agents)
 

@@ -7,7 +7,7 @@
 #include <sstream>
 #include <stdexcept>
 
-#include "engine.h"
+#include "os.h"
 
 namespace {
 
@@ -81,7 +81,7 @@ StepOutcome session_execute_node(Session& s, const Node& n, SessionStore* store)
 
     std::string output;
     if (n.kind == "exec") {
-        output = run_shell(n.cmd, n.timeout_secs);
+        output = os::run_shell(n.cmd, n.timeout_secs);
     } else if (n.kind == "ask") {
         // read one input line as the output (drive / REPL / piped input)
         std::cout << n.prompt << std::endl;
@@ -124,7 +124,7 @@ StepOutcome session_execute_node(Session& s, const Node& n, SessionStore* store)
     rec.node = n.id;
     rec.kind = n.kind;
     rec.output = output;
-    rec.at_ms = now_ms();
+    rec.at_ms = os::now_ms();
     s.history.push_back(rec);
     s.last_output = output;
     s.graph.mark_visited(n.id);
@@ -229,7 +229,7 @@ void push_walk_record(Session& s, const std::string& node, const std::string& ki
     rec.node = node;
     rec.kind = kind;
     rec.output = text;
-    rec.at_ms = now_ms();
+    rec.at_ms = os::now_ms();
     s.history.push_back(rec);
 }
 
@@ -264,7 +264,7 @@ std::string session_walk(Session& s, const std::string& from, int choose,
         rec.node = cur;
         rec.kind = "walk";
         rec.output = n->desc;
-        rec.at_ms = now_ms();
+        rec.at_ms = os::now_ms();
         s.history.push_back(rec);
   // 3. reached conclude: terminal
         if (n->kind == "conclude") {
@@ -284,6 +284,19 @@ std::string session_walk(Session& s, const std::string& from, int choose,
             int pick_idx = 0;
             if (step == 0 && choose >= 1 && choose <= static_cast<int>(es.size())) {
                 pick_idx = choose;  // start choose: explicit option for the entry node
+            } else if (auto_choose == -1) {
+  // auto (smart): prefer the first never-visited edge (exploration), else the
+  // fallback edge, else the first — keeps walking to conclude without stopping
+                for (size_t i = 0; i < es.size(); ++i) {
+                    if (s.graph.edge_visit_count(cur, es[i]->to) == 0) {
+                        pick_idx = static_cast<int>(i) + 1;
+                        break;
+                    }
+                    if (es[i]->fallback && pick_idx == 0) {
+                        pick_idx = static_cast<int>(i) + 1;  // remember fallback
+                    }
+                }
+                if (pick_idx == 0) pick_idx = 1;
             } else if (auto_choose >= 1 && auto_choose <= static_cast<int>(es.size())) {
                 pick_idx = auto_choose;  // auto: same option index at every multi-edge node
             }

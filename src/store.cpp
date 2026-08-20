@@ -1,16 +1,13 @@
 #include "store.h"
 
-#include <sys/stat.h>
-#include <sys/types.h>
-#include <dirent.h>
+#include <algorithm>
 #include <cstdio>
 #include <cstdlib>
-#include <algorithm>
 #include <fstream>
 #include <sstream>
 #include <stdexcept>
 
-#include "engine.h"
+#include "os.h"
 
   // ---------- JSON serialization ----------
 
@@ -52,29 +49,16 @@ void from_json(const nlohmann::json& j, Session& s) {
     s.history = j.value("history", std::vector<StepRecord>());
 }
 
-  // ---------- utilities ----------
-
-static bool file_exists(const std::string& path) {
-    struct stat st;
-    return stat(path.c_str(), &st) == 0;
-}
-
-static void ensure_dir(const std::string& dir) {
-    if (mkdir(dir.c_str(), 0755) != 0 && !file_exists(dir)) {
-        throw std::runtime_error("cannot create directory '" + dir + "'");
-    }
-}
-
-// ---------- SessionStore ----------
+  // ---------- SessionStore ----------
 
 SessionStore::SessionStore(const std::string& dir) : dir_(dir) {
-    ensure_dir(dir_);
+    os::ensure_dir(dir_);
 }
 
 std::string SessionStore::make_id() {
     static long seq = 0;
     ++seq;
-    return "s-" + std::to_string(now_ms()) + "-" + std::to_string(seq);
+    return "s-" + std::to_string(os::now_ms()) + "-" + std::to_string(seq);
 }
 
 std::string SessionStore::path_of(const std::string& id) const {
@@ -153,9 +137,7 @@ void SessionStore::save(const Session& s) const {
     }
     out << j.dump(2);
     out.close();
-    if (rename(tmp.c_str(), path.c_str()) != 0) {
-        throw std::runtime_error("cannot commit session file '" + path + "'");
-    }
+    os::commit_file(tmp, path);
 }
 
 void SessionStore::remove(const std::string& id) const {
@@ -167,14 +149,12 @@ void SessionStore::remove(const std::string& id) const {
 
 std::vector<Session> SessionStore::list() const {
     std::vector<Session> out;
-    DIR* d = opendir(dir_.c_str());
-    if (d == NULL) return out;
-    struct dirent* ent;
-    while ((ent = readdir(d)) != NULL) {
-        std::string name = ent->d_name;
+    std::vector<std::string> names = os::list_dir(dir_);
+    for (size_t i = 0; i < names.size(); ++i) {
+        const std::string& name = names[i];
   // collect only *.json and skip .tmp
         if (name.size() < 5 || name.substr(name.size() - 5) != ".json") continue;
-        if (name.size() > 4 && name.substr(name.size() - 9) == ".json.tmp") continue;
+        if (name.size() > 9 && name.substr(name.size() - 9) == ".json.tmp") continue;
         std::string id = name.substr(0, name.size() - 5);
         try {
             out.push_back(load(id));
@@ -182,7 +162,6 @@ std::vector<Session> SessionStore::list() const {
   // corrupted session files are skipped without affecting the rest
         }
     }
-    closedir(d);
     std::sort(out.begin(), out.end(),
               [](const Session& a, const Session& b) { return a.id < b.id; });
     return out;

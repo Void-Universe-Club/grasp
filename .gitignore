@@ -1,5 +1,6 @@
 # build artifacts
 grasp
+build*/
 src/*.o
 src/*.d
 

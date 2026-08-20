@@ -9,7 +9,6 @@
 #include <stdexcept>
 
 #include "driver.h"
-#include "engine.h"
 #include "model.h"
 #include "session.h"
 #include "store.h"
@@ -206,7 +205,13 @@ int cmd_walk(const std::vector<std::string>& args, std::string* current) {
     Session s = store().load(sid);
     std::string from = opts.count("from") > 0 ? opts["from"] : "";
     int choose = option_int(opts, "choose", 0);
-    int auto_choose = option_int(opts, "auto", 0);
+    // --auto: smart auto-walk (-1 = prefer unexplored edges, else fallback, else first)
+    int auto_choose = 0;
+    if (std::find(flags.begin(), flags.end(), "auto") != flags.end()) {
+        auto_choose = -1;
+    } else if (opts.count("auto") > 0) {
+        auto_choose = option_int(opts, "auto", -1);  // --auto N: fixed option index
+    }
     int steps = option_int(opts, "steps", 50);
     std::string stmt = session_walk(s, from, choose, auto_choose, steps, &store());
     store().save(s);
@@ -334,6 +339,31 @@ int cmd_insert(const std::vector<std::string>& args, std::string* current) {
         if (opts.count("cmd") > 0) j["cmd"] = opts["cmd"];
         if (opts.count("prompt") > 0) j["prompt"] = opts["prompt"];
         if (opts.count("message") > 0) j["message"] = opts["message"];
+    }
+  // batch form: --file may hold a JSON array of nodes; each element may carry
+  // "edge_from"/"edge_to" to auto-link (batch insert + edges in one save)
+    if (j.is_array()) {
+        Session s = store().load(sid);
+        for (size_t bi = 0; bi < j.size(); ++bi) {
+            Node n = j[bi].get<Node>();
+            Edge e;
+            bool has_edge = false;
+            if (j[bi].contains("edge_from") && j[bi].contains("edge_to")) {
+                e.from = j[bi]["edge_from"].get<std::string>();
+                e.to = j[bi]["edge_to"].get<std::string>();
+                e.fallback = j[bi].value("edge_fallback", false);
+                has_edge = true;
+            }
+            session_insert(s, n, has_edge ? &e : NULL);
+            std::cout << "inserted node " << n.id << " [" << n.kind << "]"
+                      << (has_edge ? " + edge " + e.from + "->" + e.to : "")
+                      << "\n";
+        }
+        store().save(s);
+        std::cout << "batch done | graph v" << s.graph.version << " | "
+                  << s.graph.nodes.size() << " nodes / " << s.graph.edges.size()
+                  << " edges\n";
+        return 0;
     }
     Node n = j.get<Node>();
     Edge e;
