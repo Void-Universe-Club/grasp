@@ -44,7 +44,7 @@ All OS-specific code lives in `src/os.cpp` behind the `os::` API (`src/os.h`).
 
 ## Quick start (for agents)
 
-Everything is a subcommand — scriptable from any agent loop. Sessions persist as JSON in `sessions/` (override with `GRASP_CPP_SESSIONS`).
+Build the binary first (see [Build & test](#build--test)): `./grasp` on Linux/macOS, `grasp.exe` on Windows. Everything below is a subcommand — scriptable from any agent loop. Sessions persist as JSON in `sessions/` (override with `GRASP_CPP_SESSIONS`).
 
 ```bash
 # 1. create a session from a graph file
@@ -117,14 +117,14 @@ Invalid decisions are fed back with the error and retried (≤3 per round). Need
 | `list` | list sessions |
 | `status <sid> [--json]` | current state, visits, unexplored nodes + edges |
 | `list-next <sid> [--node ID]` | outgoing edges of current (or given) node |
-| `walk <sid> [--from ID] [--choose N] [--auto N] [--steps N]` | stroll: stitch descriptions into a sentence; multi-edge nodes stop and ask; `--auto N` picks option N at every fork (non-interactive) |
+| `walk <sid> [--from ID] [--choose N] [--auto] [--auto N] [--steps N]` | stroll: stitch descriptions into a sentence; multi-edge nodes stop and ask; `--auto` prefers unexplored edges (else fallback, else first); `--auto N` picks option N at every fork (non-interactive) |
 | `show <sid> [<node-id>]` | node detail: desc / cmd / kind / visits / outgoing + incoming edges |
 | `step <sid> <node-id>` | jump to a successor and execute it |
 | `travel <sid> [--from ID] [--target ID]` | execute along edges (BFS toward target) |
 | `set-target <sid> <node-id>` | set the target node for travel |
 | `insert <sid> '<node-json>' [--edge from,to]` | insert node (+optional edge), version++ |
 | `insert <sid> <node-id> --desc '...' [--cmd '...'] [--kind kind] [--edge from,to]` | flag form — no JSON quoting needed |
-| `insert <sid> --file node.json [--edge from,to]` | insert node from a JSON file |
+| `insert <sid> --file node.json [--edge from,to]` | insert node from a JSON file; a JSON array inserts many nodes at once (each element may carry `edge_from`/`edge_to` to auto-link) |
 | `add-edge <sid> <from> <to> [--label '...']` | append an edge |
 | `remove-edge <sid> <from> <to>` | remove an edge |
 | `remove <sid> <node-id>` | remove a node and its edges |
@@ -148,7 +148,7 @@ Invalid decisions are fed back with the error and retried (≤3 per round). Need
 ## Repository layout
 
 ```
-src/            main · cli · model · store · engine · session · llm · driver · repl
+src/            main · cli · model · store · os · session · llm · driver · repl
 third_party/    nlohmann/json single header (v3.11.3)
 graphs/         example · walk_demo · meta (thinking-principle topology)
 tests/          end-to-end suite + mock LLM server
@@ -161,7 +161,7 @@ Contributions are welcome — new market topologies, docs, or core fixes.
 
 - Fork `Void-Universe-Club/grasp` (code) or `Void-Universe-Club/grasp-site` (web site).
 - To submit a topology to the market: author a versioned graph JSON, add it as `market/<name>.json` in `grasp-site`, register it in `market/index.json`, and open a pull request.
-- Run `make test` before opening a pull request (78 end-to-end tests).
+- Run the test suite before opening a pull request (78 end-to-end tests): `cmake --build build && bash tests/run_tests.sh` (or `make test` on Linux/macOS).
 
 ## Citation
 
