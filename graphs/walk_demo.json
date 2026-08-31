@@ -1,0 +1,48 @@
+{
+  "id": "walk_demo",
+  "version": 1,
+  "entry": "A",
+  "nodes": [
+    {
+      "id": "A",
+      "desc": "at home",
+      "kind": "exec",
+      "cmd": "echo at_home"
+    },
+    {
+      "id": "B",
+      "desc": "hungry",
+      "kind": "exec",
+      "cmd": "echo hungry"
+    },
+    {
+      "id": "C",
+      "desc": "eating",
+      "kind": "exec",
+      "cmd": "echo eating"
+    },
+    {
+      "id": "D",
+      "desc": "resting",
+      "kind": "exec",
+      "cmd": "echo sleeping"
+    }
+  ],
+  "edges": [
+    {
+      "from": "A",
+      "to": "B",
+      "label": "go out to find food"
+    },
+    {
+      "from": "B",
+      "to": "C",
+      "label": "find food"
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "label": "sleep"
+    }
+  ]
+}

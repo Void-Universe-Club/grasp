@@ -1,0 +1,303 @@
+{
+  "edges": [
+    {
+      "from": "m_ground",
+      "label": "start orienting",
+      "to": "m_orient"
+    },
+    {
+      "from": "m_orient",
+      "label": "problem mapped, analyze",
+      "to": "m_analyze"
+    },
+    {
+      "from": "m_analyze",
+      "label": "analysis done, plan",
+      "to": "m_plan"
+    },
+    {
+      "from": "m_plan",
+      "label": "plan clear, act",
+      "to": "m_act"
+    },
+    {
+      "from": "m_act",
+      "label": "action done, reflect",
+      "to": "m_reflect"
+    },
+    {
+      "fallback": true,
+      "from": "m_reflect",
+      "label": "no diff, wrap up",
+      "to": "m_done"
+    },
+    {
+      "from": "m_learn",
+      "label": "persisted, back to ground truth",
+      "to": "m_ground"
+    },
+    {
+      "from": "m_comm_protocol",
+      "label": "protocol active, back",
+      "to": "m_ground"
+    },
+    {
+      "from": "m_gate_generic",
+      "label": "generic lesson, learn",
+      "to": "m_learn"
+    },
+    {
+      "from": "m_doubt_topo",
+      "label": "principle persisted",
+      "to": "m_ground"
+    },
+    {
+      "from": "m_reflect",
+      "to": "m_explore_diff"
+    },
+    {
+      "from": "m_explore_diff",
+      "label": "root cause confirmed, pass the gate",
+      "to": "m_gate_generic"
+    },
+    {
+      "from": "m_learn",
+      "to": "m_oos_protocol",
+      "label": "evaluation protocol lesson"
+    },
+    {
+      "from": "m_oos_protocol",
+      "to": "m_metric_pitfall",
+      "label": "define metrics first"
+    },
+    {
+      "from": "m_metric_pitfall",
+      "to": "m_sweep2",
+      "label": "champions need robustness"
+    },
+    {
+      "from": "m_sweep2",
+      "to": "m_humble",
+      "label": "exploration is unbounded"
+    },
+    {
+      "from": "m_humble",
+      "label": "talk before replying",
+      "to": "m_comm_protocol"
+    },
+    {
+      "from": "m_metric_pitfall",
+      "to": "m_user_audit",
+      "label": "abnormal triggers audit"
+    },
+    {
+      "from": "m_user_audit",
+      "label": "blind-spot judgment principle persisted",
+      "to": "m_doubt_topo"
+    },
+    {
+      "from": "m_factor_design",
+      "label": "feature-design principle persisted",
+      "to": "m_ground"
+    },
+    {
+      "from": "m_sweep2",
+      "label": "method persisted",
+      "to": "m_ground"
+    },
+    {
+      "from": "m_humble",
+      "label": "cognition persisted",
+      "to": "m_ground"
+    },
+    {
+      "from": "m_user_audit",
+      "label": "audit principle persisted",
+      "to": "m_ground"
+    },
+    {
+      "from": "m_vol_targeting",
+      "label": "method persisted",
+      "to": "m_ground"
+    },
+    {
+      "from": "m_date_align_metric",
+      "label": "principle persisted",
+      "to": "m_ground"
+    },
+    {
+      "from": "m_factor_design",
+      "to": "m_meta_games"
+    },
+    {
+      "from": "m_meta_games",
+      "label": "fine-tune protocol persisted",
+      "to": "m_ground"
+    },
+    {
+      "from": "m_user_audit",
+      "to": "m_possize_metric",
+      "label": "align sizing before returns"
+    },
+    {
+      "from": "m_possize_metric",
+      "label": "sizing and drawdown share a source",
+      "to": "m_vol_targeting"
+    },
+    {
+      "from": "m_possize_metric",
+      "label": "align time before evaluating",
+      "to": "m_date_align_metric"
+    },
+    {
+      "from": "m_comm_protocol",
+      "to": "m_walk_decision"
+    },
+    {
+      "from": "m_walk_decision",
+      "label": "read exploration principles before design",
+      "to": "m_factor_design"
+    }
+  ],
+  "entry": "m_ground",
+  "id": "grasp_meta",
+  "meta": {},
+  "nodes": [
+    {
+      "cmd": "echo 'ground truth: trust the graph, not the weights'",
+      "desc": "Ground truth: an AI agent's weight memory is unreliable; thinking must derive from the meta session and sub sessions — the topology is the only thinking ground truth.",
+      "id": "m_ground",
+      "kind": "exec"
+    },
+    {
+      "cmd": "echo 'orient: map the task onto the meta topology'",
+      "desc": "Orient: what is the task? Knowns, unknowns, constraints? Map the problem onto the meta topology first.",
+      "id": "m_orient",
+      "kind": "exec"
+    },
+    {
+      "cmd": "echo 'analyze: derive, find blind spots'",
+      "desc": "Analyze: derive from knowns; identify blind spots (nodes lacking knowledge) and list branches worth exploring.",
+      "id": "m_analyze",
+      "kind": "exec"
+    },
+    {
+      "cmd": "echo 'plan: pick an action edge'",
+      "desc": "Action plan: pick one outgoing edge as the next move; before acting, walk to confirm the topology is reachable.",
+      "id": "m_plan",
+      "kind": "exec"
+    },
+    {
+      "cmd": "echo 'act: do the work'",
+      "desc": "Execute: call tools / write code / answer; record the outcome as this node's output.",
+      "id": "m_act",
+      "kind": "exec"
+    },
+    {
+      "cmd": "echo 'reflect: diff result vs expectation'",
+      "desc": "Reflect: does the outcome match expectation? The difference itself is new knowledge; write it to a sub session.",
+      "id": "m_reflect",
+      "kind": "exec"
+    },
+    {
+      "cmd": "echo 'learn: append knowledge as new nodes/edges'",
+      "desc": "Learn: persist the reflection as a new node/edge (append), upgrading the meta session so the same pitfall is not repeated.",
+      "id": "m_learn",
+      "kind": "exec"
+    },
+    {
+      "desc": "Done: thinking complete, conclusion persisted; return to the ground truth for the next round.",
+      "id": "m_done",
+      "kind": "conclude",
+      "message": "meta round done, knowledge persisted"
+    },
+    {
+      "cmd": "echo protocol: walk meta before every reply",
+      "desc": "Behavior protocol (explicit user requirement): before every reply, walk the meta session — read topology state and unexplored nodes/edges, persist this round's experience, then reply; write results back afterwards.",
+      "id": "m_comm_protocol",
+      "kind": "exec"
+    },
+    {
+      "cmd": "echo gate: generic-only, specifics to sub-session",
+      "desc": "Generality gate: before any insert/add-edge into the meta session, pass this check — is it reusable across scenarios? Project/game/dataset-bound knowledge (incl. concrete numbers) goes to the sub session only; only methodology / cognition / behavior protocol enters the meta session.",
+      "id": "m_gate_generic",
+      "kind": "exec"
+    },
+    {
+      "desc": "Handling doubts: user doubts are not always right — the test is whether the doubt points to a blind spot outside the current topo path (unexplored edges/nodes, unpersisted assumptions, unverified mechanisms). Only then audit and extend.",
+      "id": "m_doubt_topo",
+      "kind": "exec"
+    },
+    {
+      "desc": "Exploration-diff root cause: when new vs old results differ (variant vs champion, metrics, learn vs validate, doubt vs conclusion, refactor) never record the surface difference — root-cause it: data / mechanism / metric / randomness layer? Locate via minimal controlled experiments (one-variable switches, split-interval reproduction, metric-by-metric alignment). Persist only after the root cause is confirmed; the difference is a signal, the root cause is knowledge.",
+      "id": "m_explore_diff",
+      "kind": "exec"
+    },
+    {
+      "cmd": "echo principle: frozen out-of-sample validation",
+      "desc": "Out-of-sample validation: any data-driven conclusion splits non-overlapping learning and validation periods; parameters are chosen only on the learning period and frozen on validation; the validation window must cover diverse regimes (incl. extremes) or the conclusion has survivorship bias.",
+      "id": "m_oos_protocol",
+      "kind": "exec"
+    },
+    {
+      "cmd": "echo principle: declare metric before reporting",
+      "desc": "Metric discipline: define and declare metrics (return algorithm / position & leverage assumptions / benchmark alignment) before reporting any result; the same strategy can flip under different metrics; abnormally high returns are almost always an evaluation defect, not real skill.",
+      "id": "m_metric_pitfall",
+      "kind": "exec"
+    },
+    {
+      "cmd": "echo principle: robustness matrix before champion",
+      "desc": "Model selection: candidates need robustness checks (multi-parameter configs, multi sub-intervals) before crowning a champion; a single-window standout is almost always noise; falsification and verification are equally valuable.",
+      "id": "m_sweep2",
+      "kind": "exec"
+    },
+    {
+      "cmd": "echo principle: exploration is unbounded",
+      "desc": "Cognition: exploration is unbounded — any 'best' is only a local optimum under the current data and idea family; actively list unexplored dimensions; 'exploration complete' is an illusion.",
+      "id": "m_humble",
+      "kind": "exec"
+    },
+    {
+      "cmd": "echo principle: abnormal result triggers audit",
+      "desc": "Cognition: doubts and abnormal signals are the highest-priority audit triggers — audit the whole chain instead of defending when results look abnormal; ask: is the model real, is the timing strict, is the metric reproducible?",
+      "id": "m_user_audit",
+      "kind": "exec"
+    },
+    {
+      "cmd": "echo principle: leverage and drawdown are twins",
+      "desc": "Strategy method: sizing by a risk budget improves compounding, but position and drawdown share one source — a higher return ceiling inevitably steepens the risk boundary; return-first vs robustness-first is a risk-preference question.",
+      "id": "m_vol_targeting",
+      "kind": "exec"
+    },
+    {
+      "cmd": "echo principle: align by calendar before comparing",
+      "desc": "Evaluation pitfall: cross-asset time-series comparisons must align by calendar day — assets with different history starts misalign under index numbering, distorting cross-sectional comparisons; check temporal alignment before evaluating.",
+      "id": "m_date_align_metric",
+      "kind": "exec"
+    },
+    {
+      "cmd": "echo principle: feature design first, params second",
+      "desc": "Exploration method: feature design is the first degree of freedom — don't just parameterize the existing family; actively construct new features (price-volume interplay, volatility structure, cross-sectional relative strength, time structure); parameter sweeps only find local optima inside a feature family.",
+      "id": "m_factor_design",
+      "kind": "exec"
+    },
+    {
+      "desc": "Meta-session fine-tune protocol: use scenario games to periodically test the principle chains (metric detective -> metrics/audit; blind-spot hunter -> doubt adjudication; principle routing -> navigation coverage; feature design -> originality); a game passes only when the verdict rests on evidence and minimal controlled experiments; patch gaps with insert/add-edge.",
+      "id": "m_meta_games",
+      "kind": "exec"
+    },
+    {
+      "cmd": "echo principle: align position assumption with benchmark",
+      "desc": "Evaluation method: return vs benchmark comparisons must declare position and leverage assumptions — the same conclusion can flip under different sizing; align metrics with the benchmark before reporting.",
+      "id": "m_possize_metric",
+      "kind": "exec"
+    },
+    {
+      "cmd": "echo principle: walk before every decision point",
+      "desc": "Behavior protocol: before every key decision (design / trade-off / interpretation / conclusion) walk the meta session to load the relevant principle chain — keep topology principles present at decision time, not as an afterthought.",
+      "id": "m_walk_decision",
+      "kind": "exec"
+    }
+  ],
+  "version": 1
+}

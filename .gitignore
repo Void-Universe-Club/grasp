@@ -1,0 +1,31 @@
+# build artifacts
+grasp
+build*/
+src/*.o
+src/*.d
+
+# runtime artifacts (session persistence = runtime knowledge)
+sessions/
+
+# python caches
+__pycache__/
+*.pyc
+
+# editors
+.vscode/
+.idea/
+*.swp
+
+# generated reports
+reports/
+
+# 本地交易细节 (账户号/成交号/IP, 严格保密, 2026-08-24)
+nodes/
+graphs/quant_fut_ops_topo.svg
+
+# compiled binary output
+bin/
+
+# local trading graphs (user business data, not for public repo)
+graphs/quant_fut*.json
+graphs/quant_py*.json
