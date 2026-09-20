@@ -3,6 +3,20 @@
 Append a section per release; the Release workflow injects the section matching
 the tag name into the GitHub Release body. Keep entries at `## vX.Y.Z` level.
 
+## v0.1.5
+
+### Bug fixes
+
+- Windows release asset is now a real ZIP (PowerShell `Compress-Archive`).
+  v0.1.3/v0.1.4 shipped `grasp-windows-x64.zip` that was actually gzip/tar
+  data and could not be opened by double-click.
+
+### Docs
+
+- `grasp` usage line and `grasp help` now list every registered subcommand
+  (walk/show/dump-svg/merge/rebase/… were missing) and document the
+  `walk --auto` / `--json` flags.
+
 ## v0.1.4
 
 Same binaries as v0.1.3; first release published through the new

@@ -821,8 +821,10 @@ int cmd_drive(const std::vector<std::string>& args, std::string* current) {
 int cmd_dispatch(const std::vector<std::string>& args, std::string* current_session) {
     if (args.empty()) {
         std::cout << "usage: grasp <command> [args...]\n"
-                     "commands: new open fork delete list status list-next step travel\n"
-                     "          set-target insert remove drive repl\n"
+                     "commands: new open list delete status show walk step travel list-next\n"
+                     "          set-target insert add-edge remove-edge remove fork merge rebase\n"
+                     "          dump-svg drive repl help\n"
+                     "(undocumented extras: context query mark update diff)\n"
                      "help: grasp help\n";
         return 1;
     }
@@ -890,10 +892,13 @@ int cmd_dispatch(const std::vector<std::string>& args, std::string* current_sess
                 "  status <sid> [--json]            detailed status: node/target/visits/unexpl(explored nodes)/\n"
                 "                                   unexplE(unexplored edges)/fork chain\n"
                 "  list-next <sid> [--node ID]      outgoing edges of the current (or given) node (label + target desc)\n"
-                "  walk <sid> [--from ID] [--choose N] [--steps N]\n"
+                "  walk <sid> [--from ID] [--choose N] [--auto|-auto N] [--steps N] [--json]\n"
                 "                                   topology stroll (thinking mode, executes nothing): single edges\n"
                 "                                   advance automatically; multi-edge nodes stop and ask; unwalked\n"
-                "                                   edges are marked [unexplored]; --choose N picks the Nth edge at start\n"
+                "                                   edges are marked [unexplored]; --choose N picks the Nth edge at\n"
+                "                                   the start node only; --auto keeps walking (prefer unexplored,\n"
+                "                                   else fallback, else first), --auto N picks N at every fork;\n"
+                "                                   --json prints {cur,desc,options[]} for agents\n"
                 "  step <sid> <node-id>             single step: jump to a successor of the current node and execute\n"
                 "  travel <sid> [--from ID] [--target ID]\n"
                 "                                   traverse along edges (BFS pathfinding toward target)\n"
