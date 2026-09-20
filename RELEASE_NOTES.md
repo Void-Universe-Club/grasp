@@ -3,6 +3,13 @@
 Append a section per release; the Release workflow injects the section matching
 the tag name into the GitHub Release body. Keep entries at `## vX.Y.Z` level.
 
+## v0.1.6
+
+### Docs
+
+- `grasp help` walk entry now documents `--auto`, `--auto N` and `--json`;
+  usage line includes the full command set (follow-up to v0.1.5).
+
 ## v0.1.5
 
 ### Bug fixes
