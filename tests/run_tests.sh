@@ -233,6 +233,24 @@ OUT=$($BIN show "$M_C" n_done)
 assert_contains "$OUT" "loop" "child now has parent's new edge"
 
 echo
+note "20. walk fork summaries: [[sid:node]] refs expand BEFORE truncation"
+$BIN new graphs/example.json --id refmem >/dev/null
+OUT=$($BIN insert refmem long-lesson --desc "LESSONPAYLOAD: always verify the real byte format of an asset before concluding anything about it")
+assert_contains "$OUT" "inserted node long-lesson" "lesson session ready"
+$BIN new graphs/example.json --id reftask >/dev/null
+$BIN insert reftask r_fork --desc "decision point" >/dev/null
+$BIN add-edge reftask n_plan r_fork --label "via ref" >/dev/null
+$BIN insert reftask r_other --desc "other branch" >/dev/null
+$BIN add-edge reftask n_plan r_other --label "via other" >/dev/null
+OUT=$($BIN insert reftask r_gate --desc "carry the lesson: [[refmem:long-lesson]]" --edge n_start,r_gate)
+assert_contains "$OUT" "inserted node r_gate" "ref node inserted"
+$BIN add-edge reftask r_gate n_plan --label "onward" >/dev/null
+$BIN add-edge reftask r_gate r_other --label "sideways" >/dev/null
+OUT=$($BIN walk reftask --from r_gate)
+assert_contains "$OUT" "There are 2 options" "r_gate is a fork"
+assert_contains "$OUT" "LESSONPAYLOAD" "fork summary shows expanded ref payload"
+
+echo
 echo "========== RESULT: $PASS passed, $FAIL failed =========="
 rm -rf "$WORK"
 [ "$FAIL" -eq 0 ]
