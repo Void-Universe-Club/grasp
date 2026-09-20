@@ -3,22 +3,33 @@
 Append a section per release; the Release workflow injects the section matching
 the tag name into the GitHub Release body. Keep entries at `## vX.Y.Z` level.
 
+## v0.1.9
+
+### Docs
+
+- Correct the `--choose` wording in help/README (v0.1.7/v0.1.8 were based on a
+  misdiagnosis — see below). Semantics unchanged and verified working:
+  `--choose N` applies at the start node of the walk call, and resuming a walk
+  stopped at a fork starts exactly at that fork, so `walk sid --choose N`
+  answers the pending question (e2e-verified on the release binary).
+
+### Notes on v0.1.7 / v0.1.8
+
+- Both changed `session_walk`'s choose handling under an incorrect bug report;
+  behavior for all real flows is identical to v0.1.6. Prefer v0.1.9+.
+
 ## v0.1.8
 
-### Bug fixes
+### Changes
 
-- Follow-up to v0.1.7: the `--choose` fix shipped broken (dead condition —
-  the walk cursor had already left the start node). `--choose N` now applies
-  to the **first multi-edge node reached in the walk call**, so the documented
-  resume flow (`walk sid` stops at a fork → `walk sid --choose 2`) works.
+- `session_walk`: choose handling adjusted (see "Notes on v0.1.7 / v0.1.8").
 
 ## v0.1.7
 
-### Bug fixes
+### Changes
 
-- `walk --choose N` was silently ignored in the typical resume flow (entry
-  node with a single edge): choose now also applies at the first fork reached
-  from the start node, so `walk sid --choose 2` behaves as documented.
+- `session_walk`: first attempt at the (non-)`--choose` issue; superseded by
+  v0.1.8 (see "Notes on v0.1.7 / v0.1.8").
 
 ## v0.1.6
 
