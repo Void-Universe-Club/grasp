@@ -1,0 +1,60 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        include:
+          - os: ubuntu-latest
+            artifact: grasp-${{ github.ref_name }}-linux-x64.tar.gz
+          - os: windows-latest
+            artifact: grasp-${{ github.ref_name }}-windows-x64.zip
+          - os: macos-latest
+            artifact: grasp-${{ github.ref_name }}-macos-arm64.tar.gz
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build
+        shell: bash
+        run: |
+          cmake -S . -B build
+          cmake --build build --config Release
+
+      - name: Package
+        shell: bash
+        run: |
+          BIN=$(find build -name 'grasp*' -type f \( -name 'grasp' -o -name 'grasp.exe' \) | head -1)
+          echo "binary: $BIN"
+          mkdir -p pkg/grasp-${{ github.ref_name }}
+          cp "$BIN" pkg/grasp-${{ github.ref_name }}/
+          cp README.md LICENSE* pkg/grasp-${{ github.ref_name }}/ 2>/dev/null || true
+          tar -czf ${{ matrix.artifact }} -C pkg grasp-${{ github.ref_name }}
+          rm -rf pkg
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.artifact }}
+          path: ${{ matrix.artifact }}
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: 'grasp-*'
+          merge-multiple: true
+
+      - uses: softprops/action-gh-release@v2
+        with:
+          generate_release_notes: true
+          files: grasp-*
