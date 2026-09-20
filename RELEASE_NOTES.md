@@ -3,6 +3,14 @@
 Append a section per release; the Release workflow injects the section matching
 the tag name into the GitHub Release body. Keep entries at `## vX.Y.Z` level.
 
+## v0.1.7
+
+### Bug fixes
+
+- `walk --choose N` was silently ignored in the typical resume flow (entry
+  node with a single edge): choose now also applies at the first fork reached
+  from the start node, so `walk sid --choose 2` behaves as documented.
+
 ## v0.1.6
 
 ### Docs

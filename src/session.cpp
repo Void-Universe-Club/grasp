@@ -240,6 +240,7 @@ std::string session_walk(Session& s, const std::string& from, int choose,
     (void)store;  // walk executes nothing, no store needed
     if (max_steps <= 0) max_steps = 50;
     std::string cur = !from.empty() ? from : (s.started() ? s.node : s.graph.entry);
+    const std::string start_node = cur;
     if (s.graph.find_node(cur) == NULL) {
         throw std::runtime_error("node '" + cur + "' does not exist");
     }
@@ -272,7 +273,9 @@ std::string session_walk(Session& s, const std::string& from, int choose,
             push_walk_record(s, cur, "walk_ask", stmt.str());
             return stmt.str();
         }
-  // 4. edges: single edge advances automatically; multiple edges stop and ask (choose applies to the start only)
+  // 4. edges: single edge advances automatically; multiple edges stop and ask
+  // (choose applies at the start node -- a single-edge start advances to its
+  //  fork, and resuming a stopped walk re-applies choose there)
         std::vector<const Edge*> es = s.graph.edges_from(cur);
         if (es.empty()) {
             stmt << path.str()
@@ -283,7 +286,10 @@ std::string session_walk(Session& s, const std::string& from, int choose,
         if (es.size() > 1) {
             int pick_idx = 0;
             if (step == 0 && choose >= 1 && choose <= static_cast<int>(es.size())) {
-                pick_idx = choose;  // start choose: explicit option for the entry node
+                pick_idx = choose;  // start choose: explicit option for the start node
+            } else if (step > 0 && choose >= 1 && choose <= static_cast<int>(es.size()) &&
+                       cur == start_node) {
+                pick_idx = choose;  // entry had a single edge: choose belongs to this fork
             } else if (auto_choose == -1) {
   // auto (smart): prefer the first never-visited edge (exploration), else the
   // fallback edge, else the first — keeps walking to conclude without stopping

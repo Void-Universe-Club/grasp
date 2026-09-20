@@ -117,7 +117,7 @@ Invalid decisions are fed back with the error and retried (≤3 per round). Need
 | `list` | list sessions |
 | `status <sid> [--json]` | current state, visits, unexplored nodes + edges |
 | `list-next <sid> [--node ID]` | outgoing edges of current (or given) node |
-| `walk <sid> [--from ID] [--choose N] [--auto] [--auto N] [--steps N]` | stroll: stitch descriptions into a sentence; multi-edge nodes stop and ask; `--auto` prefers unexplored edges (else fallback, else first); `--auto N` picks option N at every fork (non-interactive) |
+| `walk <sid> [--from ID] [--choose N] [--auto] [--auto N] [--steps N] [--json]` | stroll: stitch descriptions into a sentence; multi-edge nodes stop and ask; `--choose N` picks option N at the start node (or its first fork after a single-edge start); `--auto` prefers unexplored edges (else fallback, else first); `--auto N` picks option N at every fork (non-interactive); `--json` prints `{cur,desc,options[]}` |
 | `show <sid> [<node-id>]` | node detail: desc / cmd / kind / visits / outgoing + incoming edges |
 | `step <sid> <node-id>` | jump to a successor and execute it |
 | `travel <sid> [--from ID] [--target ID]` | execute along edges (BFS toward target) |
