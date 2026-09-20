@@ -11,14 +11,15 @@ permissions:
 jobs:
   build:
     strategy:
+      fail-fast: false
       matrix:
         include:
           - os: ubuntu-latest
-            artifact: grasp-${{ github.ref_name }}-linux-x64.tar.gz
+            artifact: grasp-linux-x64.tar.gz
           - os: windows-latest
-            artifact: grasp-${{ github.ref_name }}-windows-x64.zip
+            artifact: grasp-windows-x64.zip
           - os: macos-latest
-            artifact: grasp-${{ github.ref_name }}-macos-arm64.tar.gz
+            artifact: grasp-macos-arm64.tar.gz
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
@@ -26,19 +27,41 @@ jobs:
       - name: Build
         shell: bash
         run: |
-          cmake -S . -B build
-          cmake --build build --config Release
+          set -o pipefail
+          { cmake -S . -B build && cmake --build build --config Release ; } 2>&1 | tee build.log
+          {
+            echo '### Build log (tail)'
+            echo '```'
+            tail -n 80 build.log
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Expose build errors as annotations
+        if: failure()
+        shell: bash
+        run: |
+          grep -iE '(error|Error):' build.log | head -n 12 | while IFS= read -r line; do
+            f=$(echo "$line" | sed -nE 's#^([^ :]+):([0-9]+):.*#\1#p')
+            l=$(echo "$line" | sed -nE 's#^([^ :]+):([0-9]+):.*#\2#p')
+            if [ -n "$f" ]; then
+              echo "::error file=$f,line=$l::${line:0:400}"
+            else
+              echo "::error::${line:0:400}"
+            fi
+          done
+          [ -s build.log ] || echo "::error::build.log is empty (toolchain/setup issue)"
+          exit 1
 
       - name: Package
         shell: bash
         run: |
-          BIN=$(find build -name 'grasp*' -type f \( -name 'grasp' -o -name 'grasp.exe' \) | head -1)
+          BIN=$(find build -type f \( -name 'grasp' -o -name 'grasp.exe' \) | head -1)
           echo "binary: $BIN"
-          mkdir -p pkg/grasp-${{ github.ref_name }}
-          cp "$BIN" pkg/grasp-${{ github.ref_name }}/
-          cp README.md LICENSE* pkg/grasp-${{ github.ref_name }}/ 2>/dev/null || true
-          tar -czf ${{ matrix.artifact }} -C pkg grasp-${{ github.ref_name }}
-          rm -rf pkg
+          mkdir -p pkg/grasp-${GITHUB_REF_NAME}
+          cp "$BIN" pkg/grasp-${GITHUB_REF_NAME}/
+          cp README.md pkg/grasp-${GITHUB_REF_NAME}/
+          cp LICENSE* pkg/grasp-${GITHUB_REF_NAME}/ 2>/dev/null ||:
+          tar -czf ${{ matrix.artifact }} -C pkg grasp-${GITHUB_REF_NAME}
 
       - uses: actions/upload-artifact@v4
         with:
