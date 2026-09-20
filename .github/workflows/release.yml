@@ -61,7 +61,23 @@ jobs:
           cp "$BIN" pkg/grasp-${GITHUB_REF_NAME}/
           cp README.md pkg/grasp-${GITHUB_REF_NAME}/
           cp LICENSE* pkg/grasp-${GITHUB_REF_NAME}/ 2>/dev/null ||:
-          tar -czf ${{ matrix.artifact }} -C pkg grasp-${GITHUB_REF_NAME}
+          tar -czf pkg/grasp-${GITHUB_REF_NAME}.tar.gz -C pkg grasp-${GITHUB_REF_NAME}
+
+      # Compress-Archive emits a real ZIP; tar -czf above would leave a .zip that
+      # is actually gzip (Windows users cannot open it)
+      - name: Package zip (Windows)
+        if: matrix.os == 'windows-latest'
+        shell: pwsh
+        run: |
+          Compress-Archive -Path pkg/grasp-$env:GITHUB_REF_NAME -CompressionLevel Optimal `
+                           -DestinationPath ${{ matrix.artifact }} -Force
+          tar -tzf pkg/grasp-$env:GITHUB_REF_NAME.tar.gz | head -1
+          Remove-Item pkg/grasp-$env:GITHUB_REF_NAME.tar.gz
+
+      - name: Package tarball (Unix)
+        if: matrix.os != 'windows-latest'
+        shell: bash
+        run: mv pkg/grasp-${GITHUB_REF_NAME}.tar.gz ${{ matrix.artifact }}
 
       - uses: actions/upload-artifact@v4
         with:
