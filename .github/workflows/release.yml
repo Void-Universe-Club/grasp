@@ -90,7 +90,7 @@ jobs:
               /^## /        { show = 0 }
               show' RELEASE_NOTES.md
             echo
-            echo '**Assets:** \`grasp-linux-x64.tar.gz\` · \`grasp-windows-x64.zip\` · \`grasp-macos-arm64.tar.gz\`'
+            echo '**Assets:** `grasp-linux-x64.tar.gz` · `grasp-windows-x64.zip` · `grasp-macos-arm64.tar.gz`'
           } > notes.md
           cat notes.md
 
