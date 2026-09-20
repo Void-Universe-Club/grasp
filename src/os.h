@@ -54,11 +54,12 @@ private:
 // wmain entry: UTF-16 command line -> UTF-8 strings (MSVC main() would decode
 // argv with the system ACP, breaking Chinese args on zh-CN)
 std::vector<std::string> wargv_to_utf8(int argc, wchar_t** argv);
+#endif
+
 // replace invalid UTF-8 bytes (GBK console output -> JSON-safe, 2026-08-24)
 std::string utf8_sanitize(const std::string& s);
 // truncate to n bytes without cutting a multi-byte char (dense output, 2026-08-24)
 std::string trunc_utf8(const std::string& s, size_t n);
-#endif
 
 }  // namespace os
 
