@@ -3,6 +3,15 @@
 Append a section per release; the Release workflow injects the section matching
 the tag name into the GitHub Release body. Keep entries at `## vX.Y.Z` level.
 
+## v0.1.8
+
+### Bug fixes
+
+- Follow-up to v0.1.7: the `--choose` fix shipped broken (dead condition —
+  the walk cursor had already left the start node). `--choose N` now applies
+  to the **first multi-edge node reached in the walk call**, so the documented
+  resume flow (`walk sid` stops at a fork → `walk sid --choose 2`) works.
+
 ## v0.1.7
 
 ### Bug fixes
