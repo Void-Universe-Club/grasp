@@ -61,22 +61,43 @@ std::string win_run_shell(const std::string& cmd, long timeout_secs) {
     }
     SetHandleInformation(rd, HANDLE_FLAG_INHERIT, 0);  // read end stays in the parent
 
+    // Child gets NUL as stdin: an accidental read hits EOF at once instead of
+    // blocking on the driver's console and burning the whole command timeout.
+    // sa marks it inheritable, otherwise CreateProcess silently drops the handle.
+    HANDLE nul_in = CreateFileA("NUL", GENERIC_READ,
+                                FILE_SHARE_READ | FILE_SHARE_WRITE, &sa,
+                                OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
+
     STARTUPINFOA si;
     ZeroMemory(&si, sizeof(si));
     si.cb = sizeof(si);
     si.dwFlags = STARTF_USESTDHANDLES;
     si.hStdOutput = wr;
     si.hStdError = wr;
-    si.hStdInput = GetStdHandle(STD_INPUT_HANDLE);
+    si.hStdInput = (nul_in != INVALID_HANDLE_VALUE) ? nul_in
+                                                    : GetStdHandle(STD_INPUT_HANDLE);
 
   // cmd.exe /d /s /c: /s strips the outer quotes we add, inner quotes reach the child intact
     std::string cmdline = "cmd.exe /d /s /c \"" + cmd + "\"";
     PROCESS_INFORMATION pi;
     ZeroMemory(&pi, sizeof(pi));
+    // Job object = the only reliable way to kill the whole process tree on
+    // timeout: cmd.exe spawns find/type as siblings; killing cmd orphans them
+    // with the output pipe held open.
+    HANDLE job = CreateJobObjectA(NULL, NULL);
     BOOL ok = CreateProcessA(NULL, &cmdline[0], NULL, NULL, TRUE,
-                             CREATE_NO_WINDOW, NULL, NULL, &si, &pi);
+                             CREATE_NO_WINDOW | CREATE_SUSPENDED, NULL, NULL,
+                             &si, &pi);
+    if (ok && job) {
+        AssignProcessToJobObject(job, pi.hProcess);
+    }
+    if (ok) {
+        ResumeThread(pi.hThread);
+    }
     CloseHandle(wr);  // parent: close the write end
+    if (nul_in != INVALID_HANDLE_VALUE) CloseHandle(nul_in);
     if (!ok) {
+        if (job) CloseHandle(job);
         CloseHandle(rd);
         throw std::runtime_error("CreateProcess failed: " + cmd);
     }
@@ -100,19 +121,23 @@ std::string win_run_shell(const std::string& cmd, long timeout_secs) {
             CloseHandle(pi.hThread);
             CloseHandle(pi.hProcess);
             CloseHandle(rd);
+            if (job) CloseHandle(job);
             if (code != 0) {
                 out += "\nERROR: command exit code " + std::to_string(code) +
                        " (cmd: " + cmd + ")";
             }
             return out;
         }
-  // 3. timeout kill
+  // 3. timeout kill: terminate the whole job tree so cmd's children
+  //    (find/type siblings) die too instead of orphaning with the pipe held open.
         if (now_ms() > deadline) {
-            TerminateProcess(pi.hProcess, 1);
+            if (job) TerminateJobObject(job, 1);
+            else TerminateProcess(pi.hProcess, 1);
             WaitForSingleObject(pi.hProcess, INFINITE);
             CloseHandle(pi.hThread);
             CloseHandle(pi.hProcess);
             CloseHandle(rd);
+            if (job) CloseHandle(job);
             throw std::runtime_error("command timeout (" +
                                      std::to_string(timeout_secs) + "s): " + cmd);
         }
@@ -178,7 +203,13 @@ std::string posix_run_shell(const std::string& cmd, long timeout_secs) {
         throw std::runtime_error("fork failed: " + cmd);
     }
     if (pid == 0) {
-  // child: route stdout/stderr to the pipe write end
+  // child: route stdout/stderr to the pipe write end, stdin to /dev/null
+  // (an accidental read must hit EOF, not block the driver forever)
+        int devnull = ::open("/dev/null", O_RDONLY);
+        if (devnull >= 0) {
+            ::dup2(devnull, STDIN_FILENO);
+            ::close(devnull);
+        }
         ::dup2(fds[1], STDOUT_FILENO);
         ::dup2(fds[1], STDERR_FILENO);
         pipe_guard.close_one(fds[0]);
