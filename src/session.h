@@ -50,9 +50,11 @@ std::vector<std::string> session_list_next(const Session& s, const std::string& 
   // walk: topology stroll (no execution, pure thinking navigation). Single edges advance automatically; multiple edges / dead end / conclude
   // stop and return the path node descriptions joined with edge event language as a natural-language sentence (external thinking tool).
   // choose selects the Nth outgoing edge at the start (1-based); auto_choose selects the Nth edge at EVERY multi-edge node
-  // (non-interactive stroll); max_steps guards cycles (default 50). walk updates visits accumulation and advances the current node.
+  // (non-interactive stroll); use_jev asks the local NanoJev System-One server (GRASP_JEV_URL) to pick at EVERY fork
+  // (before auto_choose); max_steps guards cycles (default 50). walk updates visits accumulation and advances the current node.
 std::string session_walk(Session& s, const std::string& from, int choose,
-                         int auto_choose, int max_steps, SessionStore* store);
+                         int auto_choose, int max_steps, SessionStore* store,
+                         bool use_jev = false);
 
   // status summary (full session JSON with --json)
 std::string session_status(const Session& s, bool as_json);

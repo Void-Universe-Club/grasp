@@ -23,7 +23,7 @@ void from_json(const nlohmann::json& j, StepRecord& s) {
     s.node = j.value("node", "");
     s.kind = j.value("kind", "");
     s.output = j.value("output", "");
-    s.at_ms = j.value("at_ms", 0L);
+    s.at_ms = j.value("at_ms", 0LL);
 }
 
 void to_json(nlohmann::json& j, const Session& s) {

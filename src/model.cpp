@@ -136,6 +136,10 @@ std::string validate_graph(const Graph& g) {
         return "entry node '" + g.entry + "' does not exist";
     }
     for (size_t i = 0; i < g.nodes.size(); ++i) {
+        const Node& n = g.nodes[i];
+        if (n.decide != "" && n.decide != "jev" && n.decide != "llm") {
+            return "node '" + n.id + "' decide must be 'jev' or 'llm' (or absent), got '" + n.decide + "'";
+        }
         for (size_t j = i + 1; j < g.nodes.size(); ++j) {
             if (g.nodes[i].id == g.nodes[j].id) {
                 return "duplicate node id '" + g.nodes[i].id + "'";
@@ -159,6 +163,9 @@ std::string validate_new_node(const Graph& g, const Node& n) {
     if (!node_kind_valid(n.kind)) {
         return "invalid node kind '" + n.kind + "' (expected exec|ask|conclude|fork)";
     }
+    if (n.decide != "" && n.decide != "jev" && n.decide != "llm") {
+        return "invalid node decide '" + n.decide + "' (expected jev|llm or absent)";
+    }
     if (g.find_node(n.id) != NULL) {
         return "node id '" + n.id + "' already exists";
     }
@@ -173,6 +180,26 @@ std::string validate_new_edge(const Graph& g, const Edge& e) {
         return "edge to '" + e.to + "' references missing node";
     }
     return "";
+}
+
+std::vector<std::string> fork_safety_warnings(const Graph& g) {
+    std::vector<std::string> out;
+    for (size_t i = 0; i < g.nodes.size(); ++i) {
+        std::vector<const Edge*> es = g.edges_from(g.nodes[i].id);
+        if (es.size() < 2) continue;  // not a fork
+        bool has_fallback = false;
+        for (size_t k = 0; k < es.size(); ++k) {
+            if (es[k]->fallback) has_fallback = true;
+        }
+        if (has_fallback) continue;  // wrong picks have a rescue exit
+        for (size_t k = 0; k < es.size(); ++k) {
+            const Node* t = g.find_node(es[k]->to);
+            if (t != NULL && t->kind != "conclude" && g.edges_from(t->id).empty()) {
+                out.push_back(g.nodes[i].id + "->" + t->id);
+            }
+        }
+    }
+    return out;
 }
 
   // ---------- JSON serialization ----------
@@ -190,6 +217,7 @@ void to_json(nlohmann::json& j, const Node& n) {
     if (!n.result.empty()) j["result"] = n.result;
     if (!n.evidence.empty()) j["evidence"] = n.evidence;
     if (!n.related_files.empty()) j["related_files"] = n.related_files;
+    if (!n.decide.empty()) j["decide"] = n.decide;
 }
 
 void from_json(const nlohmann::json& j, Node& n) {
@@ -204,6 +232,7 @@ void from_json(const nlohmann::json& j, Node& n) {
     n.result = j.value("result", "");
     n.evidence = j.value("evidence", "");
     n.related_files = j.value("related_files", "");
+    n.decide = j.value("decide", "");
 }
 
 void to_json(nlohmann::json& j, const Edge& e) {

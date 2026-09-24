@@ -23,6 +23,7 @@ struct Node {
     std::string result;       // confirmed | refuted | neutral | pending
     std::string evidence;     // validation data / evidence summary
     std::string related_files;  // related code files (comma-separated, graph-code links, 2026-08-24)
+    std::string decide;       // fork decision-maker: "" (auto: Jev+threshold) | "jev" (always Jev) | "llm" (never Jev)
 };
 
 // edge: a from -> to transition. label is the event description (e.g. "find food"/"sleep"),
@@ -71,6 +72,11 @@ std::string validate_graph(const Graph& g);
 std::string validate_new_node(const Graph& g, const Node& n);
 // insert --edge validation: from / to must exist
 std::string validate_new_edge(const Graph& g, const Edge& e);
+
+// fork safety-net lint: multi-edge forks with NO fallback edge and at least one
+// outgoing edge whose target is a non-conclude sink (a wrong pick that dead-ends).
+// Such forks are unsafe to hand to a cheap System One -- add a fallback/return edge or tag decide="llm".
+std::vector<std::string> fork_safety_warnings(const Graph& g);
 
 // JSON serialization (shared by graph file and session snapshot)
 void to_json(nlohmann::json& j, const Node& n);

@@ -10,6 +10,7 @@
 #include <algorithm>
 
 #include "driver.h"
+#include "jev.h"
 #include "model.h"
 #include "os.h"
 #include "session.h"
@@ -265,7 +266,11 @@ int cmd_walk(const std::vector<std::string>& args, std::string* current) {
         std::cout << out.dump() << "\n";
         return 0;
     }
-    std::string stmt = session_walk(s, from, choose, auto_choose, steps, &store());
+    bool use_jev = std::find(flags.begin(), flags.end(), "jev") != flags.end();
+    if (use_jev && !jev_available()) {
+        throw std::runtime_error("--jev requires GRASP_JEV_URL (e.g. http://127.0.0.1:8765)");
+    }
+    std::string stmt = session_walk(s, from, choose, auto_choose, steps, &store(), use_jev);
     store().save(s);
     std::cout << stmt << "\n";
     return 0;
@@ -341,6 +346,7 @@ int cmd_show(const std::vector<std::string>& args, std::string* current) {
     if (!n->prompt.empty()) std::cout << "prompt  : " << n->prompt << "\n";
     if (!n->message.empty()) std::cout << "message : " << n->message << "\n";
     if (n->timeout_secs > 0) std::cout << "timeout : " << n->timeout_secs << "s\n";
+    if (!n->decide.empty()) std::cout << "decide  : " << n->decide << "\n";
     std::cout << "visits  : " << s.graph.visit_count(n->id) << "\n";
     std::vector<const Edge*> out = s.graph.edges_from(n->id);
     std::cout << "outgoing: " << out.size() << "\n";
@@ -726,7 +732,7 @@ int cmd_update(const std::vector<std::string>& args, std::string* current) {
     size_t pos = 0;
     std::string sid = session_id_of(rest, &pos, current);
     if (pos >= rest.size()) {
-        throw std::runtime_error("usage: update <session-id> <node-id> [--desc '..'] [--result r] [--evidence '..'] [--hypothesis '..'] [--files 'a,b'] [--cmd '..']");
+        throw std::runtime_error("usage: update <session-id> <node-id> [--desc '..'] [--result r] [--evidence '..'] [--hypothesis '..'] [--files 'a,b'] [--cmd '..'] [--decide jev|llm]");
     }
     Session s = store().load(sid);
     Node* n = const_cast<Node*>(s.graph.find_node(rest[pos]));
@@ -739,6 +745,15 @@ int cmd_update(const std::vector<std::string>& args, std::string* current) {
     if (opts.count("files") > 0) { n->related_files = opts["files"]; ++changed; }
     if (opts.count("cmd") > 0) { n->cmd = opts["cmd"]; ++changed; }
     if (opts.count("kind") > 0) { n->kind = opts["kind"]; ++changed; }
+    if (opts.count("decide") > 0) {
+        std::string d = opts["decide"];
+        if (d == "auto") d = "";
+        if (!d.empty() && d != "jev" && d != "llm") {
+            throw std::runtime_error("--decide must be jev|llm|auto, got '" + opts["decide"] + "'");
+        }
+        n->decide = d;
+        ++changed;
+    }
     if (!changed) throw std::runtime_error("no fields to update (see usage)");
     s.graph.version++;
     store().save(s);
@@ -812,7 +827,11 @@ int cmd_drive(const std::vector<std::string>& args, std::string* current) {
     size_t pos = 0;
     std::string sid = session_id_of(rest, &pos, current);
     int max_steps = option_int(opts, "max-steps", 20);
-    drive_session(store(), sid, max_steps);
+    bool use_jev = std::find(flags.begin(), flags.end(), "jev") != flags.end();
+    if (use_jev && !jev_available()) {
+        throw std::runtime_error("--jev requires GRASP_JEV_URL (e.g. http://127.0.0.1:8765)");
+    }
+    drive_session(store(), sid, max_steps, use_jev);
     return 0;
 }
 
@@ -892,13 +911,14 @@ int cmd_dispatch(const std::vector<std::string>& args, std::string* current_sess
                 "  status <sid> [--json]            detailed status: node/target/visits/unexpl(explored nodes)/\n"
                 "                                   unexplE(unexplored edges)/fork chain\n"
                 "  list-next <sid> [--node ID]      outgoing edges of the current (or given) node (label + target desc)\n"
-                "  walk <sid> [--from ID] [--choose N] [--auto|-auto N] [--steps N] [--json]\n"
+                "  walk <sid> [--from ID] [--choose N] [--auto|-auto N] [--steps N] [--jev] [--json]\n"
                 "                                   topology stroll (thinking mode, executes nothing): single edges\n"
                 "                                   advance automatically; multi-edge nodes stop and ask; unwalked\n"
                 "                                   edges are marked [unexplored]; --choose N picks the Nth edge at\n"
                 "                                   the start node of the call (resume a stopped fork the same way);\n"
                 "                                   --auto keeps walking (prefer unexplored,\n"
                 "                                   else fallback, else first), --auto N picks N at every fork;\n"
+                "                                   --jev lets local NanoJev (GRASP_JEV_URL) pick at every fork;\n"
                 "                                   --json prints {cur,desc,options[]} for agents\n"
                 "  step <sid> <node-id>             single step: jump to a successor of the current node and execute\n"
                 "  travel <sid> [--from ID] [--target ID]\n"
@@ -915,17 +935,22 @@ int cmd_dispatch(const std::vector<std::string>& args, std::string* current_sess
                 "  rebase <sid>                       sync the parent session's newest topology into this session\n"
                 "  dump-svg <sid> [--out FILE] [--width W] [--height H]\n"
                 "                                   render the session graph as a standalone SVG\n"
-                "  drive <sid> [--max-steps N]      optional: built-in LLM decision loop (or drive it yourself)\n"
+                "  drive <sid> [--max-steps N] [--jev]\n"
+                "                                   optional: built-in LLM decision loop (or drive it yourself);\n"
+                "                                   --jev: NanoJev picks forks with p>=GRASP_JEV_MIN_P, LLM only on low confidence\n"
                 "  repl [--session sid]             interactive REPL (session id omitted after open)\n"
                 "\n"
                 "[Node JSON]\n"
                 "  {\"id\":\"n1\",\"desc\":\"natural-language description (the text walk stitches)\",\"kind\":\"exec\",\"cmd\":\"echo hi\"}\n"
                 "  kind: exec(run command) | ask(read stdin) | conclude(end session) | fork(fork a child session)\n"
+                "  decide (optional): jev=this fork always System One | llm=semantic fork, never Jev | absent=auto (Jev + threshold)\n"
                 "  desc is the state description for the agent; cmd runs on execution ($ENV_VAR expanded)\n"
                 "\n"
                 "[Environment]\n"
                 "  OPENAI_API_KEY / OPENAI_BASE_URL / OPENAI_MODEL   only needed by drive\n"
                 "  GRASP_CPP_SESSIONS  session directory (default sessions/)\n"
+                "  GRASP_JEV_URL       local NanoJev server (e.g. http://127.0.0.1:8765), enables --jev system-one lane\n"
+                "  GRASP_JEV_MIN_P     drive --jev trust threshold for the fast lane (default 0.5)\n"
                 "\n"
                 "[Example: a day of meta-session work]\n"
                 "  grasp new graphs/meta.json --id my-meta\n"

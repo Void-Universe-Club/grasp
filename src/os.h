@@ -11,7 +11,7 @@
 namespace os {
 
 // current timestamp (milliseconds since epoch)
-long now_ms();
+long long now_ms();
 
 // run a shell command and return the merged stdout+stderr; kill and throw
 // std::runtime_error after timeout_secs (60s default when <= 0)
@@ -56,10 +56,9 @@ private:
 std::vector<std::string> wargv_to_utf8(int argc, wchar_t** argv);
 #endif
 
-// replace invalid UTF-8 bytes (GBK console output -> JSON-safe, 2026-08-24)
-std::string utf8_sanitize(const std::string& s);
-// truncate to n bytes without cutting a multi-byte char (dense output, 2026-08-24)
-std::string trunc_utf8(const std::string& s, size_t n);
+// platform-independent UTF-8 helpers (defined unconditionally in os.cpp)
+std::string utf8_sanitize(const std::string& s);  // GBK console output -> JSON-safe
+std::string trunc_utf8(const std::string& s, size_t n);  // cut at a char boundary
 
 }  // namespace os
 

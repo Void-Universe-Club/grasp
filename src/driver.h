@@ -9,7 +9,10 @@
 #include "store.h"
 
   // run the drive loop on a session; max_steps is the LLM decision-round budget.
+  // use_jev: at multi-edge forks the local NanoJev server (GRASP_JEV_URL) picks the edge
+  // first; the LLM is only asked when Jev's top probability < GRASP_JEV_MIN_P (default 0.5).
   // return the rounds executed; throw std::runtime_error when the LLM is unconfigured or the loop fails.
-int drive_session(SessionStore& store, const std::string& session_id, int max_steps);
+int drive_session(SessionStore& store, const std::string& session_id, int max_steps,
+                  bool use_jev = false);
 
 #endif // GRASP_CPP_DRIVER_H

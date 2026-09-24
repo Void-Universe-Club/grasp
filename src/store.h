@@ -14,7 +14,7 @@ struct StepRecord {
     std::string node;
     std::string kind;
     std::string output;
-    long at_ms;
+    long long at_ms;   // epoch ms: 32-bit 'long' overflows on Windows (LLP64)
 };
 
   // Session: one run over a graph.

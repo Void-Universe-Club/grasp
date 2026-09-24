@@ -4,6 +4,7 @@
 #include <sstream>
 #include <stdexcept>
 
+#include "jev.h"
 #include "llm.h"
 #include "os.h"
 #include "session.h"
@@ -279,7 +280,8 @@ ApplyResult apply_decision(SessionStore& store, const std::string& sid,
 
 }  // namespace
 
-int drive_session(SessionStore& store, const std::string& session_id, int max_steps) {
+int drive_session(SessionStore& store, const std::string& session_id, int max_steps,
+                  bool use_jev) {
     LlmConfig cfg;
     if (!llm_config_from_env(cfg)) {
         throw std::runtime_error(
@@ -303,6 +305,53 @@ int drive_session(SessionStore& store, const std::string& session_id, int max_st
         std::string obs = build_observation(s, store);
         std::cout << "\n===== drive round " << (rounds + 1) << " / " << max_steps
                   << " (" << current << ") =====\n" << obs;
+
+  // System-One fast lane (opt-in): at a pure edge-choice fork, let local NanoJev decide.
+  // node decide tag: "llm" = semantic fork, skip the lane entirely; "jev" = trust the pick
+  // unconditionally; "" = apply the GRASP_JEV_MIN_P trust threshold.
+        if (use_jev && s.started()) {
+            std::string cur = s.node;
+            const Node* tag = s.graph.find_node(cur);
+            std::vector<const Edge*> es = s.graph.edges_from(cur);
+            if (es.size() > 1 && !(tag != NULL && tag->decide == "llm")) {
+                const Node* n = s.graph.find_node(cur);
+                std::vector<JevOption> opts;
+                for (size_t i = 0; i < es.size(); ++i) {
+                    const Node* t = s.graph.find_node(es[i]->to);
+                    JevOption o;
+                    o.id = es[i]->to;
+                    o.text = jev_option_text(es[i]->label, es[i]->to, t ? t->desc : "");
+                    opts.push_back(o);
+                }
+                JevAnswer a = jev_ask_choice((n == NULL || n->desc.empty()) ? cur : n->desc, opts);
+                std::cout << "jev ranking:";
+                for (size_t i = 0; i < a.probs.size(); ++i) {
+                    std::cout << " " << a.probs[i].first << "=" << a.probs[i].second;
+                }
+                std::cout << "\n";
+                bool always_trust = n != NULL && n->decide == "jev";
+                if (always_trust || a.top_prob() >= jev_min_p()) {
+                    Decision d;
+                    d.action = "step";
+                    d.node = a.choice;
+                    std::cout << "decision: {\"action\":\"step\",\"node\":\"" << d.node
+                              << "\"} (jev system-one, p=" << a.top_prob()
+                              << (always_trust ? ", decide=jev LLM skipped"
+                                               : " >= min " + std::to_string(jev_min_p()) + ", LLM skipped")
+                              << ")\n";
+                    ApplyResult r = apply_decision(store, current, d);
+                    std::cout << r.feedback << "\n";
+                    if (!r.new_session.empty()) {
+                        current = r.new_session;
+                        std::cout << "drive switched to fork session " << current << "\n";
+                    }
+                    if (r.finished) return rounds + 1;
+                    continue;
+                }
+                std::cout << "jev top p=" << a.top_prob() << " < min " << jev_min_p()
+                          << ", falling back to LLM\n";
+            }
+        }
 
   // LLM decision; on parse/validation failure feed the error back and retry (<=3 per round)
         std::string prompt = decision_prompt(obs);

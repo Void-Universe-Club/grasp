@@ -1,5 +1,6 @@
 #include "session.h"
 
+#include <iomanip>
 #include <iostream>
 #include <map>
 #include <queue>
@@ -7,6 +8,7 @@
 #include <sstream>
 #include <stdexcept>
 
+#include "jev.h"
 #include "os.h"
 
 namespace {
@@ -236,7 +238,8 @@ void push_walk_record(Session& s, const std::string& node, const std::string& ki
 }  // namespace
 
 std::string session_walk(Session& s, const std::string& from, int choose,
-                         int auto_choose, int max_steps, SessionStore* store) {
+                         int auto_choose, int max_steps, SessionStore* store,
+                         bool use_jev) {
     (void)store;  // walk executes nothing, no store needed
     if (max_steps <= 0) max_steps = 50;
     std::string cur = !from.empty() ? from : (s.started() ? s.node : s.graph.entry);
@@ -284,8 +287,39 @@ std::string session_walk(Session& s, const std::string& from, int choose,
         }
         if (es.size() > 1) {
             int pick_idx = 0;
+            std::string jev_log;
             if (step == 0 && choose >= 1 && choose <= static_cast<int>(es.size())) {
-                pick_idx = choose;  // start choose: explicit option for the start node
+                pick_idx = choose;  // start choose: explicit option for the entry node
+            } else if (use_jev && n->decide != "llm") {
+  // System-One fast lane: local NanoJev scores every outgoing edge in one forward pass.
+  // decide="llm" nodes are semantic forks (立项/裁决/定稿): System One is skipped,
+  // the fork falls back to interactive/auto choice (walk has no LLM lane).
+                std::vector<JevOption> opts;
+                for (size_t i = 0; i < es.size(); ++i) {
+                    const Node* t = s.graph.find_node(es[i]->to);
+                    JevOption o;
+                    o.id = es[i]->to;
+                    o.text = jev_option_text(es[i]->label, es[i]->to, t ? t->desc : "");
+                    opts.push_back(o);
+                }
+                JevAnswer a = jev_ask_choice(n->desc.empty() ? cur : n->desc, opts);
+                std::ostringstream jv;
+                jv << std::fixed << std::setprecision(2);
+                for (size_t i = 0; i < a.probs.size(); ++i) {
+                    if (i) jv << ", ";
+                    jv << a.probs[i].first << "=" << a.probs[i].second;
+                }
+                jev_log = " [jev: " + jv.str() + "]";
+                for (size_t i = 0; i < es.size(); ++i) {
+                    if (es[i]->to == a.choice) {
+                        pick_idx = static_cast<int>(i) + 1;
+                        break;
+                    }
+                }
+                if (pick_idx == 0) {
+                    throw std::runtime_error("Jev chose '" + a.choice +
+                                             "', not an outgoing edge of " + cur);
+                }
             } else if (auto_choose == -1) {
   // auto (smart): prefer the first never-visited edge (exploration), else the
   // fallback edge, else the first — keeps walking to conclude without stopping
@@ -311,7 +345,7 @@ std::string session_walk(Session& s, const std::string& from, int choose,
                                       ? pick->label
                                       : (t ? t->desc : pick->to);
                 push_walk_record(s, cur, "walk_choose",
-                                 "choice: " + opt);
+                                 "choice: " + opt + jev_log);
                 cur = pick->to;
                 continue;
             }
@@ -535,6 +569,12 @@ std::string session_status(const Session& s, bool as_json) {
     std::vector<std::string> ue = s.graph.unexplored_edges();
     ss << "unexplE : " << (ue.empty() ? "(none)" : ue[0]);
     for (size_t i = 1; i < ue.size(); ++i) ss << ", " << ue[i];
+    ss << "\n";
+  // fork safety-net lint (P1): forks a cheap System One may safely drive
+    std::vector<std::string> fw = fork_safety_warnings(s.graph);
+    ss << "forklint : " << (fw.empty() ? "ok (every fork has a fallback or no sinks)" : fw[0]);
+    for (size_t i = 1; i < fw.size(); ++i) ss << ", " << fw[i];
+    if (!fw.empty()) ss << "  <- no fallback + sink target: tag decide=\"llm\" or add a return edge";
     ss << "\n";
     return ss.str();
 }

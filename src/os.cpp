@@ -22,9 +22,10 @@ namespace os {
 
 // ---------- time ----------
 
-long now_ms() {
+// epoch ms exceeds 32-bit 'long' on Windows (LLP64) — must be 64-bit.
+long long now_ms() {
     using namespace std::chrono;
-    return static_cast<long>(duration_cast<milliseconds>(
+    return static_cast<long long>(duration_cast<milliseconds>(
         system_clock::now().time_since_epoch()).count());
 }
 
@@ -80,7 +81,7 @@ std::string win_run_shell(const std::string& cmd, long timeout_secs) {
         throw std::runtime_error("CreateProcess failed: " + cmd);
     }
 
-    long deadline = now_ms() + timeout_secs * 1000;
+    long long deadline = now_ms() + timeout_secs * 1000;
     std::string out;
     for (;;) {
   // 1. read currently available data
@@ -189,7 +190,7 @@ std::string posix_run_shell(const std::string& cmd, long timeout_secs) {
   // parent: close the write end
     pipe_guard.close_one(fds[1]);
 
-    long deadline = now_ms() + timeout_secs * 1000;
+    long long deadline = now_ms() + timeout_secs * 1000;
     std::string out;
     int status = 0;
 

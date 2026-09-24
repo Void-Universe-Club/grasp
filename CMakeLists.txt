@@ -9,7 +9,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(grasp
     src/main.cpp src/cli.cpp src/model.cpp src/store.cpp src/os.cpp
-    src/session.cpp src/llm.cpp src/driver.cpp src/repl.cpp src/svg.cpp)
+    src/session.cpp src/llm.cpp src/jev.cpp src/driver.cpp src/repl.cpp src/svg.cpp)
 
 target_include_directories(grasp PRIVATE src third_party)
 
