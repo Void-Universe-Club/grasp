@@ -1,0 +1,50 @@
+{
+  "ep1": {
+    "steps": 50,
+    "collisions": 20,
+    "jev_calls": 46,
+    "llm_calls": 0,
+    "escalations": 0,
+    "forced": 4,
+    "graph_skips": 0,
+    "reposition": 0,
+    "success": true,
+    "outcome": "goal_reached",
+    "flywheel_rows": 46,
+    "new_nodes": 51,
+    "new_edges": 80,
+    "prunes": 0
+  },
+  "ep2": {
+    "steps": 32,
+    "collisions": 2,
+    "jev_calls": 28,
+    "llm_calls": 0,
+    "escalations": 0,
+    "forced": 4,
+    "graph_skips": 20,
+    "reposition": 0,
+    "success": true,
+    "outcome": "goal_reached",
+    "flywheel_rows": 2,
+    "new_nodes": 2,
+    "new_edges": 2,
+    "prunes": 0
+  },
+  "ep3": {
+    "steps": 30,
+    "collisions": 0,
+    "jev_calls": 26,
+    "llm_calls": 0,
+    "escalations": 0,
+    "forced": 4,
+    "graph_skips": 22,
+    "reposition": 0,
+    "success": true,
+    "outcome": "goal_reached",
+    "flywheel_rows": 0,
+    "new_nodes": 0,
+    "new_edges": 0,
+    "prunes": 0
+  }
+}

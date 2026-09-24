@@ -1,0 +1,84 @@
+{
+  "A_jev_only": [
+    {
+      "physical_steps": 25,
+      "decision_steps": 25,
+      "remaining_steps": 231,
+      "collisions": 11,
+      "success": true,
+      "outcome": "goal_reached",
+      "visited_cells": 15,
+      "reposition_steps": 0,
+      "goal_reached": true,
+      "jev_calls": 22,
+      "forced_calls": 3
+    },
+    {
+      "physical_steps": 25,
+      "decision_steps": 25,
+      "remaining_steps": 231,
+      "collisions": 11,
+      "success": true,
+      "outcome": "goal_reached",
+      "visited_cells": 15,
+      "reposition_steps": 0,
+      "goal_reached": true,
+      "jev_calls": 22,
+      "forced_calls": 3
+    },
+    {
+      "physical_steps": 25,
+      "decision_steps": 25,
+      "remaining_steps": 231,
+      "collisions": 11,
+      "success": true,
+      "outcome": "goal_reached",
+      "visited_cells": 15,
+      "reposition_steps": 0,
+      "goal_reached": true,
+      "jev_calls": 22,
+      "forced_calls": 3
+    }
+  ],
+  "B_jev_grasp": [
+    {
+      "physical_steps": 25,
+      "decision_steps": 25,
+      "remaining_steps": 231,
+      "collisions": 11,
+      "success": true,
+      "outcome": "goal_reached",
+      "visited_cells": 15,
+      "reposition_steps": 0,
+      "goal_reached": true,
+      "jev_calls": 22,
+      "forced_calls": 3
+    },
+    {
+      "physical_steps": 14,
+      "decision_steps": 14,
+      "remaining_steps": 242,
+      "collisions": 0,
+      "success": true,
+      "outcome": "goal_reached",
+      "visited_cells": 15,
+      "reposition_steps": 0,
+      "goal_reached": true,
+      "jev_calls": 0,
+      "forced_calls": 14
+    },
+    {
+      "physical_steps": 14,
+      "decision_steps": 14,
+      "remaining_steps": 242,
+      "collisions": 0,
+      "success": true,
+      "outcome": "goal_reached",
+      "visited_cells": 15,
+      "reposition_steps": 0,
+      "goal_reached": true,
+      "jev_calls": 0,
+      "forced_calls": 14
+    }
+  ]
+}

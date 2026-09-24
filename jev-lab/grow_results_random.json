@@ -1,0 +1,62 @@
+{
+  "ep1": {
+    "steps": 39,
+    "collisions": 23,
+    "jev_calls": 0,
+    "llm_calls": 0,
+    "escalations": 0,
+    "forced": 0,
+    "graph_skips": 0,
+    "reposition": 2,
+    "success": true,
+    "outcome": "goal_reached",
+    "new_nodes": 40,
+    "new_edges": 55,
+    "prunes": 0
+  },
+  "ep2": {
+    "steps": 31,
+    "collisions": 15,
+    "jev_calls": 0,
+    "llm_calls": 0,
+    "escalations": 0,
+    "forced": 0,
+    "graph_skips": 33,
+    "reposition": 2,
+    "success": true,
+    "outcome": "goal_reached",
+    "new_nodes": 4,
+    "new_edges": 4,
+    "prunes": 0
+  },
+  "ep3": {
+    "steps": 39,
+    "collisions": 23,
+    "jev_calls": 0,
+    "llm_calls": 0,
+    "escalations": 0,
+    "forced": 0,
+    "graph_skips": 41,
+    "reposition": 2,
+    "success": true,
+    "outcome": "goal_reached",
+    "new_nodes": 5,
+    "new_edges": 5,
+    "prunes": 0
+  },
+  "transfer": {
+    "steps": 34,
+    "collisions": 18,
+    "jev_calls": 0,
+    "llm_calls": 0,
+    "escalations": 0,
+    "forced": 0,
+    "graph_skips": 39,
+    "reposition": 4,
+    "success": true,
+    "outcome": "goal_reached",
+    "new_nodes": 7,
+    "new_edges": 13,
+    "prunes": 7
+  }
+}

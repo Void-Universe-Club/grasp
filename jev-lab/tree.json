@@ -1,0 +1,4356 @@
+{
+  "sha": "76fdfc9ecdca45a9bcef17991a07d3041a87685a",
+  "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/trees/76fdfc9ecdca45a9bcef17991a07d3041a87685a",
+  "tree": [
+    {
+      "path": ".env.example",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a59c8afaf202e6de0f04ebebeac25620a81e4c7a",
+      "size": 20,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/a59c8afaf202e6de0f04ebebeac25620a81e4c7a"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c8026c1b8ad03ab4105b298726b528d0ecb4229",
+      "size": 335,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/4c8026c1b8ad03ab4105b298726b528d0ecb4229"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6cd1f1b6511c81f43c8be48004a53332ed4f73c",
+      "size": 1077,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/f6cd1f1b6511c81f43c8be48004a53332ed4f73c"
+    },
+    {
+      "path": "README.en.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8f8afeb7e4462e45211aaeee391bfd4ee2e9cc2",
+      "size": 9366,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/a8f8afeb7e4462e45211aaeee391bfd4ee2e9cc2"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8f8afeb7e4462e45211aaeee391bfd4ee2e9cc2",
+      "size": 9366,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/a8f8afeb7e4462e45211aaeee391bfd4ee2e9cc2"
+    },
+    {
+      "path": "README.zh-CN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9022fd275e100f9d6e34f4a52473a39c328f3028",
+      "size": 9012,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/9022fd275e100f9d6e34f4a52473a39c328f3028"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9444c34b485aff53e9e193cfb64d3413a80aaef",
+      "size": 114622,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/d9444c34b485aff53e9e193cfb64d3413a80aaef"
+    },
+    {
+      "path": "assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b7e55e52152dff163b3093a9798701afbb9db2ca",
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/trees/b7e55e52152dff163b3093a9798701afbb9db2ca"
+    },
+    {
+      "path": "assets/arcade_data_manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9649541f5a7867a167bfacef2f9c750a903ec62c",
+      "size": 12873,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/9649541f5a7867a167bfacef2f9c750a903ec62c"
+    },
+    {
+      "path": "assets/arcade_maze.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4c417cdb2262a6f1206256354d159d9b482bd7a",
+      "size": 949814,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/b4c417cdb2262a6f1206256354d159d9b482bd7a"
+    },
+    {
+      "path": "assets/arcade_maze.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3c4ad301d7623a9b0582809185174b30302a714",
+      "size": 521934,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/f3c4ad301d7623a9b0582809185174b30302a714"
+    },
+    {
+      "path": "assets/arcade_maze.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73d23e0f97063ac8c4be5140d0eecc1aff705240",
+      "size": 356940,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/73d23e0f97063ac8c4be5140d0eecc1aff705240"
+    },
+    {
+      "path": "assets/arcade_media_manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33fc01e9111a2126f32fbb5b2d4628aa29e9328f",
+      "size": 2829,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/33fc01e9111a2126f32fbb5b2d4628aa29e9328f"
+    },
+    {
+      "path": "assets/arcade_snake.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73d054933765218ffd824ec5107318e3eb3fee53",
+      "size": 1727268,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/73d054933765218ffd824ec5107318e3eb3fee53"
+    },
+    {
+      "path": "assets/arcade_snake.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9d940e17f4641d3392836f1f27343556fea8b16",
+      "size": 606286,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/e9d940e17f4641d3392836f1f27343556fea8b16"
+    },
+    {
+      "path": "assets/arcade_snake.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90b33ef430494802cf476949aedfbf7b17edf7d3",
+      "size": 331436,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/90b33ef430494802cf476949aedfbf7b17edf7d3"
+    },
+    {
+      "path": "assets/basic_unified_autoplay.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ef6cf08b3c85895177ca839a8484ff36c4c2a39",
+      "size": 9563289,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/1ef6cf08b3c85895177ca839a8484ff36c4c2a39"
+    },
+    {
+      "path": "assets/comparison_greedy.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3e36f73f32df19457205cda8e188e5f2dd28516",
+      "size": 195623,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/b3e36f73f32df19457205cda8e188e5f2dd28516"
+    },
+    {
+      "path": "assets/comparison_greedy.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd06d89f9481342bbfb0fbef3c9b3e7fbff19040",
+      "size": 673481,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/dd06d89f9481342bbfb0fbef3c9b3e7fbff19040"
+    },
+    {
+      "path": "assets/comparison_greedy.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6f41c193744d58c546e1b98c7fdafe67de31de6",
+      "size": 212097,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/f6f41c193744d58c546e1b98c7fdafe67de31de6"
+    },
+    {
+      "path": "assets/comparison_media_manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22c67904f7d23b934732204230abf84b8ce85dde",
+      "size": 117847,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/22c67904f7d23b934732204230abf84b8ce85dde"
+    },
+    {
+      "path": "assets/comparison_playback_check.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36b9677a9c5e19c77bdc95b30d1083e60a8ba593",
+      "size": 7115,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/36b9677a9c5e19c77bdc95b30d1083e60a8ba593"
+    },
+    {
+      "path": "assets/comparison_sample.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "965281315b67ef465d71848183a2f9a041e837ce",
+      "size": 214271,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/965281315b67ef465d71848183a2f9a041e837ce"
+    },
+    {
+      "path": "assets/comparison_sample.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ac103a1f4adc9aa157cb86102b6b4054ebd3bd7",
+      "size": 718029,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/4ac103a1f4adc9aa157cb86102b6b4054ebd3bd7"
+    },
+    {
+      "path": "assets/comparison_sample.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68739b807a8377ad98b354787868a9ba9251cbf1",
+      "size": 211004,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/68739b807a8377ad98b354787868a9ba9251cbf1"
+    },
+    {
+      "path": "assets/maze_unified_autoplay.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df4ddb84aab54185c2272e50a7ba45bcbb7de745",
+      "size": 1557887,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/df4ddb84aab54185c2272e50a7ba45bcbb7de745"
+    },
+    {
+      "path": "assets/predict_position.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35af79462bd3de9fecd056636ab5181d6c537783",
+      "size": 2930326,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/35af79462bd3de9fecd056636ab5181d6c537783"
+    },
+    {
+      "path": "assets/predict_position_development.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "618b9364cb35a78ae234398c43189db01a885c51",
+      "size": 407451,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/618b9364cb35a78ae234398c43189db01a885c51"
+    },
+    {
+      "path": "assets/predict_position_unified_autoplay.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70f969e3bae62d3b99087cda454e05ca2ad71750",
+      "size": 4188645,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/70f969e3bae62d3b99087cda454e05ca2ad71750"
+    },
+    {
+      "path": "assets/predict_position_video_manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71a01f92cd4cd0d10caa0dcb8ad0eaee267ce199",
+      "size": 5427,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/71a01f92cd4cd0d10caa0dcb8ad0eaee267ce199"
+    },
+    {
+      "path": "assets/shooting_development.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e132c9177859f7c2d295f86e6c8d76be521fd09e",
+      "size": 266859,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/e132c9177859f7c2d295f86e6c8d76be521fd09e"
+    },
+    {
+      "path": "assets/side_by_side_browser_check.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f34a9e7826d8e743c2f115dec25fccbda8247f46",
+      "size": 26230,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/f34a9e7826d8e743c2f115dec25fccbda8247f46"
+    },
+    {
+      "path": "assets/side_by_side_data_manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ba15d567e0f81e6fcad7b153d4d6db3a84e162b",
+      "size": 16871,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/0ba15d567e0f81e6fcad7b153d4d6db3a84e162b"
+    },
+    {
+      "path": "assets/side_by_side_live_assets_check.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8fe31989bfb63c4e1a66ad64e069b64ae6f4626e",
+      "size": 1248,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/8fe31989bfb63c4e1a66ad64e069b64ae6f4626e"
+    },
+    {
+      "path": "assets/side_by_side_maze.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "325a1acb113c05a41a5a7278c04698b3d2432134",
+      "size": 1281089,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/325a1acb113c05a41a5a7278c04698b3d2432134"
+    },
+    {
+      "path": "assets/side_by_side_maze.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bfc468955d9afc22c274c1fe60326b96dee5248c",
+      "size": 159332,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/bfc468955d9afc22c274c1fe60326b96dee5248c"
+    },
+    {
+      "path": "assets/side_by_side_mobile.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50cb36437daf95df604feb83b308f3a4228d739c",
+      "size": 94651,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/50cb36437daf95df604feb83b308f3a4228d739c"
+    },
+    {
+      "path": "assets/side_by_side_snake.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e4378ef94675bc70750be68bcc92f74b05851d9",
+      "size": 152548,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/9e4378ef94675bc70750be68bcc92f74b05851d9"
+    },
+    {
+      "path": "assets/side_by_side_video_manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6cb287a86f60835bcd2fe9aafb45da6c2842329",
+      "size": 5928,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/b6cb287a86f60835bcd2fe9aafb45da6c2842329"
+    },
+    {
+      "path": "configs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dca2d139d329f83b93da1fa10e56a8a9fb137cee",
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/trees/dca2d139d329f83b93da1fa10e56a8a9fb137cee"
+    },
+    {
+      "path": "configs/appo_basic_supervision_v1.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a7a3dbf12bda545271cdb80669e75ab42a6a0d1",
+      "size": 4246,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/8a7a3dbf12bda545271cdb80669e75ab42a6a0d1"
+    },
+    {
+      "path": "configs/appo_basic_supervision_v1_cases.jsonl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "698db53e3b9c0a6c864b55ef4704038864a622e9",
+      "size": 146688,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/698db53e3b9c0a6c864b55ef4704038864a622e9"
+    },
+    {
+      "path": "configs/appo_basic_supervision_v1_novelty.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9cb4cf26bdad0f4976eb8e788897715b78b1c62",
+      "size": 150786,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/c9cb4cf26bdad0f4976eb8e788897715b78b1c62"
+    },
+    {
+      "path": "configs/appo_basic_supervision_v1_weights.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a1d0fc08626ff4a9d3eac19b87b3b22730a50e1",
+      "size": 184,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/3a1d0fc08626ff4a9d3eac19b87b3b22730a50e1"
+    },
+    {
+      "path": "configs/appo_basic_v1.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79ef3ed58916db3467b221665a5d98aa79a9b4dc",
+      "size": 3163,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/79ef3ed58916db3467b221665a5d98aa79a9b4dc"
+    },
+    {
+      "path": "configs/hard_navigation_demo_v1_cases.jsonl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f0043c7a9241aea5c465f5736022c7666bbf2d1",
+      "size": 9475,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/8f0043c7a9241aea5c465f5736022c7666bbf2d1"
+    },
+    {
+      "path": "configs/predict_position_demo_v1.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec78895bc001c0e7d40236adb02ad4be5817c6a0",
+      "size": 1117,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/ec78895bc001c0e7d40236adb02ad4be5817c6a0"
+    },
+    {
+      "path": "configs/shooting_demo_v1_cases.jsonl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "308d62fc7148c77da4ccd6e1b7a9db0f610554d2",
+      "size": 2100,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/308d62fc7148c77da4ccd6e1b7a9db0f610554d2"
+    },
+    {
+      "path": "configs/sonic_policy_pool_weights.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "177938dd5af991d357fb6f28395fcdf55124a715",
+      "size": 185,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/177938dd5af991d357fb6f28395fcdf55124a715"
+    },
+    {
+      "path": "configs/sonic_predict_supervision_v1.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b83d399cf4a227498d5161c8684d16ebfa5fed4",
+      "size": 2878,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/8b83d399cf4a227498d5161c8684d16ebfa5fed4"
+    },
+    {
+      "path": "configs/sonic_predict_supervision_v1_cases.jsonl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6348be1d24bc65dbd9dbb44434be7b158e96b300",
+      "size": 194176,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/6348be1d24bc65dbd9dbb44434be7b158e96b300"
+    },
+    {
+      "path": "configs/sonic_predict_supervision_v1_novelty.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b4378d55ee0a496a80cd2accf4f63cfb3b17ae8",
+      "size": 2703,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/6b4378d55ee0a496a80cd2accf4f63cfb3b17ae8"
+    },
+    {
+      "path": "configs/sonic_unified_sft_v1.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e382ae27abee093cdaca802ece658db766c23ba",
+      "size": 1908,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/0e382ae27abee093cdaca802ece658db766c23ba"
+    },
+    {
+      "path": "configs/unified_basic_demo_v1.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76087295d2f84fd02dac2a0ea339bfeec86ff7c5",
+      "size": 1202,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/76087295d2f84fd02dac2a0ea339bfeec86ff7c5"
+    },
+    {
+      "path": "configs/unified_games_v1_cases.jsonl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84ff39d9a2b96a5c58f2469bf8cc9a8fc32a078a",
+      "size": 35916,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/84ff39d9a2b96a5c58f2469bf8cc9a8fc32a078a"
+    },
+    {
+      "path": "configs/unified_navigation_demo_v1.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a67b55738cc070eda096362d3ae67a31f2ba41fd",
+      "size": 1118,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/a67b55738cc070eda096362d3ae67a31f2ba41fd"
+    },
+    {
+      "path": "configs/unified_td_v1.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93162cd49a0654807f19cf14f1c3ca66f7e54122",
+      "size": 4503,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/93162cd49a0654807f19cf14f1c3ca66f7e54122"
+    },
+    {
+      "path": "docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b617c1ad833c508f15825be015b9215040001f80",
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/trees/b617c1ad833c508f15825be015b9215040001f80"
+    },
+    {
+      "path": "docs/APPO_BASIC_RESULTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ee373792894443e59f51127c9e74a616f662754",
+      "size": 7142,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/2ee373792894443e59f51127c9e74a616f662754"
+    },
+    {
+      "path": "docs/APPO_SUPERVISION.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48601ae1fe70fc98115a656a775319ddacdd82c3",
+      "size": 11124,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/48601ae1fe70fc98115a656a775319ddacdd82c3"
+    },
+    {
+      "path": "docs/ATOMIC_PLANNING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a50b2999164357f3c3cb6026d58b7e0ae4256fdc",
+      "size": 6092,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/a50b2999164357f3c3cb6026d58b7e0ae4256fdc"
+    },
+    {
+      "path": "docs/DEVELOPMENT_RESULTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "147667b7a3f167f5a0c4a9849f80587727711af3",
+      "size": 6226,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/147667b7a3f167f5a0c4a9849f80587727711af3"
+    },
+    {
+      "path": "docs/FABLE_REVIEW.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "126bc5695e48caf824fad2ab3f452a9e7cc39a4f",
+      "size": 6718,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/126bc5695e48caf824fad2ab3f452a9e7cc39a4f"
+    },
+    {
+      "path": "docs/GAME_RELEASE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8861c642cc39c2a47a7f92c98cf8f9923675f4a",
+      "size": 6167,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/c8861c642cc39c2a47a7f92c98cf8f9923675f4a"
+    },
+    {
+      "path": "docs/MODEL_EDGE_RESULTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5285247a8bed0c11f14792b09525dd74fb336cc3",
+      "size": 5497,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/5285247a8bed0c11f14792b09525dd74fb336cc3"
+    },
+    {
+      "path": "docs/PREDICT_POSITION_DEMO.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c39d9087246071b31dc2ec27a657d828660d8ccb",
+      "size": 3999,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/c39d9087246071b31dc2ec27a657d828660d8ccb"
+    },
+    {
+      "path": "docs/RLCD_EXPERIMENT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "69e4667c2f8adf80892a2db53f98326a5f6f715f",
+      "size": 11848,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/69e4667c2f8adf80892a2db53f98326a5f6f715f"
+    },
+    {
+      "path": "docs/SCALED_GAMES.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f46ef7452bbafcbeb7ba599ed2b65bacbe198b0e",
+      "size": 11437,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/f46ef7452bbafcbeb7ba599ed2b65bacbe198b0e"
+    },
+    {
+      "path": "docs/SHOOTING_DEMO.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91856ce5008fe7f1ad9bfebddb5bb65cef6be9a0",
+      "size": 3761,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/91856ce5008fe7f1ad9bfebddb5bb65cef6be9a0"
+    },
+    {
+      "path": "docs/SONIC_PREDICT_POSITION.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b92318127b616f975ef92b8b4008e8d3d17cf50",
+      "size": 7547,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/1b92318127b616f975ef92b8b4008e8d3d17cf50"
+    },
+    {
+      "path": "docs/SONIC_PREDICT_POSITION_RESULTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90b4291bc656a407a0d7e3ce0668f6e23eddd5bb",
+      "size": 6584,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/90b4291bc656a407a0d7e3ce0668f6e23eddd5bb"
+    },
+    {
+      "path": "docs/TYPESAFE_CONTRACT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9fa5e591c7f8da5b22cb5e8d47aa2ad4d5731f73",
+      "size": 7259,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/9fa5e591c7f8da5b22cb5e8d47aa2ad4d5731f73"
+    },
+    {
+      "path": "docs/UNIFIED_DEVELOPMENT_RELEASE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "edc9606f5a75133c7816d92723e85e960665d011",
+      "size": 5332,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/edc9606f5a75133c7816d92723e85e960665d011"
+    },
+    {
+      "path": "docs/UNIFIED_GAMES.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8cc48cb4e689eeee68f4d2e208fee8bf66bd4bf",
+      "size": 20286,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/c8cc48cb4e689eeee68f4d2e208fee8bf66bd4bf"
+    },
+    {
+      "path": "docs/UNIFIED_RESULTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e3a21b78895cc7f43b917f6ee6daa4bc07f4da1",
+      "size": 9418,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/3e3a21b78895cc7f43b917f6ee6daa4bc07f4da1"
+    },
+    {
+      "path": "docs/UNIFIED_TD.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6731ea3f89974c6ceba59046dcb92cad53383541",
+      "size": 7710,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/6731ea3f89974c6ceba59046dcb92cad53383541"
+    },
+    {
+      "path": "docs/UNIFIED_TD_RESULTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ebdca928e20c32ea6601b0ac1aae8ed86baf1c5",
+      "size": 8641,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/0ebdca928e20c32ea6601b0ac1aae8ed86baf1c5"
+    },
+    {
+      "path": "package-lock.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7cfce43742287fa13da446346e9f23c4285b291",
+      "size": 4846,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/a7cfce43742287fa13da446346e9f23c4285b291"
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "265275adfda47418dad0dd5c39c52f2eea8fb3ff",
+      "size": 638,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/265275adfda47418dad0dd5c39c52f2eea8fb3ff"
+    },
+    {
+      "path": "requirements-shooting-demo.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "69f4b1201bf21bf69df324c6dfe5bfcee6edd575",
+      "size": 114,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/69f4b1201bf21bf69df324c6dfe5bfcee6edd575"
+    },
+    {
+      "path": "requirements-toy.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "600ddb485900b63e13603286c3afaa28ccd8f14d",
+      "size": 135,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/600ddb485900b63e13603286c3afaa28ccd8f14d"
+    },
+    {
+      "path": "requirements-vizdoom.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a45252b36c08007cee5b4896e8bf50a74c858e9",
+      "size": 113,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/5a45252b36c08007cee5b4896e8bf50a74c858e9"
+    },
+    {
+      "path": "research",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "37287bbd182ae19042e8d675c86f64fdacdcf5b2",
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/trees/37287bbd182ae19042e8d675c86f64fdacdcf5b2"
+    },
+    {
+      "path": "research/algorithm_architecture_audit_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df2f218eb26861bc2d7e542858bb857df1048162",
+      "size": 20715,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/df2f218eb26861bc2d7e542858bb857df1048162"
+    },
+    {
+      "path": "research/algorithm_fable_decisions_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "768872d75bf7a64a7f651df5e06ff3845088af56",
+      "size": 19741,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/768872d75bf7a64a7f651df5e06ff3845088af56"
+    },
+    {
+      "path": "research/algorithm_training_contract_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46f6193f87f174269a71999630759c971f3a8521",
+      "size": 41353,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/46f6193f87f174269a71999630759c971f3a8521"
+    },
+    {
+      "path": "research/budget_summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d726ac652a497cd71b6f2767dbe530d4e4f17128",
+      "size": 2082,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/d726ac652a497cd71b6f2767dbe530d4e4f17128"
+    },
+    {
+      "path": "research/core_features_rlcd_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56f971829278ee6aadcfedbd4ff5af1957faf97f",
+      "size": 18894,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/56f971829278ee6aadcfedbd4ff5af1957faf97f"
+    },
+    {
+      "path": "research/distribution_probe_inputs.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0564c17018d13dda0b909c032e9042fca8f8a024",
+      "size": 732301,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/0564c17018d13dda0b909c032e9042fca8f8a024"
+    },
+    {
+      "path": "research/distribution_probe_summary_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13a583d5d659447c4c3d89f3e8cf01796f347440",
+      "size": 5802,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/13a583d5d659447c4c3d89f3e8cf01796f347440"
+    },
+    {
+      "path": "research/dynamic_candidates_check.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd0fe729dcd711a2111925b61eadda638073016e",
+      "size": 32046,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/dd0fe729dcd711a2111925b61eadda638073016e"
+    },
+    {
+      "path": "research/dynamic_candidates_v2.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4b3de3aa2efc689f1f37b58cf9930e363e26380",
+      "size": 32063,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/a4b3de3aa2efc689f1f37b58cf9930e363e26380"
+    },
+    {
+      "path": "research/game_dataset_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f19de323b8e2adbdd4e733e291a41f5d3c87d7f",
+      "size": 7754,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/9f19de323b8e2adbdd4e733e291a41f5d3c87d7f"
+    },
+    {
+      "path": "research/game_fable_review_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4883e1949aeeb2fa77b278d5a5076c66961a2145",
+      "size": 17301,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/4883e1949aeeb2fa77b278d5a5076c66961a2145"
+    },
+    {
+      "path": "research/implementation_plan_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8221a70245c7bae06b36bd39a3bef845f09783ef",
+      "size": 27881,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/8221a70245c7bae06b36bd39a3bef845f09783ef"
+    },
+    {
+      "path": "research/jev_public_sources_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1f3fcee38a8d2b56bcb0b4e3c17852428aa71c5",
+      "size": 13962,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/f1f3fcee38a8d2b56bcb0b4e3c17852428aa71c5"
+    },
+    {
+      "path": "research/jevlike_repo_audit_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7fa4eb540db92d440f65afa7143f13c13c9e30f3",
+      "size": 5340,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/7fa4eb540db92d440f65afa7143f13c13c9e30f3"
+    },
+    {
+      "path": "research/live_service_check_v2.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2fdd57598842cba30030be37380c13bac36ebb6c",
+      "size": 12614,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/2fdd57598842cba30030be37380c13bac36ebb6c"
+    },
+    {
+      "path": "research/live_service_check_v3.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "401791de707c69ef139a67ddc98827889aea3abc",
+      "size": 12613,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/401791de707c69ef139a67ddc98827889aea3abc"
+    },
+    {
+      "path": "research/nanojev_comparison_api_receipts.jsonl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95dcd6f020e689811681e8fb270b99a38c1f0b5a",
+      "size": 280894,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/95dcd6f020e689811681e8fb270b99a38c1f0b5a"
+    },
+    {
+      "path": "research/nanojev_comparison_cohort.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e6f1cc64f2b1dab1cdc707ac35dab74c640cb67",
+      "size": 36401,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/6e6f1cc64f2b1dab1cdc707ac35dab74c640cb67"
+    },
+    {
+      "path": "research/nanojev_comparison_protocol_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4464d9b0bee59e9066547a4a7bafb83953db7622",
+      "size": 12755,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/4464d9b0bee59e9066547a4a7bafb83953db7622"
+    },
+    {
+      "path": "research/nanojev_comparison_public.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75d5cbe41d9169e267c0707555be862d532eb82d",
+      "size": 21081144,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/75d5cbe41d9169e267c0707555be862d532eb82d"
+    },
+    {
+      "path": "research/nanojev_comparison_verification.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d36c03bcfb7d3d025ca25fb4ca55579ad1dd754",
+      "size": 25515,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/5d36c03bcfb7d3d025ca25fb4ca55579ad1dd754"
+    },
+    {
+      "path": "research/nanojev_comparison_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c526613076568388c9994173e96fb8777bd3c26b",
+      "size": 4615,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/c526613076568388c9994173e96fb8777bd3c26b"
+    },
+    {
+      "path": "research/nanojev_showcase.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f85bce6be4fb48f0cd137853f2d2519f2fb04922",
+      "size": 1864,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/f85bce6be4fb48f0cd137853f2d2519f2fb04922"
+    },
+    {
+      "path": "research/nanojev_showcase_selection.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75b18b1211b130b635b54e1ae3fd03a01e5e2c1d",
+      "size": 28959,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/75b18b1211b130b635b54e1ae3fd03a01e5e2c1d"
+    },
+    {
+      "path": "research/navigation_failure_fable_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51c033dd692d146cf8f24f5545e0dffcf0ffd30b",
+      "size": 9910,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/51c033dd692d146cf8f24f5545e0dffcf0ffd30b"
+    },
+    {
+      "path": "research/navigation_v3_input_audit.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3fd57ad418e3569d7bcd6d116339b6ea6d55fee",
+      "size": 1173,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/b3fd57ad418e3569d7bcd6d116339b6ea6d55fee"
+    },
+    {
+      "path": "research/navigation_v3_jev_api_greedy.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5baeb8ac6b1bbb63653ee0d6794efab01399cce4",
+      "size": 2584363,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/5baeb8ac6b1bbb63653ee0d6794efab01399cce4"
+    },
+    {
+      "path": "research/navigation_v3_jev_api_sample.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c4e7cd81b89249bf697e6a71c188a1b892492f0",
+      "size": 2137308,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/2c4e7cd81b89249bf697e6a71c188a1b892492f0"
+    },
+    {
+      "path": "research/navigation_v3_native_qwen_audit.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b570540ae321393c0c84be46d23ce13839010704",
+      "size": 774,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/b570540ae321393c0c84be46d23ce13839010704"
+    },
+    {
+      "path": "research/navigation_v3_native_qwen_greedy.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d852b416554e40fdb97a69b9a8cfe033396ae46",
+      "size": 7251308,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/0d852b416554e40fdb97a69b9a8cfe033396ae46"
+    },
+    {
+      "path": "research/navigation_v3_native_qwen_preflight.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b182e50f47e4bdf94b3d2be904f60384afa7201f",
+      "size": 24779,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/b182e50f47e4bdf94b3d2be904f60384afa7201f"
+    },
+    {
+      "path": "research/navigation_v3_native_qwen_sample.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3367929e290996784be73f928586956bb7138012",
+      "size": 6671678,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/3367929e290996784be73f928586956bb7138012"
+    },
+    {
+      "path": "research/navigation_v3_native_qwen_summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3c4786c3c0c36e31034f8fa62bc98a295c13807",
+      "size": 8103,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/e3c4786c3c0c36e31034f8fa62bc98a295c13807"
+    },
+    {
+      "path": "research/navigation_v3_native_qwen_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66a1c53c5c1d28de4fc0c50c7d82db43282ef0ee",
+      "size": 4255,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/66a1c53c5c1d28de4fc0c50c7d82db43282ef0ee"
+    },
+    {
+      "path": "research/navigation_v3_oracle.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44aa8486fe69f4e537a6ea6c47f0fcae2426b3e4",
+      "size": 393241,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/44aa8486fe69f4e537a6ea6c47f0fcae2426b3e4"
+    },
+    {
+      "path": "research/navigation_v3_protocol_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "312a554171cd4fc05b49ef0912372113c82f2cb6",
+      "size": 2722,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/312a554171cd4fc05b49ef0912372113c82f2cb6"
+    },
+    {
+      "path": "research/navigation_v3_random.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab50f4cd4d8a1f79029395415cf171d1dae7afcb",
+      "size": 3093158,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/ab50f4cd4d8a1f79029395415cf171d1dae7afcb"
+    },
+    {
+      "path": "research/navigation_v3_regression.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56924b948224479bfb556965cf10377edbb4951b",
+      "size": 45196,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/56924b948224479bfb556965cf10377edbb4951b"
+    },
+    {
+      "path": "research/navigation_v3_regression_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8913abc1ae4ca8fb955baf67919c38471331866",
+      "size": 3633,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/b8913abc1ae4ca8fb955baf67919c38471331866"
+    },
+    {
+      "path": "research/navigation_v3_report_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a03da7f21949611d3d0d92b6b27776570a91602b",
+      "size": 15423,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/a03da7f21949611d3d0d92b6b27776570a91602b"
+    },
+    {
+      "path": "research/navigation_v3_source_audit.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b61732bfcc718aaa17e76e1ba04d20e57c50852",
+      "size": 3222,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/6b61732bfcc718aaa17e76e1ba04d20e57c50852"
+    },
+    {
+      "path": "research/navigation_v3_source_audit_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d59cc25b716b4c3371f69cdf93622cffdd9abba4",
+      "size": 3078,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/d59cc25b716b4c3371f69cdf93622cffdd9abba4"
+    },
+    {
+      "path": "research/navigation_v3_summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05a18be63f1e7a8e34b24c94690d8e31804c716f",
+      "size": 319244,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/05a18be63f1e7a8e34b24c94690d8e31804c716f"
+    },
+    {
+      "path": "research/navigation_v3_training_manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "224aab88db55dda9a0133ede307b859838c6e4aa",
+      "size": 12284,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/224aab88db55dda9a0133ede307b859838c6e4aa"
+    },
+    {
+      "path": "research/navigation_v3_v3_gold_ascii_multi_seed17_greedy.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf0195c6bdb7eb3edb7f0085c949a848d20eb8b3",
+      "size": 7110481,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/bf0195c6bdb7eb3edb7f0085c949a848d20eb8b3"
+    },
+    {
+      "path": "research/navigation_v3_v3_gold_ascii_multi_seed17_sample.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c1feb6c0184759db1b95eb3107e10a49e97758c",
+      "size": 4799139,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/5c1feb6c0184759db1b95eb3107e10a49e97758c"
+    },
+    {
+      "path": "research/navigation_v3_v3_gold_ascii_single_seed17_greedy.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98c2a55fca51e3842c75a3bf123a1f615c5252d3",
+      "size": 4981758,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/98c2a55fca51e3842c75a3bf123a1f615c5252d3"
+    },
+    {
+      "path": "research/navigation_v3_v3_gold_ascii_single_seed17_sample.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7940f456646da1295b5d887daf417a158eeff43",
+      "size": 3751533,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/a7940f456646da1295b5d887daf417a158eeff43"
+    },
+    {
+      "path": "research/navigation_v3_v3_gold_coords_multi_seed17_greedy.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5de66729ad4e84d997e1a49d95a3199c2c16052",
+      "size": 3221849,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/f5de66729ad4e84d997e1a49d95a3199c2c16052"
+    },
+    {
+      "path": "research/navigation_v3_v3_gold_coords_multi_seed17_sample.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6fc741677d5cc7ef590461592553e6b4355a6085",
+      "size": 2685094,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/6fc741677d5cc7ef590461592553e6b4355a6085"
+    },
+    {
+      "path": "research/navigation_v3_v3_gold_coords_single_seed17_greedy.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8b5a5292157004a03b71f3f8860e5679739409f",
+      "size": 4082691,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/e8b5a5292157004a03b71f3f8860e5679739409f"
+    },
+    {
+      "path": "research/navigation_v3_v3_gold_coords_single_seed17_sample.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b57bd65a4f7c07418b5dc2c0f5657ace64c0cf2",
+      "size": 2733083,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/3b57bd65a4f7c07418b5dc2c0f5657ace64c0cf2"
+    },
+    {
+      "path": "research/navigation_v3_v3_teacher_coords_multi_seed17_greedy.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c0ba429d1442ce207b3051d7cbee3e2f868b4e5",
+      "size": 3483834,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/2c0ba429d1442ce207b3051d7cbee3e2f868b4e5"
+    },
+    {
+      "path": "research/navigation_v3_v3_teacher_coords_multi_seed17_sample.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef3cb50ac4f92cbb0a22278df45a56a40ee1bb5d",
+      "size": 2407867,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/ef3cb50ac4f92cbb0a22278df45a56a40ee1bb5d"
+    },
+    {
+      "path": "research/openjev_repo_audit_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2efd0e35d04957cb882865276fbbff7ec73bff63",
+      "size": 13406,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/2efd0e35d04957cb882865276fbbff7ec73bff63"
+    },
+    {
+      "path": "research/parallel_example_v2.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ff76f8e328e9db3efad80c9d7eb5e73f3868a36",
+      "size": 13587,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/7ff76f8e328e9db3efad80c9d7eb5e73f3868a36"
+    },
+    {
+      "path": "research/parallel_example_v3.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ad8af5af2df91e0b28ab35b8f3309d4af5a0fe4",
+      "size": 13456,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/7ad8af5af2df91e0b28ab35b8f3309d4af5a0fe4"
+    },
+    {
+      "path": "research/pipeline_rollout_audit_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33b7c9ad469e11d67a1b9a1596eaa129e84f51c4",
+      "size": 8065,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/33b7c9ad469e11d67a1b9a1596eaa129e84f51c4"
+    },
+    {
+      "path": "research/pipeline_runbook.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "096197bda00dfe4529ec3756e729c506b51b5c69",
+      "size": 18417,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/096197bda00dfe4529ec3756e729c506b51b5c69"
+    },
+    {
+      "path": "research/pipeline_runbook_check.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d44313c1dddd6a17ff846a25b59241de8bf361a",
+      "size": 686,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/8d44313c1dddd6a17ff846a25b59241de8bf361a"
+    },
+    {
+      "path": "research/pipeline_runbook_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f83c9250290979e18263ae17df99a4b44e35729",
+      "size": 13703,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/8f83c9250290979e18263ae17df99a4b44e35729"
+    },
+    {
+      "path": "research/pipeline_v2_protocol_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c53bf5e72505199d694e2582aba436151c48138d",
+      "size": 5885,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/c53bf5e72505199d694e2582aba436151c48138d"
+    },
+    {
+      "path": "research/pipeline_v2_report_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2fee81e40680170e2de5ec72e39c9c5a541ca11",
+      "size": 7523,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/a2fee81e40680170e2de5ec72e39c9c5a541ca11"
+    },
+    {
+      "path": "research/pipeline_v2_summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50923535235cafb84166476067c5d868673f8102",
+      "size": 769604,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/50923535235cafb84166476067c5d868673f8102"
+    },
+    {
+      "path": "research/probability_semantics_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac5217e28b97f650eebfca0d58e4c633ca34d481",
+      "size": 5272,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/ac5217e28b97f650eebfca0d58e4c633ca34d481"
+    },
+    {
+      "path": "research/query_distribution_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3d139115a6fb41f1a217101977584a269c63dd0",
+      "size": 9683,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/e3d139115a6fb41f1a217101977584a269c63dd0"
+    },
+    {
+      "path": "research/qwen_tree_check.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a6683bac546bd410ae6a1edcddbd89b776c200f",
+      "size": 18020,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/4a6683bac546bd410ae6a1edcddbd89b776c200f"
+    },
+    {
+      "path": "research/qwen_tree_check_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b7c45244f408dd5175d4de553f9b93f96966322",
+      "size": 4765,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/2b7c45244f408dd5175d4de553f9b93f96966322"
+    },
+    {
+      "path": "research/release_content_check.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b40297f008f2118c882f83d9b61b321cd2b416f",
+      "size": 1511,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/0b40297f008f2118c882f83d9b61b321cd2b416f"
+    },
+    {
+      "path": "research/release_scope_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b56bbf43178a541d93dbe4e6a9e68d8d1851cef2",
+      "size": 5297,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/b56bbf43178a541d93dbe4e6a9e68d8d1851cef2"
+    },
+    {
+      "path": "research/replication_plan_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58a0b7ce160826998cadd581c962c4eb8695a0ad",
+      "size": 20791,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/58a0b7ce160826998cadd581c962c4eb8695a0ad"
+    },
+    {
+      "path": "research/rlcd_algebra_check.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6897b0f71f406e2e9ab99265a41d47b56e6d21d6",
+      "size": 5053,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/6897b0f71f406e2e9ab99265a41d47b56e6d21d6"
+    },
+    {
+      "path": "research/rlcd_public_discussion_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2ea7c3ffa7848dd66570fa89d221bd355a614ce",
+      "size": 10598,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/b2ea7c3ffa7848dd66570fa89d221bd355a614ce"
+    },
+    {
+      "path": "research/rlcd_theory_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9f4598e13ddd7affa31ca99ee70b6bb5973900a",
+      "size": 25316,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/b9f4598e13ddd7affa31ca99ee70b6bb5973900a"
+    },
+    {
+      "path": "research/server_contract_check.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f063bc8f38a6f7c509844d99106960523aec7805",
+      "size": 263,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/f063bc8f38a6f7c509844d99106960523aec7805"
+    },
+    {
+      "path": "research/source_gold_reproduction_check.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a48994e2691a779e2faff6d817e4b32ea38c6b8",
+      "size": 629,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/1a48994e2691a779e2faff6d817e4b32ea38c6b8"
+    },
+    {
+      "path": "research/student_distribution_probe_brief_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "011ebbb7c891b515ece4e1fc7b866bef47fdba26",
+      "size": 2246,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/011ebbb7c891b515ece4e1fc7b866bef47fdba26"
+    },
+    {
+      "path": "research/student_distribution_probe_summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e394f1cb015578804826c23d9398bca2510f6b5b",
+      "size": 29928,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/e394f1cb015578804826c23d9398bca2510f6b5b"
+    },
+    {
+      "path": "research/toy_experiment_report_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59f803547794834a5605ea1c4a12de630ce50669",
+      "size": 8724,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/59f803547794834a5605ea1c4a12de630ce50669"
+    },
+    {
+      "path": "research/toy_inference_example.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2020b7b8fc3c5f321bd7c4f1f2af4b8b5d1be1c",
+      "size": 2189,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/f2020b7b8fc3c5f321bd7c4f1f2af4b8b5d1be1c"
+    },
+    {
+      "path": "research/toy_results",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1345148d0409a8b4dafe736b60fb1633d2249789",
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/trees/1345148d0409a8b4dafe736b60fb1633d2249789"
+    },
+    {
+      "path": "research/toy_results/environment_freeze.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78fcba4f1dce28b01633e30a39559ecc30408824",
+      "size": 1029,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/78fcba4f1dce28b01633e30a39559ecc30408824"
+    },
+    {
+      "path": "research/toy_results/run_manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9bf683d5a983b67474c72c71d10c056b39966339",
+      "size": 10899,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/9bf683d5a983b67474c72c71d10c056b39966339"
+    },
+    {
+      "path": "research/toy_results/summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ddf195c4fa18fc814f560f15f063719f7f398bab",
+      "size": 5865,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/ddf195c4fa18fc814f560f15f063719f7f398bab"
+    },
+    {
+      "path": "research/toy_teacher_audit.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2a3dfedb0d9615db9f31ecb58b5cde9e60e81dc",
+      "size": 44732,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/b2a3dfedb0d9615db9f31ecb58b5cde9e60e81dc"
+    },
+    {
+      "path": "research/toy_teacher_audit_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "522d7c4b69064e99581dbb11009ffd0cb2ea271f",
+      "size": 1907,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/522d7c4b69064e99581dbb11009ffd0cb2ea271f"
+    },
+    {
+      "path": "research/trained_invariance_timing.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee9ff8f8472611fbdd1d1b90284361fc107fc09d",
+      "size": 26223,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/ee9ff8f8472611fbdd1d1b90284361fc107fc09d"
+    },
+    {
+      "path": "research/trained_invariance_timing_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "911f991691aa7927fac48c5115160bc39d3b1bfd",
+      "size": 5040,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/911f991691aa7927fac48c5115160bc39d3b1bfd"
+    },
+    {
+      "path": "research/training_design_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be4142054b7bf27f51930ec3353e6372fb35813a",
+      "size": 22161,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/be4142054b7bf27f51930ec3353e6372fb35813a"
+    },
+    {
+      "path": "research/tree_attention_check.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "678a08fc87cdc30611686ca9ef05612efe8a32d2",
+      "size": 576,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/678a08fc87cdc30611686ca9ef05612efe8a32d2"
+    },
+    {
+      "path": "research/web_empty_browser_check.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "920112c3e1e91dc101e187d81a949534c81ffebe",
+      "size": 563,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/920112c3e1e91dc101e187d81a949534c81ffebe"
+    },
+    {
+      "path": "research/web_live_browser_check.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9928d3e5de0324c9b9d730ec7b2f7cbcd94cc95e",
+      "size": 976,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/9928d3e5de0324c9b9d730ec7b2f7cbcd94cc95e"
+    },
+    {
+      "path": "research/web_live_browser_response.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ff527687d0ea57bee406d170029326dd32368d7",
+      "size": 7839,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/2ff527687d0ea57bee406d170029326dd32368d7"
+    },
+    {
+      "path": "research/web_reader_review_zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe1f59754881a7571ce3919344ee9cdca20208a3",
+      "size": 5655,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/fe1f59754881a7571ce3919344ee9cdca20208a3"
+    },
+    {
+      "path": "research/web_v3_live_browser_check.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90d313dfabad3bc56e754144dfbae3403fc11032",
+      "size": 996,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/90d313dfabad3bc56e754144dfbae3403fc11032"
+    },
+    {
+      "path": "research/web_v3_live_browser_response.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b07de70aa5d4de9e0a212fea5b48819beb5ec68e",
+      "size": 7832,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/b07de70aa5d4de9e0a212fea5b48819beb5ec68e"
+    },
+    {
+      "path": "research/workflow_manifest_v2.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "45ae76656f7a42b502f7f12c16bcbea30056c601",
+      "size": 1802,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/45ae76656f7a42b502f7f12c16bcbea30056c601"
+    },
+    {
+      "path": "results",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "01990f0a60250a3a82a50c223e25d302430ef670",
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/trees/01990f0a60250a3a82a50c223e25d302430ef670"
+    },
+    {
+      "path": "results/appo_basic_supervision_v1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3a77e4ac5cae076d346349f76068dba4aa146609",
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/trees/3a77e4ac5cae076d346349f76068dba4aa146609"
+    },
+    {
+      "path": "results/appo_basic_supervision_v1/action_fit",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b15e5bee9759de2371b6647d38a32eb0def9662c",
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/trees/b15e5bee9759de2371b6647d38a32eb0def9662c"
+    },
+    {
+      "path": "results/appo_basic_supervision_v1/action_fit/summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2576435c125875f34903275e7074ecd86f5baa5a",
+      "size": 73496,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/2576435c125875f34903275e7074ecd86f5baa5a"
+    },
+    {
+      "path": "results/appo_basic_supervision_v1/action_fit/summary.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49c9bcbdcae0a0edd3d034462cc63a5b9e1ed871",
+      "size": 1942,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/49c9bcbdcae0a0edd3d034462cc63a5b9e1ed871"
+    },
+    {
+      "path": "results/appo_basic_supervision_v1/initial_overlap_summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c32f846515df1da2042785b9328fedc00e49511",
+      "size": 90296,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/4c32f846515df1da2042785b9328fedc00e49511"
+    },
+    {
+      "path": "results/appo_basic_supervision_v1/regression",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2e0fa1052c6623a64f3abec4916aefa6787f77f4",
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/trees/2e0fa1052c6623a64f3abec4916aefa6787f77f4"
+    },
+    {
+      "path": "results/appo_basic_supervision_v1/regression/summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c36d6e3d3be5f7fe83f3b286712eefff58dc532",
+      "size": 351478,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/6c36d6e3d3be5f7fe83f3b286712eefff58dc532"
+    },
+    {
+      "path": "results/appo_basic_supervision_v1/regression/summary.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "260eaa7eb1b5b862faf0ea48b04636997ed65b6c",
+      "size": 33546,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/260eaa7eb1b5b862faf0ea48b04636997ed65b6c"
+    },
+    {
+      "path": "results/appo_basic_supervision_v1/summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c6f200185bffe9d05abc60d9f6794098da66fca",
+      "size": 1059459,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/8c6f200185bffe9d05abc60d9f6794098da66fca"
+    },
+    {
+      "path": "results/appo_basic_supervision_v1/summary.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f334873fc9a1b382faa1f2fe0c0dbc20444d46e9",
+      "size": 3023,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/f334873fc9a1b382faa1f2fe0c0dbc20444d46e9"
+    },
+    {
+      "path": "results/appo_basic_supervision_v1/validation",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "45bb537b9ef47b7c0988ac5be8daf221a5b7c2d2",
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/trees/45bb537b9ef47b7c0988ac5be8daf221a5b7c2d2"
+    },
+    {
+      "path": "results/appo_basic_supervision_v1/validation/data_diagnostic.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae1c98140abb310d1abef1d9211943d10ded9311",
+      "size": 26614,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/ae1c98140abb310d1abef1d9211943d10ded9311"
+    },
+    {
+      "path": "results/appo_basic_supervision_v1/validation/execution_audit.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a786d96eaa896adeb06dc1c76ccef707a092b105",
+      "size": 7545,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/a786d96eaa896adeb06dc1c76ccef707a092b105"
+    },
+    {
+      "path": "results/appo_basic_supervision_v1/validation/protocol_binding_audit.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bcf3d0c8a41c2739208810ff46706f0e698794d7",
+      "size": 1556,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/bcf3d0c8a41c2739208810ff46706f0e698794d7"
+    },
+    {
+      "path": "results/appo_basic_supervision_v1/validation/training_audit.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dcce3fd7749fc093213f15dc9a7c2a0f69886faa",
+      "size": 16336,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/dcce3fd7749fc093213f15dc9a7c2a0f69886faa"
+    },
+    {
+      "path": "results/appo_basic_v1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fb77826d3b6363388292e6814ff708d7fcb9b7e9",
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/trees/fb77826d3b6363388292e6814ff708d7fcb9b7e9"
+    },
+    {
+      "path": "results/appo_basic_v1/native_rendering_summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75294747da2aa21d2cc4cf87d99669249c013944",
+      "size": 175882,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/75294747da2aa21d2cc4cf87d99669249c013944"
+    },
+    {
+      "path": "results/appo_basic_v1/summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "809542fe2fd924a504a124a610777980b9a89f74",
+      "size": 723991,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/809542fe2fd924a504a124a610777980b9a89f74"
+    },
+    {
+      "path": "results/appo_basic_v1/summary.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91b5f1ed3adc796adbe99c23ae97a241648943fe",
+      "size": 2338,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/91b5f1ed3adc796adbe99c23ae97a241648943fe"
+    },
+    {
+      "path": "results/appo_basic_v1/validation.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66ba5ac092c03a66ff08b146e566309485e1e710",
+      "size": 7521,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/66ba5ac092c03a66ff08b146e566309485e1e710"
+    },
+    {
+      "path": "results/arcade_controller_comparison.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2035b60ec73000bf5323dfbce0996e3309990e7a",
+      "size": 53899,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/2035b60ec73000bf5323dfbce0996e3309990e7a"
+    },
+    {
+      "path": "results/arcade_costs.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5bc6f396911536d505da4a8e808b208f9a73f4bc",
+      "size": 1755,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/5bc6f396911536d505da4a8e808b208f9a73f4bc"
+    },
+    {
+      "path": "results/arcade_selection_protocol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43d69c8058328b58b0dff62b3a435a9ecb3e94e0",
+      "size": 1797,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/43d69c8058328b58b0dff62b3a435a9ecb3e94e0"
+    },
+    {
+      "path": "results/arcade_snake_cohort.jsonl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55e2c99410a544da37aa8c78525bc860ada04274",
+      "size": 2437,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/55e2c99410a544da37aa8c78525bc860ada04274"
+    },
+    {
+      "path": "results/calibrated_learning_benchmark.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "100614a4192d13ca3e7d8b680e9320135a9a2c7c",
+      "size": 808900,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/100614a4192d13ca3e7d8b680e9320135a9a2c7c"
+    },
+    {
+      "path": "results/calibrated_objectives_check.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db4e050c98ff335798de39266d08cbe036679344",
+      "size": 18084,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/db4e050c98ff335798de39266d08cbe036679344"
+    },
+    {
+      "path": "results/composed_games_api.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f641d528727daf5b9d455e479b8b0a1b3b8490cd",
+      "size": 134418,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/f641d528727daf5b9d455e479b8b0a1b3b8490cd"
+    },
+    {
+      "path": "results/composed_initial.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34fce92b4d5de30c3088799123426ebb7a77e337",
+      "size": 134487,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/34fce92b4d5de30c3088799123426ebb7a77e337"
+    },
+    {
+      "path": "results/composed_jev.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31b37fea8230da7023a6817b694dd53997887994",
+      "size": 139940,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/31b37fea8230da7023a6817b694dd53997887994"
+    },
+    {
+      "path": "results/composed_jev_receipts.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b98a00aed62b5dad8afd350b17d18de8561ccff",
+      "size": 7285,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/8b98a00aed62b5dad8afd350b17d18de8561ccff"
+    },
+    {
+      "path": "results/composed_local_atomic.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e67364abc8509c5b142435744d51cddcbabdd28",
+      "size": 134503,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/2e67364abc8509c5b142435744d51cddcbabdd28"
+    },
+    {
+      "path": "results/composed_reference.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe946e15a0ba8804d800eff38e5a9584360a8eef",
+      "size": 133132,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/fe946e15a0ba8804d800eff38e5a9584360a8eef"
+    },
+    {
+      "path": "results/composed_snake_constant_greedy.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c80c9761618032c88081a4eeff5d42f366bd1d69",
+      "size": 1707492,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/c80c9761618032c88081a4eeff5d42f366bd1d69"
+    },
+    {
+      "path": "results/dataset_reproduction_check.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d217e8de64af887932233a1c0faaa9f3dd5be116",
+      "size": 1642,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/d217e8de64af887932233a1c0faaa9f3dd5be116"
+    },
+    {
+      "path": "results/development_costs.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a157afea1ae05215303fd9a0e6d8d71d7720bfd2",
+      "size": 1014,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/a157afea1ae05215303fd9a0e6d8d71d7720bfd2"
+    },
+    {
+      "path": "results/development_results_summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f1f1cc0bb0de964c625c0c6512b97df42d648bc",
+      "size": 42860,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/3f1f1cc0bb0de964c625c0c6512b97df42d648bc"
+    },
+    {
+      "path": "results/hard_development_demo_v1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4fed452acbbad756c0238b07ab92e7068e6e7a0e",
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/trees/4fed452acbbad756c0238b07ab92e7068e6e7a0e"
+    },
+    {
+      "path": "results/hard_development_demo_v1/browser_check.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce6beb46d06756a4ec72fc8372f4a6c57ccd1342",
+      "size": 89844,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/ce6beb46d06756a4ec72fc8372f4a6c57ccd1342"
+    },
+    {
+      "path": "results/hard_development_demo_v1/deployment.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "928ab64b5049635022917a91a37a6e6f390f1ea3",
+      "size": 1026,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/928ab64b5049635022917a91a37a6e6f390f1ea3"
+    },
+    {
+      "path": "results/hard_development_demo_v1/live_verification.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93edea6f4956aa369880727e39a168420e41aa6a",
+      "size": 27116,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/93edea6f4956aa369880727e39a168420e41aa6a"
+    },
+    {
+      "path": "results/hard_development_demo_v1/public_site_guard.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b8b13eb3380cd03f240bbb132e79c9908c13cd2",
+      "size": 1152,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/8b8b13eb3380cd03f240bbb132e79c9908c13cd2"
+    },
+    {
+      "path": "results/hard_navigation_demo_v1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "76dfeb797c7154346f3ff36b16b12af119e2fc23",
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/trees/76dfeb797c7154346f3ff36b16b12af119e2fc23"
+    },
+    {
+      "path": "results/hard_navigation_demo_v1/build_manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6d76466756cfe1bbf258f25aa1db99d3e142e7d",
+      "size": 15512,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/c6d76466756cfe1bbf258f25aa1db99d3e142e7d"
+    },
+    {
+      "path": "results/hard_navigation_demo_v1/maze_nanojev.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a640649bee04bf81de83739652d1f11cd2523af1",
+      "size": 360923,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/a640649bee04bf81de83739652d1f11cd2523af1"
+    },
+    {
+      "path": "results/hard_navigation_demo_v1/snake_nanojev.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07f46e0cbea43a095bb375d1a5922657cba84551",
+      "size": 1010577,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/07f46e0cbea43a095bb375d1a5922657cba84551"
+    },
+    {
+      "path": "results/hosted_comparison_release.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8595954a7a338cfbf3f216e75fd10db9b8e1e353",
+      "size": 1084,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/8595954a7a338cfbf3f216e75fd10db9b8e1e353"
+    },
+    {
+      "path": "results/hosted_game_bundle_smoke.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c53e305755059e855eeb13815a4e65a68d448a74",
+      "size": 1658,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/c53e305755059e855eeb13815a4e65a68d448a74"
+    },
+    {
+      "path": "results/huggingface_games_release.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ea6bfa78e3f950519250459e53b2a25f83d4794",
+      "size": 4958,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/1ea6bfa78e3f950519250459e53b2a25f83d4794"
+    },
+    {
+      "path": "results/huggingface_unified_dev_release.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7df1ad54d6551d247e8b2b2a9f417d7a71b0df7c",
+      "size": 106807,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/7df1ad54d6551d247e8b2b2a9f417d7a71b0df7c"
+    },
+    {
+      "path": "results/huggingface_unified_public_release.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "016641c89ef6d6de37b364509a7203fb78b5ac7d",
+      "size": 141301,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/016641c89ef6d6de37b364509a7203fb78b5ac7d"
+    },
+    {
+      "path": "results/jev_preflight.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb1233cb3cfc1f277167a9ba9497e73ea4f4e48d",
+      "size": 8209,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/cb1233cb3cfc1f277167a9ba9497e73ea4f4e48d"
+    },
+    {
+      "path": "results/local_atomic_question_summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02c6a08dc7350808e7b3761f43dbe1ed691ac827",
+      "size": 359770,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/02c6a08dc7350808e7b3761f43dbe1ed691ac827"
+    },
+    {
+      "path": "results/local_maze_data_manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "258460f379e2fec9d29fc4333508f17636d1b346",
+      "size": 8190,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/258460f379e2fec9d29fc4333508f17636d1b346"
+    },
+    {
+      "path": "results/model_edges_128_constant.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5352f1813462608079bc12c02c378a0fccebcfb7",
+      "size": 344802,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/5352f1813462608079bc12c02c378a0fccebcfb7"
+    },
+    {
+      "path": "results/model_edges_128_initial.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7e0c338329d4130cb4a4dc8be83e6fae7c14a40",
+      "size": 340079,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/b7e0c338329d4130cb4a4dc8be83e6fae7c14a40"
+    },
+    {
+      "path": "results/model_edges_128_jev.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38ebc3b0a4dcc4e75cd90ec0c827d099555b9b35",
+      "size": 681827,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/38ebc3b0a4dcc4e75cd90ec0c827d099555b9b35"
+    },
+    {
+      "path": "results/model_edges_128_local_atomic.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d1b779d8ea8545db2f95935a138fcaab6b2bdab",
+      "size": 368907,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/1d1b779d8ea8545db2f95935a138fcaab6b2bdab"
+    },
+    {
+      "path": "results/model_edges_128_reference.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93e4d9eac4193e1c569786b9efe006b7835e1dad",
+      "size": 352675,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/93e4d9eac4193e1c569786b9efe006b7835e1dad"
+    },
+    {
+      "path": "results/model_edges_constant.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6626c48c50f1c999e6fed10c8dd4cce5925d2b06",
+      "size": 393016,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/6626c48c50f1c999e6fed10c8dd4cce5925d2b06"
+    },
+    {
+      "path": "results/model_edges_initial.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e31441cb10f88988fa92e03f04d2762a15ad384",
+      "size": 399438,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/0e31441cb10f88988fa92e03f04d2762a15ad384"
+    },
+    {
+      "path": "results/model_edges_jev.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58d3ef4139d95518d8434ab8756f32bc8096af9c",
+      "size": 4657256,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/58d3ef4139d95518d8434ab8756f32bc8096af9c"
+    },
+    {
+      "path": "results/model_edges_local_atomic.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2057a391bd6f44869643510a80f7badb4a56b358",
+      "size": 528106,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/2057a391bd6f44869643510a80f7badb4a56b358"
+    },
+    {
+      "path": "results/model_edges_native.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e25acc18858ed9026603fed3a339f170b569102",
+      "size": 10051779,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/3e25acc18858ed9026603fed3a339f170b569102"
+    },
+    {
+      "path": "results/model_edges_native_verification.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ad06ffc59f4aa8ec236b3f64b18aecd831107d5",
+      "size": 837,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/0ad06ffc59f4aa8ec236b3f64b18aecd831107d5"
+    },
+    {
+      "path": "results/model_edges_reference.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28c7340058f5ef07bfdcd04254e6ef0665c75c25",
+      "size": 360537,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/28c7340058f5ef07bfdcd04254e6ef0665c75c25"
+    },
+    {
+      "path": "results/model_edges_summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a27962e9137b4a3d554171581ac4b97c65745289",
+      "size": 58269,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/a27962e9137b4a3d554171581ac4b97c65745289"
+    },
+    {
+      "path": "results/predict_position_demo_v1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "67fe138d1e38abb6d5dba29bb2286dd00b6c70ff",
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/trees/67fe138d1e38abb6d5dba29bb2286dd00b6c70ff"
+    },
+    {
+      "path": "results/predict_position_demo_v1/browser_check.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8895a7862ddcea7cbb10db02f3813a04c880a5a4",
+      "size": 3494,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/8895a7862ddcea7cbb10db02f3813a04c880a5a4"
+    },
+    {
+      "path": "results/predict_position_demo_v1/build_manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3204f4cf21274559a134527742c635733cba01ef",
+      "size": 39740,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/3204f4cf21274559a134527742c635733cba01ef"
+    },
+    {
+      "path": "results/predict_position_demo_v1/deployment.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7cc202a814de2b2bfad89532b0f4f8ab80659a1e",
+      "size": 986,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/7cc202a814de2b2bfad89532b0f4f8ab80659a1e"
+    },
+    {
+      "path": "results/predict_position_demo_v1/live_verification.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1326ca04326803da0c90dd0c4f3013753843676",
+      "size": 6255,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/d1326ca04326803da0c90dd0c4f3013753843676"
+    },
+    {
+      "path": "results/predict_position_demo_v1/local_verification.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "346c01cafddc46c99355a8ca0e43a10dd7f8a825",
+      "size": 681,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/346c01cafddc46c99355a8ca0e43a10dd7f8a825"
+    },
+    {
+      "path": "results/predict_position_wins_v2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "090cd71603745ab30dfaa21529b3dbfe4b950bec",
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/trees/090cd71603745ab30dfaa21529b3dbfe4b950bec"
+    },
+    {
+      "path": "results/predict_position_wins_v2/filter_manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b372efb056c92d845f227246dccbbc692628496",
+      "size": 12336,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/0b372efb056c92d845f227246dccbbc692628496"
+    },
+    {
+      "path": "results/readme_autoplay_v1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5b6e44a6c92865c9807b290803a5f432254fdf0a",
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/trees/5b6e44a6c92865c9807b290803a5f432254fdf0a"
+    },
+    {
+      "path": "results/readme_autoplay_v1/capture_manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "709bece6bcb50feafe631b1401556aec9ba905a8",
+      "size": 22718,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/709bece6bcb50feafe631b1401556aec9ba905a8"
+    },
+    {
+      "path": "results/readme_basic_autoplay_v1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "88007cf6309592e10944d0becaf771ce1657faef",
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/trees/88007cf6309592e10944d0becaf771ce1657faef"
+    },
+    {
+      "path": "results/readme_basic_autoplay_v1/capture_manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a007e018fbe165a8236c8eed75acedfbc47bbe40",
+      "size": 12802,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/a007e018fbe165a8236c8eed75acedfbc47bbe40"
+    },
+    {
+      "path": "results/readme_release_v1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3dbb73b142afcd61be81b50a6e873d541a7524b9",
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/trees/3dbb73b142afcd61be81b50a6e873d541a7524b9"
+    },
+    {
+      "path": "results/readme_release_v1/autoplay_routes.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83899c1ff65f2b82e38a99657966cef44a3a3dc2",
+      "size": 620,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/83899c1ff65f2b82e38a99657966cef44a3a3dc2"
+    },
+    {
+      "path": "results/readme_release_v1/deployment.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "855a5c158e79e3a9937ddc265df5a07c283700fd",
+      "size": 850,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/855a5c158e79e3a9937ddc265df5a07c283700fd"
+    },
+    {
+      "path": "results/readme_release_v1/live_verification.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "498b39ca51c1680fa038f2392333d5f4320e3732",
+      "size": 27116,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/498b39ca51c1680fa038f2392333d5f4320e3732"
+    },
+    {
+      "path": "results/rollout_games_api.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88894d540071f050e64fe932573a9d370ea21205",
+      "size": 347823,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/88894d540071f050e64fe932573a9d370ea21205"
+    },
+    {
+      "path": "results/rollout_games_gold.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68c3ef0d57a4c6d41981bebf2fbd54dba4daf567",
+      "size": 412695,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/68c3ef0d57a4c6d41981bebf2fbd54dba4daf567"
+    },
+    {
+      "path": "results/rollout_initial.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36b10e46d7df7ea3a3e07260a9192b6c4fac2167",
+      "size": 395193,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/36b10e46d7df7ea3a3e07260a9192b6c4fac2167"
+    },
+    {
+      "path": "results/rollout_jev.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bdc2ad59e70a4f5d3547c7f6efefef4b2b5fb66d",
+      "size": 445952,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/bdc2ad59e70a4f5d3547c7f6efefef4b2b5fb66d"
+    },
+    {
+      "path": "results/rollout_pilot_episodes.jsonl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26dd804d0fbff4e7c65d5da916aaf8846663eaa2",
+      "size": 14550,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/26dd804d0fbff4e7c65d5da916aaf8846663eaa2"
+    },
+    {
+      "path": "results/rollout_pilot_protocol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "80aad05ca8ff336586408694e9bba95aa3043f9a",
+      "size": 944,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/80aad05ca8ff336586408694e9bba95aa3043f9a"
+    },
+    {
+      "path": "results/rollout_random.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86ed798ccf9b015c9f8f6d47ff259a5359c92f54",
+      "size": 393369,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/86ed798ccf9b015c9f8f6d47ff259a5359c92f54"
+    },
+    {
+      "path": "results/rollout_reference.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "605619b38b2d9566729792d7d01f0262ba04427e",
+      "size": 347853,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/605619b38b2d9566729792d7d01f0262ba04427e"
+    },
+    {
+      "path": "results/scaled_probability_summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49d0c34663eeef1585d06162f1409c9efea516ba",
+      "size": 4923388,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/49d0c34663eeef1585d06162f1409c9efea516ba"
+    },
+    {
+      "path": "results/shooting_demo_v1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6c1d44315fd99dfa88960256eb8bf6c959f35d1b",
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/trees/6c1d44315fd99dfa88960256eb8bf6c959f35d1b"
+    },
+    {
+      "path": "results/shooting_demo_v1/base_replay.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83163f1f484e3542520988a81ddcc089f3cec3b0",
+      "size": 13074,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/83163f1f484e3542520988a81ddcc089f3cec3b0"
+    },
+    {
+      "path": "results/shooting_demo_v1/browser_check.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63474276b2b47f1eb7dda9dae39254b4c9d46bcb",
+      "size": 2930,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/63474276b2b47f1eb7dda9dae39254b4c9d46bcb"
+    },
+    {
+      "path": "results/shooting_demo_v1/build_manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7148c64fcdc2443f76807a07c4be504fbb57f40c",
+      "size": 91349,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/7148c64fcdc2443f76807a07c4be504fbb57f40c"
+    },
+    {
+      "path": "results/shooting_demo_v1/deployment.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ee8344a9e7d4d830616d6402a24d102b1b8d7fa",
+      "size": 1835,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/6ee8344a9e7d4d830616d6402a24d102b1b8d7fa"
+    },
+    {
+      "path": "results/shooting_demo_v1/nanojev_replay.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9952f46877c29e420753000f7edbef14eaf308e7",
+      "size": 13438,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/9952f46877c29e420753000f7edbef14eaf308e7"
+    },
+    {
+      "path": "results/shooting_demo_v1/public_site_guard.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4614e6d1a50dc8f827bd24eb7bf771d30f5d1379",
+      "size": 119,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/4614e6d1a50dc8f827bd24eb7bf771d30f5d1379"
+    },
+    {
+      "path": "results/shooting_demo_v1/staged_navigation_check.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32712c64ed62560360fcb7f61df4b47f6386789b",
+      "size": 161,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/32712c64ed62560360fcb7f61df4b47f6386789b"
+    },
+    {
+      "path": "results/side_by_side_maze_episode.jsonl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b5f97819f5b71c0546ceb02508a1622fdf5001f",
+      "size": 9206,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/6b5f97819f5b71c0546ceb02508a1622fdf5001f"
+    },
+    {
+      "path": "results/sonic_sft_v1_summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec0b2ded8fdc57ea5eada56a489614dce77b5354",
+      "size": 134896,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/ec0b2ded8fdc57ea5eada56a489614dce77b5354"
+    },
+    {
+      "path": "results/token_profile.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "684a0a3ca8cdf9aa0927850397ca34c625e9a8a5",
+      "size": 3591,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/684a0a3ca8cdf9aa0927850397ca34c625e9a8a5"
+    },
+    {
+      "path": "results/training_run_receipts.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f98ab1a5cff74755ca8755459ac5e3e800704ae0",
+      "size": 358066,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/f98ab1a5cff74755ca8755459ac5e3e800704ae0"
+    },
+    {
+      "path": "results/unified_basic_demo_v1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "31eeacf954dd5ebaa29e58fed3f4517062b97693",
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/trees/31eeacf954dd5ebaa29e58fed3f4517062b97693"
+    },
+    {
+      "path": "results/unified_basic_demo_v1/build_manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "196966115ee2259edba3b48089e6fd52c8f99a42",
+      "size": 36726,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/196966115ee2259edba3b48089e6fd52c8f99a42"
+    },
+    {
+      "path": "results/unified_basic_demo_v1/local_verification.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fea6b1bb535ba5bf7a7691fb7c5bcfc6bd634093",
+      "size": 7290,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/fea6b1bb535ba5bf7a7691fb7c5bcfc6bd634093"
+    },
+    {
+      "path": "results/unified_development_demo_v2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "21f1e3a959619143a1cb29618288a045a945f4b7",
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/trees/21f1e3a959619143a1cb29618288a045a945f4b7"
+    },
+    {
+      "path": "results/unified_development_demo_v2/browser_check.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8b70c3351fa2b797c5655b9d2911485b53f4288",
+      "size": 52606,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/d8b70c3351fa2b797c5655b9d2911485b53f4288"
+    },
+    {
+      "path": "results/unified_development_demo_v2/deployment.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0bb6b9b5ffd074716cd2ec2614ead1d434a32b0",
+      "size": 966,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/d0bb6b9b5ffd074716cd2ec2614ead1d434a32b0"
+    },
+    {
+      "path": "results/unified_development_demo_v2/live_verification.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2dde4b183b761fee5f1f353581f3a535c36a45c0",
+      "size": 34704,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/2dde4b183b761fee5f1f353581f3a535c36a45c0"
+    },
+    {
+      "path": "results/unified_development_demo_v2/public_site_guard.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bcc470135c8c8a8a6c0cb3d64e7c441f9881734c",
+      "size": 1152,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/bcc470135c8c8a8a6c0cb3d64e7c441f9881734c"
+    },
+    {
+      "path": "results/unified_games_v1.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b1b284364e716ef53c4b661f081b5e812d53eb6",
+      "size": 3878441,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/3b1b284364e716ef53c4b661f081b5e812d53eb6"
+    },
+    {
+      "path": "results/unified_navigation_demo_v1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9dbce68fdddca400b9bb98ea760a47be8fc40537",
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/trees/9dbce68fdddca400b9bb98ea760a47be8fc40537"
+    },
+    {
+      "path": "results/unified_navigation_demo_v1/build_manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "440ab96ea06fee074a173f39dba740d7681c4834",
+      "size": 117685,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/440ab96ea06fee074a173f39dba740d7681c4834"
+    },
+    {
+      "path": "results/unified_td_v1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "159ecf33e48cb9eb681cef372f9643fa0dd86887",
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/trees/159ecf33e48cb9eb681cef372f9643fa0dd86887"
+    },
+    {
+      "path": "results/unified_td_v1/initial_pi1_baseline.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "900652357279191c80aaa91e25fac8f40bc64939",
+      "size": 6669,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/900652357279191c80aaa91e25fac8f40bc64939"
+    },
+    {
+      "path": "results/unified_td_v1/local_reproduction.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd0598752c33a67cc028e9907adc40bf5f6dfd84",
+      "size": 561,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/dd0598752c33a67cc028e9907adc40bf5f6dfd84"
+    },
+    {
+      "path": "results/unified_td_v1/replay_summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13ae4a3382193f2b7d7c4acb89b99bcd3afac420",
+      "size": 7047,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/13ae4a3382193f2b7d7c4acb89b99bcd3afac420"
+    },
+    {
+      "path": "results/unified_td_v1/report_provenance.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8423e1ba0431f13c160b1dbeff38d5ce47e6b9e3",
+      "size": 643,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/8423e1ba0431f13c160b1dbeff38d5ce47e6b9e3"
+    },
+    {
+      "path": "results/unified_td_v1/summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16d501d56ac4db5f568953850ab4534e005de938",
+      "size": 2856055,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/16d501d56ac4db5f568953850ab4534e005de938"
+    },
+    {
+      "path": "results/unified_td_v1/summary.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc3557bd144b479905f02a8c9c070b8d77193163",
+      "size": 28755,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/fc3557bd144b479905f02a8c9c070b8d77193163"
+    },
+    {
+      "path": "results/unified_td_v1/task_prior_baseline.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26f6ccc16c3a990c97bd6af23c5869682dd118ef",
+      "size": 9514,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/26f6ccc16c3a990c97bd6af23c5869682dd118ef"
+    },
+    {
+      "path": "results/unified_td_v1/training_audit.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53c355da3eb9fc6e957c03753a8449dacdb48c54",
+      "size": 48793,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/53c355da3eb9fc6e957c03753a8449dacdb48c54"
+    },
+    {
+      "path": "results/unified_td_v1/validation.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d2949e76e9d9f76c1e7af6afd80459f2faef1e7",
+      "size": 2893,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/4d2949e76e9d9f76c1e7af6afd80459f2faef1e7"
+    },
+    {
+      "path": "scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6e8a69950456d776952798a45d6c34b98ca547b0",
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/trees/6e8a69950456d776952798a45d6c34b98ca547b0"
+    },
+    {
+      "path": "scripts/appo_basic_data.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "997541adf426d6d3f02431e42aa69ae3ae4cd01c",
+      "size": 29468,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/997541adf426d6d3f02431e42aa69ae3ae4cd01c"
+    },
+    {
+      "path": "scripts/appo_observation_novelty.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca5dd08ee001835f62728c39ea69fef3bc6253d3",
+      "size": 14513,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/ca5dd08ee001835f62728c39ea69fef3bc6253d3"
+    },
+    {
+      "path": "scripts/assemble_navigation_v3_views.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d2611196b586c16049ce14d52a8c4c809d90376",
+      "size": 15473,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/1d2611196b586c16049ce14d52a8c4c809d90376"
+    },
+    {
+      "path": "scripts/assemble_pipeline_dataset.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ddcab6df722d5884c31e78d1f63e2e764e9c828c",
+      "size": 10863,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/ddcab6df722d5884c31e78d1f63e2e764e9c828c"
+    },
+    {
+      "path": "scripts/audit_appo_jev_reference.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1023ced0e4813d751f30b78f873548c0814cd10",
+      "size": 16595,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/d1023ced0e4813d751f30b78f873548c0814cd10"
+    },
+    {
+      "path": "scripts/audit_appo_supervision_data.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "997b621109a2b8e98409cf33077d17f4e8d51e13",
+      "size": 24263,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/997b621109a2b8e98409cf33077d17f4e8d51e13"
+    },
+    {
+      "path": "scripts/benchmark_calibrated_learning.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d30d95db12b9473bad8afdd17663b37c3455e7a2",
+      "size": 16293,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/d30d95db12b9473bad8afdd17663b37c3455e7a2"
+    },
+    {
+      "path": "scripts/build_arcade_demo.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d96ce2d1f434fcb105cfd35b629b2685e0ab4873",
+      "size": 22030,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/d96ce2d1f434fcb105cfd35b629b2685e0ab4873"
+    },
+    {
+      "path": "scripts/build_demo_artifact.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5f74590931f519f865dc9697196dba993f79ee9",
+      "size": 2555,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/b5f74590931f519f865dc9697196dba993f79ee9"
+    },
+    {
+      "path": "scripts/build_game_decisions.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f43fd0af61c8ab9eaa72656a932631ee40058702",
+      "size": 20493,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/f43fd0af61c8ab9eaa72656a932631ee40058702"
+    },
+    {
+      "path": "scripts/build_hard_navigation_demo.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e58706a10193af57adb8f6dd7aac9338d9795bfe",
+      "size": 12267,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/e58706a10193af57adb8f6dd7aac9338d9795bfe"
+    },
+    {
+      "path": "scripts/build_local_maze_data.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3bb43e67b8f5569c6386da0bef7f112be509d4f",
+      "size": 8892,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/d3bb43e67b8f5569c6386da0bef7f112be509d4f"
+    },
+    {
+      "path": "scripts/build_navigation_v3.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9bfbae38b79068366e68fe2e610b17b7e6aff39e",
+      "size": 22994,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/9bfbae38b79068366e68fe2e610b17b7e6aff39e"
+    },
+    {
+      "path": "scripts/build_predict_position_demo.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8ad3753e75c3f959d6585e76b8239c073062d9b",
+      "size": 19652,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/a8ad3753e75c3f959d6585e76b8239c073062d9b"
+    },
+    {
+      "path": "scripts/build_scaled_games.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd68a8eb15806c126fdf9c8c8b75821b3600b91a",
+      "size": 12726,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/bd68a8eb15806c126fdf9c8c8b75821b3600b91a"
+    },
+    {
+      "path": "scripts/build_shooting_demo.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "885fa2a22a4cce45d80779d0b635f1c9641a3265",
+      "size": 25870,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/885fa2a22a4cce45d80779d0b635f1c9641a3265"
+    },
+    {
+      "path": "scripts/build_side_by_side_demo.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2e93f99010e5f590a8a9a315d0f7b99f001cb2f",
+      "size": 20190,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/a2e93f99010e5f590a8a9a315d0f7b99f001cb2f"
+    },
+    {
+      "path": "scripts/build_toy_decisions.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc543eb1bd34f3495474ffa4ea70c362305513e4",
+      "size": 15322,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/bc543eb1bd34f3495474ffa4ea70c362305513e4"
+    },
+    {
+      "path": "scripts/build_unified_basic_demo.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5911a98f48a7e518d876a4651d3d7a4d3084d925",
+      "size": 11197,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/5911a98f48a7e518d876a4651d3d7a4d3084d925"
+    },
+    {
+      "path": "scripts/build_unified_navigation_demo.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55c5e895415abd09136dcf8359c138cbb260b2ed",
+      "size": 16300,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/55c5e895415abd09136dcf8359c138cbb260b2ed"
+    },
+    {
+      "path": "scripts/build_unified_release.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b68778f782c42661954a18d9cead02016dd16217",
+      "size": 23448,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/b68778f782c42661954a18d9cead02016dd16217"
+    },
+    {
+      "path": "scripts/build_workflow_decisions.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66629690e53f73911dfda9853d4d2e57ae4f5bd9",
+      "size": 11785,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/66629690e53f73911dfda9853d4d2e57ae4f5bd9"
+    },
+    {
+      "path": "scripts/calibrated_objectives.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd86abe2e847896db7fccda9b6e8ab57414c3bd2",
+      "size": 4129,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/bd86abe2e847896db7fccda9b6e8ab57414c3bd2"
+    },
+    {
+      "path": "scripts/capture_arcade.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c1c7ace4d4e93b472a2b3ee8d7f5473c6bc576e",
+      "size": 9818,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/0c1c7ace4d4e93b472a2b3ee8d7f5473c6bc576e"
+    },
+    {
+      "path": "scripts/capture_comparison.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0c1e374db10dc2963856625a77517ba54e41638",
+      "size": 4647,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/c0c1e374db10dc2963856625a77517ba54e41638"
+    },
+    {
+      "path": "scripts/capture_parallel_example.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af6b30eaa016bff8c59e88db1870ea739a9ef326",
+      "size": 1584,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/af6b30eaa016bff8c59e88db1870ea739a9ef326"
+    },
+    {
+      "path": "scripts/capture_predict_position_demo.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "107ca38dcc52e9b2618c74516c81f93cb6e6d898",
+      "size": 16511,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/107ca38dcc52e9b2618c74516c81f93cb6e6d898"
+    },
+    {
+      "path": "scripts/capture_readme_autoplay.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e028619e950485a1893e5edd8cfe7c6ecb6fef2",
+      "size": 25054,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/4e028619e950485a1893e5edd8cfe7c6ecb6fef2"
+    },
+    {
+      "path": "scripts/capture_side_by_side_video.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91c17547ac28ff5e58d565b35e5e21f56286c9a8",
+      "size": 16421,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/91c17547ac28ff5e58d565b35e5e21f56286c9a8"
+    },
+    {
+      "path": "scripts/check_dynamic_candidates.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f141f6276efe67fecc8b25583a9ae44c19229a9",
+      "size": 9185,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/3f141f6276efe67fecc8b25583a9ae44c19229a9"
+    },
+    {
+      "path": "scripts/check_hard_development_demo.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d22d9f12be0704d49e94ac7e13f0d42c858a35ef",
+      "size": 1446,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/d22d9f12be0704d49e94ac7e13f0d42c858a35ef"
+    },
+    {
+      "path": "scripts/check_live_service.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9bb4fdfd33b1461e2d2387d8000d50d4bfff57d",
+      "size": 2063,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/b9bb4fdfd33b1461e2d2387d8000d50d4bfff57d"
+    },
+    {
+      "path": "scripts/check_predict_position_demo.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b52d6d4ce012a771ada031412bbb07f2c56e181",
+      "size": 13192,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/1b52d6d4ce012a771ada031412bbb07f2c56e181"
+    },
+    {
+      "path": "scripts/check_qwen_tree.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6d571272a5f5473fa9ba7cc4f3e52663b3148d0",
+      "size": 15313,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/c6d571272a5f5473fa9ba7cc4f3e52663b3148d0"
+    },
+    {
+      "path": "scripts/check_server_contract.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "54c68e273c6050111aebf6a4ad206b7d773375e8",
+      "size": 2046,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/54c68e273c6050111aebf6a4ad206b7d773375e8"
+    },
+    {
+      "path": "scripts/check_shooting_demo.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6f673264b10577025ed81cd50a72b4d9b9b74ca",
+      "size": 8207,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/d6f673264b10577025ed81cd50a72b4d9b9b74ca"
+    },
+    {
+      "path": "scripts/check_side_by_side.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28f71718deb6af523a86d770c69e4357dec98a42",
+      "size": 15333,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/28f71718deb6af523a86d770c69e4357dec98a42"
+    },
+    {
+      "path": "scripts/check_trained_invariance.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e6000e5ccc6389b6300d60786e3c2a8c19d36fd",
+      "size": 18457,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/2e6000e5ccc6389b6300d60786e3c2a8c19d36fd"
+    },
+    {
+      "path": "scripts/check_tree_attention.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc8c00612805c5bdfa21c1f32d646cf3bce4e1fd",
+      "size": 7652,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/dc8c00612805c5bdfa21c1f32d646cf3bce4e1fd"
+    },
+    {
+      "path": "scripts/check_unified_development_demo.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a739dc80692ac6917d171454b9914f6dc49dfbe7",
+      "size": 32550,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/a739dc80692ac6917d171454b9914f6dc49dfbe7"
+    },
+    {
+      "path": "scripts/checkpoint_delta_transport.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66d535f97ea22c1103dd6182066ba679d5885b32",
+      "size": 13363,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/66d535f97ea22c1103dd6182066ba679d5885b32"
+    },
+    {
+      "path": "scripts/collect_appo_parallel.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81b5428c0c85d014193cdc8ac1f3db807dfebbb3",
+      "size": 12649,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/81b5428c0c85d014193cdc8ac1f3db807dfebbb3"
+    },
+    {
+      "path": "scripts/compact_game_rollout.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da3038524b485ccd9346fe4297d4632409535e25",
+      "size": 3178,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/da3038524b485ccd9346fe4297d4632409535e25"
+    },
+    {
+      "path": "scripts/complete_sonic_evaluation.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "353a708b5199d1cdab8599647e302753014fc340",
+      "size": 21708,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/353a708b5199d1cdab8599647e302753014fc340"
+    },
+    {
+      "path": "scripts/diagnose_appo_doom_rendering.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6519d52694386596e0b3720a40b88155d990f4e",
+      "size": 6628,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/a6519d52694386596e0b3720a40b88155d990f4e"
+    },
+    {
+      "path": "scripts/evaluate_appo_doom.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36fa3224448527286a61811b09e60697821f5579",
+      "size": 20367,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/36fa3224448527286a61811b09e60697821f5579"
+    },
+    {
+      "path": "scripts/evaluate_composed_maze.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55bbac6ea100ad544b32e03d1e84feb951de205b",
+      "size": 20735,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/55bbac6ea100ad544b32e03d1e84feb951de205b"
+    },
+    {
+      "path": "scripts/evaluate_composed_snake.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "929b7449f784f0a1fdeff2680e9eca417b14c192",
+      "size": 17961,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/929b7449f784f0a1fdeff2680e9eca417b14c192"
+    },
+    {
+      "path": "scripts/evaluate_game_policy.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08e55773dbbe617095b73eac2e2e81a82e64d796",
+      "size": 14290,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/08e55773dbbe617095b73eac2e2e81a82e64d796"
+    },
+    {
+      "path": "scripts/evaluate_game_questions.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce06ef9f186853112a4aecdb2953cdb5282e8d4d",
+      "size": 1809,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/ce06ef9f186853112a4aecdb2953cdb5282e8d4d"
+    },
+    {
+      "path": "scripts/evaluate_known_distributions.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7fc598f5a364ce6f852150cc06e2017e7e764e9c",
+      "size": 15796,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/7fc598f5a364ce6f852150cc06e2017e7e764e9c"
+    },
+    {
+      "path": "scripts/evaluate_live_jev_navigation.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b38f7a85df32bd9c0921980a3775dad17904c122",
+      "size": 3965,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/b38f7a85df32bd9c0921980a3775dad17904c122"
+    },
+    {
+      "path": "scripts/evaluate_model_edges_maze.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ff0bcfc65cb122eeb4393f1f97f80f7c74d0f03",
+      "size": 20481,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/3ff0bcfc65cb122eeb4393f1f97f80f7c74d0f03"
+    },
+    {
+      "path": "scripts/evaluate_native_qwen_maze.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1bd52af4acfce7df978a50cf82e1967c0814853",
+      "size": 7781,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/a1bd52af4acfce7df978a50cf82e1967c0814853"
+    },
+    {
+      "path": "scripts/evaluate_native_qwen_navigation.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7cf2f9bc83af312ec01988c107408c980f870630",
+      "size": 15484,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/7cf2f9bc83af312ec01988c107408c980f870630"
+    },
+    {
+      "path": "scripts/evaluate_native_qwen_shooting.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00bf10643513781ca2e1b7b667da852749b93cf8",
+      "size": 14532,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/00bf10643513781ca2e1b7b667da852749b93cf8"
+    },
+    {
+      "path": "scripts/evaluate_native_qwen_unified.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "629dd7f0f4462ebe7d0f26ed8f8710d539c9e67f",
+      "size": 15375,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/629dd7f0f4462ebe7d0f26ed8f8710d539c9e67f"
+    },
+    {
+      "path": "scripts/evaluate_navigation_v3.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99de1004ce450387f643b44b8504a28b650aa2b0",
+      "size": 28227,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/99de1004ce450387f643b44b8504a28b650aa2b0"
+    },
+    {
+      "path": "scripts/evaluate_pipeline_decisions.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff30e5f5583c5bb5e139308b7e1dead0ce52a4e8",
+      "size": 10344,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/ff30e5f5583c5bb5e139308b7e1dead0ce52a4e8"
+    },
+    {
+      "path": "scripts/evaluate_regression_decisions.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43a198590707feb2165bde995b65d3d223c8415b",
+      "size": 5170,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/43a198590707feb2165bde995b65d3d223c8415b"
+    },
+    {
+      "path": "scripts/evaluate_scaled_games.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7bd1cb4111c57bdabd17420715158f17f0878c6",
+      "size": 11447,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/e7bd1cb4111c57bdabd17420715158f17f0878c6"
+    },
+    {
+      "path": "scripts/evaluate_sonic_dev_epsilon.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0cc254efbd514c3ed0dd06ec0a5d9c9bd717d230",
+      "size": 14609,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/0cc254efbd514c3ed0dd06ec0a5d9c9bd717d230"
+    },
+    {
+      "path": "scripts/evaluate_toy_decisions.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8662017bb95fa5708558f6fa5ca1b31eb0b730d1",
+      "size": 16382,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/8662017bb95fa5708558f6fa5ca1b31eb0b730d1"
+    },
+    {
+      "path": "scripts/evaluate_unified_checkpoint.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "052f40e9d1fe219ff4d591547237ef095189135e",
+      "size": 7962,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/052f40e9d1fe219ff4d591547237ef095189135e"
+    },
+    {
+      "path": "scripts/filter_predict_position_wins.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a533cf9fb7faa06ebbf418435c68f9b2ee0e5521",
+      "size": 10303,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/a533cf9fb7faa06ebbf418435c68f9b2ee0e5521"
+    },
+    {
+      "path": "scripts/freeze_scaled_labels.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "230495c5e9604f172ebc36354d04b8b15290add0",
+      "size": 4738,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/230495c5e9604f172ebc36354d04b8b15290add0"
+    },
+    {
+      "path": "scripts/game_outcomes.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a1e8d89b2eb6d6c02be0462757f2d7e3f66d52f",
+      "size": 4693,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/2a1e8d89b2eb6d6c02be0462757f2d7e3f66d52f"
+    },
+    {
+      "path": "scripts/game_question_profiles.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8438039caa64e930d9cd4b3d5724dffa32942a04",
+      "size": 1452,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/8438039caa64e930d9cd4b3d5724dffa32942a04"
+    },
+    {
+      "path": "scripts/game_tasks.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76fc239da134f8a04de8578f18075696403566ef",
+      "size": 10507,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/76fc239da134f8a04de8578f18075696403566ef"
+    },
+    {
+      "path": "scripts/jev_navigation_worker.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f80cda2e574ec37091846eb5ccc060d975d21b6c",
+      "size": 6129,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/f80cda2e574ec37091846eb5ccc060d975d21b6c"
+    },
+    {
+      "path": "scripts/jev_probe.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3eabaf895f6bb3ca71d1b954404978340725b56d",
+      "size": 6210,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/3eabaf895f6bb3ca71d1b954404978340725b56d"
+    },
+    {
+      "path": "scripts/label_decision_dataset.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f685165875a33a4398333c830a7399d24f3ac34",
+      "size": 5483,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/6f685165875a33a4398333c830a7399d24f3ac34"
+    },
+    {
+      "path": "scripts/label_toy_decisions.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98363e45801ab3e279d3ee10d1135f4a8a91939b",
+      "size": 3723,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/98363e45801ab3e279d3ee10d1135f4a8a91939b"
+    },
+    {
+      "path": "scripts/merge_decision_datasets.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c098a3910b860c7bfa6543a080722ccb0d224f9d",
+      "size": 2104,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/c098a3910b860c7bfa6543a080722ccb0d224f9d"
+    },
+    {
+      "path": "scripts/package_source.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc77988a989d23d76b24c6cd032755c223fffcf3",
+      "size": 24156,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/dc77988a989d23d76b24c6cd032755c223fffcf3"
+    },
+    {
+      "path": "scripts/predict_toy_decisions.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06e7c26a28efa7e66989b1fdbc6d33a4d051a412",
+      "size": 17961,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/06e7c26a28efa7e66989b1fdbc6d33a4d051a412"
+    },
+    {
+      "path": "scripts/prepare_appo_supervision.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af7b7cfdd003de45166589586ea5cead2111beba",
+      "size": 13100,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/af7b7cfdd003de45166589586ea5cead2111beba"
+    },
+    {
+      "path": "scripts/prepare_repository.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c73d7e3e7f21c73c0707dd322226ea2378d7290",
+      "size": 3102,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/1c73d7e3e7f21c73c0707dd322226ea2378d7290"
+    },
+    {
+      "path": "scripts/prepare_sonic_supervision.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "047f7946ef3d37dc6a66396e3896036c009172fa",
+      "size": 19685,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/047f7946ef3d37dc6a66396e3896036c009172fa"
+    },
+    {
+      "path": "scripts/prepare_unified_public_release.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6aeebcde54df2cedd6eb58c2b71b8885edcda320",
+      "size": 9099,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/6aeebcde54df2cedd6eb58c2b71b8885edcda320"
+    },
+    {
+      "path": "scripts/probe_jev_distributions.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1717406f713d49f586d840cacc0d823fc4c69999",
+      "size": 25503,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/1717406f713d49f586d840cacc0d823fc4c69999"
+    },
+    {
+      "path": "scripts/probe_jev_probability_semantics.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2bcba13bea0daae1573b471fe60b31277449893a",
+      "size": 3233,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/2bcba13bea0daae1573b471fe60b31277449893a"
+    },
+    {
+      "path": "scripts/publish_unified_public_release.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63fe9495ef63f9c64a24c4c17bc7f0d8c89e422e",
+      "size": 12199,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/63fe9495ef63f9c64a24c4c17bc7f0d8c89e422e"
+    },
+    {
+      "path": "scripts/render_comparison_video.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b628bbe819aef0b4d90d7b385c4446005a1a6ffa",
+      "size": 13309,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/b628bbe819aef0b4d90d7b385c4446005a1a6ffa"
+    },
+    {
+      "path": "scripts/replay_unified_episodes.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c52d724b584eb670bcc2e969d90a8a61e8622a1",
+      "size": 10847,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/0c52d724b584eb670bcc2e969d90a8a61e8622a1"
+    },
+    {
+      "path": "scripts/rollout_jev_navigation.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75382d4c57f2e14f5ad1602d70e7bfc37c1c1d4c",
+      "size": 15182,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/75382d4c57f2e14f5ad1602d70e7bfc37c1c1d4c"
+    },
+    {
+      "path": "scripts/run_appo_basic_experiment.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc3121785d178200274f7267842b109e387dcfbd",
+      "size": 3305,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/cc3121785d178200274f7267842b109e387dcfbd"
+    },
+    {
+      "path": "scripts/run_appo_supervision.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "837463f9e4d12144bd9d4b9254582f0eccd630d8",
+      "size": 9566,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/837463f9e4d12144bd9d4b9254582f0eccd630d8"
+    },
+    {
+      "path": "scripts/run_jev_parallel_cases.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8586a7217fec813d271df6d63ba2063698fdde74",
+      "size": 24822,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/8586a7217fec813d271df6d63ba2063698fdde74"
+    },
+    {
+      "path": "scripts/run_sonic_supervision.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "145622f456e27693f7d47277f776536716af11b0",
+      "size": 11556,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/145622f456e27693f7d47277f776536716af11b0"
+    },
+    {
+      "path": "scripts/scaled_maze.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92855edeb2a2c0a8eed0f0191a1868be65cc888b",
+      "size": 18877,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/92855edeb2a2c0a8eed0f0191a1868be65cc888b"
+    },
+    {
+      "path": "scripts/serve_decisions.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65b2ea56a57238a78c3d82479648a3acc21f1175",
+      "size": 4231,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/65b2ea56a57238a78c3d82479648a3acc21f1175"
+    },
+    {
+      "path": "scripts/snake_game.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "050c1d5ce13862a6758b4bfcf34dbe3686c6ac5b",
+      "size": 10989,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/050c1d5ce13862a6758b4bfcf34dbe3686c6ac5b"
+    },
+    {
+      "path": "scripts/sonic_predict_data.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf580555e58e44642c2f7e7e4020e7e86753c1aa",
+      "size": 24776,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/cf580555e58e44642c2f7e7e4020e7e86753c1aa"
+    },
+    {
+      "path": "scripts/sonic_predict_policy.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10470e49d6bd08ef88948debe7eb2a90db8b2bbe",
+      "size": 12107,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/10470e49d6bd08ef88948debe7eb2a90db8b2bbe"
+    },
+    {
+      "path": "scripts/stage_comparison_site.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a219e21582e14169a9468dbd6717824a975a68d",
+      "size": 3778,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/3a219e21582e14169a9468dbd6717824a975a68d"
+    },
+    {
+      "path": "scripts/stage_development_site.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a17c3300910d60700e20eefe09f09d4c2f3db7a",
+      "size": 8811,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/8a17c3300910d60700e20eefe09f09d4c2f3db7a"
+    },
+    {
+      "path": "scripts/summarize_appo_action_fit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c964b73cb887629c48386a04f551f1b88d5c785f",
+      "size": 25102,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/c964b73cb887629c48386a04f551f1b88d5c785f"
+    },
+    {
+      "path": "scripts/summarize_appo_doom.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a005b25d4a2976ed2e5445fc478c5440a42970e",
+      "size": 11010,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/0a005b25d4a2976ed2e5445fc478c5440a42970e"
+    },
+    {
+      "path": "scripts/summarize_appo_supervision.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "645f57f15ea67a5c4d2e3f225c81a5c5f4c2dc87",
+      "size": 17523,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/645f57f15ea67a5c4d2e3f225c81a5c5f4c2dc87"
+    },
+    {
+      "path": "scripts/summarize_composed_maze.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "843b7fa5531f730e9d12ddd1e971c94f31bea384",
+      "size": 10151,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/843b7fa5531f730e9d12ddd1e971c94f31bea384"
+    },
+    {
+      "path": "scripts/summarize_development_results.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "523fac77eb6c74aaf77f8d6ebc74c024355f8069",
+      "size": 21041,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/523fac77eb6c74aaf77f8d6ebc74c024355f8069"
+    },
+    {
+      "path": "scripts/summarize_model_edges.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb95d73360a5a664ba8ffe4677ac1523e6cace05",
+      "size": 20657,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/cb95d73360a5a664ba8ffe4677ac1523e6cace05"
+    },
+    {
+      "path": "scripts/summarize_navigation_v3.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4789ca1d71ae55876ff77d8fd157d11f5e421533",
+      "size": 44039,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/4789ca1d71ae55876ff77d8fd157d11f5e421533"
+    },
+    {
+      "path": "scripts/summarize_pipeline_v2.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d41a4d7a36f5cd7bc1433f3b9d10fad329ac50d8",
+      "size": 31088,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/d41a4d7a36f5cd7bc1433f3b9d10fad329ac50d8"
+    },
+    {
+      "path": "scripts/summarize_scaled_results.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "463865c07f91594a1218ccc5ab8c63d169289f88",
+      "size": 24104,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/463865c07f91594a1218ccc5ab8c63d169289f88"
+    },
+    {
+      "path": "scripts/summarize_sonic_supervision.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61f0d5f7fbf06cc3e11760ad9ad41d1a4f74b8a6",
+      "size": 24319,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/61f0d5f7fbf06cc3e11760ad9ad41d1a4f74b8a6"
+    },
+    {
+      "path": "scripts/summarize_toy_results.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7825792921011328d6c95fc222db37c9dbb7dd10",
+      "size": 11814,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/7825792921011328d6c95fc222db37c9dbb7dd10"
+    },
+    {
+      "path": "scripts/summarize_unified_cohort.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d605e871895e33d4f094ad90370d9bd71da39d5",
+      "size": 8199,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/3d605e871895e33d4f094ad90370d9bd71da39d5"
+    },
+    {
+      "path": "scripts/summarize_unified_games.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a6f726ced82934bed7b8458c010790055df8624",
+      "size": 28338,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/5a6f726ced82934bed7b8458c010790055df8624"
+    },
+    {
+      "path": "scripts/summarize_unified_td.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4adf0dfab1c17036981ebcaf94fc3ca9e58843a",
+      "size": 39238,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/d4adf0dfab1c17036981ebcaf94fc3ca9e58843a"
+    },
+    {
+      "path": "scripts/teacher_demo.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33d2d8b5021eb89b235126f874864e0731552bf4",
+      "size": 3336,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/33d2d8b5021eb89b235126f874864e0731552bf4"
+    },
+    {
+      "path": "scripts/teachers.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81f6a5cc66827c284cd2c1471a902f196dfa92f7",
+      "size": 11444,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/81f6a5cc66827c284cd2c1471a902f196dfa92f7"
+    },
+    {
+      "path": "scripts/test_appo_basic_data.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f82db7f64b80bf0b071f5eae4f0af7c26e87ab5c",
+      "size": 9606,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/f82db7f64b80bf0b071f5eae4f0af7c26e87ab5c"
+    },
+    {
+      "path": "scripts/test_appo_doom.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a50d627d87b179c3d0674e072478f917ced78395",
+      "size": 2103,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/a50d627d87b179c3d0674e072478f917ced78395"
+    },
+    {
+      "path": "scripts/test_appo_supervision_guards.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db7896ceee0510021a68882adfa841faaee82d7e",
+      "size": 7772,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/db7896ceee0510021a68882adfa841faaee82d7e"
+    },
+    {
+      "path": "scripts/test_build_hard_navigation_demo.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c42020e89bba9f1c756374539a1f5d694947e33",
+      "size": 1883,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/7c42020e89bba9f1c756374539a1f5d694947e33"
+    },
+    {
+      "path": "scripts/test_build_local_maze_data.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "598dd0c876803347d1e9fda7841b330e686172b3",
+      "size": 5896,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/598dd0c876803347d1e9fda7841b330e686172b3"
+    },
+    {
+      "path": "scripts/test_build_predict_position_demo.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb26b8e3e21192143e7d2e7c36fa19bc6e495167",
+      "size": 7707,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/eb26b8e3e21192143e7d2e7c36fa19bc6e495167"
+    },
+    {
+      "path": "scripts/test_build_shooting_demo.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03e072b6a9462d19c5e136b5ea031b7febd8deb9",
+      "size": 8409,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/03e072b6a9462d19c5e136b5ea031b7febd8deb9"
+    },
+    {
+      "path": "scripts/test_build_unified_basic_demo.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4570f59d6afa4c956790eae261847a55657106a",
+      "size": 2307,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/f4570f59d6afa4c956790eae261847a55657106a"
+    },
+    {
+      "path": "scripts/test_build_unified_navigation_demo.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a44e486f21c20069182b680eaa0771b663f3006",
+      "size": 4762,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/6a44e486f21c20069182b680eaa0771b663f3006"
+    },
+    {
+      "path": "scripts/test_calibrated_objectives.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b24d52e9f659c54d0a8d75990a221dd742dec3ae",
+      "size": 16640,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/b24d52e9f659c54d0a8d75990a221dd742dec3ae"
+    },
+    {
+      "path": "scripts/test_complete_sonic_evaluation.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4720036ce39793182faed7649dd319a6320dad95",
+      "size": 10782,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/4720036ce39793182faed7649dd319a6320dad95"
+    },
+    {
+      "path": "scripts/test_composed_maze.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8667ddf75afa1de62cb49dd944631d3c83cd46ce",
+      "size": 8089,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/8667ddf75afa1de62cb49dd944631d3c83cd46ce"
+    },
+    {
+      "path": "scripts/test_composed_snake.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46b2ce9ec37aae442b286f576561b6d78de7084b",
+      "size": 5474,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/46b2ce9ec37aae442b286f576561b6d78de7084b"
+    },
+    {
+      "path": "scripts/test_freeze_scaled_labels.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b466367b6c0665c968e6d341c55a93c588d453c",
+      "size": 1859,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/6b466367b6c0665c968e6d341c55a93c588d453c"
+    },
+    {
+      "path": "scripts/test_game_outcomes.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8ef6ac85f7b03d3c3e99838381ec92141354a9b",
+      "size": 3401,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/b8ef6ac85f7b03d3c3e99838381ec92141354a9b"
+    },
+    {
+      "path": "scripts/test_model_edges_maze.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd76ffd56aa7df1bb4d9255e97af3a973252985a",
+      "size": 12439,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/dd76ffd56aa7df1bb4d9255e97af3a973252985a"
+    },
+    {
+      "path": "scripts/test_native_qwen_shooting.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ca7405668574cdabd5b36b2e86956c139d40f9e",
+      "size": 5851,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/9ca7405668574cdabd5b36b2e86956c139d40f9e"
+    },
+    {
+      "path": "scripts/test_native_qwen_unified.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d23cc444232af711cf4d1eb72fdc286c86a018da",
+      "size": 9647,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/d23cc444232af711cf4d1eb72fdc286c86a018da"
+    },
+    {
+      "path": "scripts/test_prepare_sonic_supervision.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7bd0aaf342c9b43ff9cbc758851b37db5613e66",
+      "size": 14221,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/d7bd0aaf342c9b43ff9cbc758851b37db5613e66"
+    },
+    {
+      "path": "scripts/test_probe_jev_distributions.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7646bcfb1e0cd412bc41f291f1fd830a5ca7bb6b",
+      "size": 7081,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/7646bcfb1e0cd412bc41f291f1fd830a5ca7bb6b"
+    },
+    {
+      "path": "scripts/test_question_contract.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a88c81114a219478b94a7a2d5fd678f8ad7feb8",
+      "size": 12662,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/9a88c81114a219478b94a7a2d5fd678f8ad7feb8"
+    },
+    {
+      "path": "scripts/test_run_jev_parallel_cases.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e77e052a43f509b5553529359a1891029786e4d",
+      "size": 12302,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/9e77e052a43f509b5553529359a1891029786e4d"
+    },
+    {
+      "path": "scripts/test_run_sonic_supervision.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31840c3dd56ab91e808e3203d2f06ed828b1ddbe",
+      "size": 2661,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/31840c3dd56ab91e808e3203d2f06ed828b1ddbe"
+    },
+    {
+      "path": "scripts/test_scaled_maze.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ffa644ac2c55c455d81318eefc80d857f624e3af",
+      "size": 12290,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/ffa644ac2c55c455d81318eefc80d857f624e3af"
+    },
+    {
+      "path": "scripts/test_scaled_pipeline.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6c0909d6d262d6a527354f9c3762adcd74b3396",
+      "size": 18756,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/a6c0909d6d262d6a527354f9c3762adcd74b3396"
+    },
+    {
+      "path": "scripts/test_snake_game.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c71d219a84382588fc3d0387c85d8b76ef53b34",
+      "size": 8223,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/7c71d219a84382588fc3d0387c85d8b76ef53b34"
+    },
+    {
+      "path": "scripts/test_sonic_dev_epsilon.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "384f8457b4b1eb5ac361ba8679f91a00394b56ab",
+      "size": 1669,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/384f8457b4b1eb5ac361ba8679f91a00394b56ab"
+    },
+    {
+      "path": "scripts/test_sonic_predict_data.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04e31bdb2c319c06017e157ce37c00821b337d08",
+      "size": 7734,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/04e31bdb2c319c06017e157ce37c00821b337d08"
+    },
+    {
+      "path": "scripts/test_summarize_sonic_supervision.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9e9a25792a85cb096733a9324972c6245bdd482",
+      "size": 15981,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/c9e9a25792a85cb096733a9324972c6245bdd482"
+    },
+    {
+      "path": "scripts/test_unified_cohort.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46b1ceb4cc7f1f846c7ea13a31ea23ae22108cb1",
+      "size": 4553,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/46b1ceb4cc7f1f846c7ea13a31ea23ae22108cb1"
+    },
+    {
+      "path": "scripts/test_unified_doom_env.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3cf6544b3e36fd3aa267898abd1203224f676823",
+      "size": 15325,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/3cf6544b3e36fd3aa267898abd1203224f676823"
+    },
+    {
+      "path": "scripts/test_unified_expert_targets.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0b1c1454cdca0af04bc7fb9b492aeead30f0c09",
+      "size": 12779,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/e0b1c1454cdca0af04bc7fb9b492aeead30f0c09"
+    },
+    {
+      "path": "scripts/test_unified_grid_envs.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97fbbfdde3c148862f518fe855c8faf24d0acee2",
+      "size": 14502,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/97fbbfdde3c148862f518fe855c8faf24d0acee2"
+    },
+    {
+      "path": "scripts/test_unified_pipeline.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc57d8742cc8dbe3ff26b39fae0ed2517ea042b2",
+      "size": 17672,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/bc57d8742cc8dbe3ff26b39fae0ed2517ea042b2"
+    },
+    {
+      "path": "scripts/test_unified_summary.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95d3c89a1013835029daecec047868d85128c599",
+      "size": 17160,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/95d3c89a1013835029daecec047868d85128c599"
+    },
+    {
+      "path": "scripts/test_unified_td.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d8c3dcfd3af9f5a59048b96dde495af3bebf2f6",
+      "size": 13388,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/5d8c3dcfd3af9f5a59048b96dde495af3bebf2f6"
+    },
+    {
+      "path": "scripts/test_unified_td_summary.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd16f7cb982bed9911c8408cb4fb1d243a0daaf6",
+      "size": 20016,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/fd16f7cb982bed9911c8408cb4fb1d243a0daaf6"
+    },
+    {
+      "path": "scripts/test_unified_td_training.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de52fe21439b92ae92173dc746b98b312187d600",
+      "size": 20800,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/de52fe21439b92ae92173dc746b98b312187d600"
+    },
+    {
+      "path": "scripts/test_unified_training.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31ccbd32297c5f306860e62eef2369da203da4b9",
+      "size": 15545,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/31ccbd32297c5f306860e62eef2369da203da4b9"
+    },
+    {
+      "path": "scripts/train_pipeline_decisions.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76524919f6545fd8168efe6d8efbb94797b5803b",
+      "size": 33988,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/76524919f6545fd8168efe6d8efbb94797b5803b"
+    },
+    {
+      "path": "scripts/train_toy_decisions.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "203c5ac5b1077b005a73a356e1c65969a43e5190",
+      "size": 20890,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/203c5ac5b1077b005a73a356e1c65969a43e5190"
+    },
+    {
+      "path": "scripts/train_unified_games.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20059a4ab4afc0fe4e48d2eaba049c76d3369977",
+      "size": 52461,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/20059a4ab4afc0fe4e48d2eaba049c76d3369977"
+    },
+    {
+      "path": "scripts/unified_doom_env.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96d4c9ddf85f6cfaf50b47aa1c0e96cf4590c3d5",
+      "size": 16577,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/96d4c9ddf85f6cfaf50b47aa1c0e96cf4590c3d5"
+    },
+    {
+      "path": "scripts/unified_game_pipeline.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4bf10dc83b8ad7e7b63af5975d550b4f879d71c7",
+      "size": 28674,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/4bf10dc83b8ad7e7b63af5975d550b4f879d71c7"
+    },
+    {
+      "path": "scripts/unified_grid_envs.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06ebdc23dfef487c7115d3d053ff79668b00d1e0",
+      "size": 15448,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/06ebdc23dfef487c7115d3d053ff79668b00d1e0"
+    },
+    {
+      "path": "scripts/unified_jev_worker.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc0ecf7028f6bf9e2c6646c723f9dda192a91aff",
+      "size": 6961,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/dc0ecf7028f6bf9e2c6646c723f9dda192a91aff"
+    },
+    {
+      "path": "scripts/unified_td.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c063143dac55370478e007fa8b0f6d860dbe067",
+      "size": 16207,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/5c063143dac55370478e007fa8b0f6d860dbe067"
+    },
+    {
+      "path": "scripts/upload_unified_private_release.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4a40ab5d984c37cc02614da158ee71a03a0f571",
+      "size": 11875,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/c4a40ab5d984c37cc02614da158ee71a03a0f571"
+    },
+    {
+      "path": "scripts/verify_nanojev_comparison.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f30231b97f89558d911d494981801a146e6ee1a7",
+      "size": 42541,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/f30231b97f89558d911d494981801a146e6ee1a7"
+    },
+    {
+      "path": "web",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7a14271a94e1a7e9a407e8e563c54d5ed293e1c9",
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/trees/7a14271a94e1a7e9a407e8e563c54d5ed293e1c9"
+    },
+    {
+      "path": "web/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6c291876a6a95dce89f560d5a95758219184916",
+      "size": 12817,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/a6c291876a6a95dce89f560d5a95758219184916"
+    },
+    {
+      "path": "web/app.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c9baaf172e70fb59075cd1efe60e1bdd1704c8f",
+      "size": 34088,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/2c9baaf172e70fb59075cd1efe60e1bdd1704c8f"
+    },
+    {
+      "path": "web/arcade.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58e0c959fcb04f938b237245a679ce3cb2612540",
+      "size": 15130,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/58e0c959fcb04f938b237245a679ce3cb2612540"
+    },
+    {
+      "path": "web/arcade.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de84968b8b9a14a0294f29a4016bdea2b37cea88",
+      "size": 5547,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/de84968b8b9a14a0294f29a4016bdea2b37cea88"
+    },
+    {
+      "path": "web/arcade.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e498c5e1a4796e6d316684ee42666c41fc710d3",
+      "size": 23914,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/7e498c5e1a4796e6d316684ee42666c41fc710d3"
+    },
+    {
+      "path": "web/arcade_results.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11e8d2e906e9176b485885f250a14bf914d3f543",
+      "size": 899305,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/11e8d2e906e9176b485885f250a14bf914d3f543"
+    },
+    {
+      "path": "web/comparison.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e523bd02544e1168d46136f1207ba11566b5bb0",
+      "size": 6129,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/8e523bd02544e1168d46136f1207ba11566b5bb0"
+    },
+    {
+      "path": "web/comparison.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05e40f5ddee9396105d7e8eb0ce6b3fac16bacba",
+      "size": 1983,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/05e40f5ddee9396105d7e8eb0ce6b3fac16bacba"
+    },
+    {
+      "path": "web/comparison.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5601dafd0afc4f400538aeebbba667d280014621",
+      "size": 8533,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/5601dafd0afc4f400538aeebbba667d280014621"
+    },
+    {
+      "path": "web/comparison_results.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7afee118783ac48f2b3fe1b2dcdabadd8cade44",
+      "size": 1055072,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/b7afee118783ac48f2b3fe1b2dcdabadd8cade44"
+    },
+    {
+      "path": "web/demo_results.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1609b176674e1d340fe8d3ec83f83f733d61a776",
+      "size": 67477904,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/1609b176674e1d340fe8d3ec83f83f733d61a776"
+    },
+    {
+      "path": "web/dev",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1f18ea69ecc9d49a6cc9d730fec9fff8565eb1ae",
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/trees/1f18ea69ecc9d49a6cc9d730fec9fff8565eb1ae"
+    },
+    {
+      "path": "web/dev/basic.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d1b1d8b1d55ba25bf8f8f75f465aa3a2edede81",
+      "size": 2947,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/3d1b1d8b1d55ba25bf8f8f75f465aa3a2edede81"
+    },
+    {
+      "path": "web/dev/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c2c8bc44a09441b6a0edcbfb93e90fdeb8b5795f",
+      "size": 7381,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/c2c8bc44a09441b6a0edcbfb93e90fdeb8b5795f"
+    },
+    {
+      "path": "web/dev/media",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9d1469068339bda3f8e0b104626101210f91d82f",
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/trees/9d1469068339bda3f8e0b104626101210f91d82f"
+    },
+    {
+      "path": "web/dev/media/predict_position_51113ebc06da_base_598dab7fb7be_000.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a79031fec0f774fbfa669f9d5b0efa90a5580e32",
+      "size": 151566,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/a79031fec0f774fbfa669f9d5b0efa90a5580e32"
+    },
+    {
+      "path": "web/dev/media/predict_position_51113ebc06da_base_598dab7fb7be_001.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e165d1ca588d5338d0cd5006ceb83bed356744f0",
+      "size": 199684,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/e165d1ca588d5338d0cd5006ceb83bed356744f0"
+    },
+    {
+      "path": "web/dev/media/predict_position_51113ebc06da_base_dba1848c235d_000.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25295823ea10bfa53227b2d183cdd72745113c18",
+      "size": 243562,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/25295823ea10bfa53227b2d183cdd72745113c18"
+    },
+    {
+      "path": "web/dev/media/predict_position_51113ebc06da_base_dba1848c235d_001.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5507ca77bb1171ffa8b994608a5c78af47709443",
+      "size": 72318,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/5507ca77bb1171ffa8b994608a5c78af47709443"
+    },
+    {
+      "path": "web/dev/media/predict_position_51113ebc06da_jev_598dab7fb7be_000.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a79031fec0f774fbfa669f9d5b0efa90a5580e32",
+      "size": 151566,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/a79031fec0f774fbfa669f9d5b0efa90a5580e32"
+    },
+    {
+      "path": "web/dev/media/predict_position_51113ebc06da_jev_598dab7fb7be_001.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e165d1ca588d5338d0cd5006ceb83bed356744f0",
+      "size": 199684,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/e165d1ca588d5338d0cd5006ceb83bed356744f0"
+    },
+    {
+      "path": "web/dev/media/predict_position_51113ebc06da_jev_dba1848c235d_000.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "278e4bec434040e95765cf4a119488d161cdbb3a",
+      "size": 485456,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/278e4bec434040e95765cf4a119488d161cdbb3a"
+    },
+    {
+      "path": "web/dev/media/predict_position_51113ebc06da_jev_dba1848c235d_001.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48f76607b27665d453112d64db47839d64017f80",
+      "size": 75226,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/48f76607b27665d453112d64db47839d64017f80"
+    },
+    {
+      "path": "web/dev/media/predict_position_51113ebc06da_nanojev_598dab7fb7be_000.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6064813d4722662529b0a6853e3e2d6396917fe8",
+      "size": 795870,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/6064813d4722662529b0a6853e3e2d6396917fe8"
+    },
+    {
+      "path": "web/dev/media/predict_position_51113ebc06da_nanojev_dba1848c235d_000.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "765c4296633953fbc938856f12a0dfdc41e99746",
+      "size": 153592,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/765c4296633953fbc938856f12a0dfdc41e99746"
+    },
+    {
+      "path": "web/dev/media/predict_position_51113ebc06da_nanojev_dba1848c235d_001.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1eb0a444a9464ed5b3b519b4af59b860f4c7bded",
+      "size": 155428,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/1eb0a444a9464ed5b3b519b4af59b860f4c7bded"
+    },
+    {
+      "path": "web/dev/media/predict_position_51113ebc06da_nanojev_dba1848c235d_002.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08d3f7edf0d1113eea6006634979fdf86620ffd7",
+      "size": 392872,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/08d3f7edf0d1113eea6006634979fdf86620ffd7"
+    },
+    {
+      "path": "web/dev/media/predict_position_51113ebc06da_nanojev_dba1848c235d_003.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13772985e3ea18560fa4bf614674925f31e41a52",
+      "size": 174018,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/13772985e3ea18560fa4bf614674925f31e41a52"
+    },
+    {
+      "path": "web/dev/media/shooting_unified_5fc1641e8c9c_base_31b23ef9bbd9_000.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3021ad8d4bd6b60e0aa366f2c391fcd8905d3361",
+      "size": 72042,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/3021ad8d4bd6b60e0aa366f2c391fcd8905d3361"
+    },
+    {
+      "path": "web/dev/media/shooting_unified_5fc1641e8c9c_base_31b23ef9bbd9_001.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ba23938772a0759ef92a7239d6e3193c508bd76",
+      "size": 72272,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/9ba23938772a0759ef92a7239d6e3193c508bd76"
+    },
+    {
+      "path": "web/dev/media/shooting_unified_5fc1641e8c9c_base_31b23ef9bbd9_002.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f932dc5039f413c05da71fb8875af449bcfb3bc",
+      "size": 516070,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/1f932dc5039f413c05da71fb8875af449bcfb3bc"
+    },
+    {
+      "path": "web/dev/media/shooting_unified_5fc1641e8c9c_base_31b23ef9bbd9_003.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1594915e2bbbbdbd096a5587e7fe3ff9c8ac3691",
+      "size": 520940,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/1594915e2bbbbdbd096a5587e7fe3ff9c8ac3691"
+    },
+    {
+      "path": "web/dev/media/shooting_unified_5fc1641e8c9c_base_31b23ef9bbd9_004.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "880ef89d09de0d4c93281069bbbaf9fa759c86a4",
+      "size": 209710,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/880ef89d09de0d4c93281069bbbaf9fa759c86a4"
+    },
+    {
+      "path": "web/dev/media/shooting_unified_5fc1641e8c9c_base_3917625ee4a3_000.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f4f04c11d0f5198b18f8c5cc0d393a1fc699e8d",
+      "size": 346750,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/4f4f04c11d0f5198b18f8c5cc0d393a1fc699e8d"
+    },
+    {
+      "path": "web/dev/media/shooting_unified_5fc1641e8c9c_base_3917625ee4a3_001.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "efba86cffef005f654a200e079c86dcb6f04ab69",
+      "size": 576784,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/efba86cffef005f654a200e079c86dcb6f04ab69"
+    },
+    {
+      "path": "web/dev/media/shooting_unified_5fc1641e8c9c_base_3917625ee4a3_002.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db9754c33c9bfeeb4496a1752f5e5497e91b6a6d",
+      "size": 478122,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/db9754c33c9bfeeb4496a1752f5e5497e91b6a6d"
+    },
+    {
+      "path": "web/dev/media/shooting_unified_5fc1641e8c9c_base_3917625ee4a3_003.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3af37e4444ae46cd38affecfdd1f93bab23f136a",
+      "size": 78016,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/3af37e4444ae46cd38affecfdd1f93bab23f136a"
+    },
+    {
+      "path": "web/dev/media/shooting_unified_5fc1641e8c9c_base_3917625ee4a3_004.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87db7d156d93b8fc0eb91c525823ee841aff40be",
+      "size": 53962,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/87db7d156d93b8fc0eb91c525823ee841aff40be"
+    },
+    {
+      "path": "web/dev/media/shooting_unified_5fc1641e8c9c_base_ddee180fa546_000.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4d9ac48b07b7339f7ddf5adec66613573e8778a",
+      "size": 71144,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/f4d9ac48b07b7339f7ddf5adec66613573e8778a"
+    },
+    {
+      "path": "web/dev/media/shooting_unified_5fc1641e8c9c_base_ddee180fa546_001.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c194c7ea90d71e69a3a1751ea6ade5129fddd8ac",
+      "size": 71482,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/c194c7ea90d71e69a3a1751ea6ade5129fddd8ac"
+    },
+    {
+      "path": "web/dev/media/shooting_unified_5fc1641e8c9c_base_ddee180fa546_002.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3f77b2ac99362fce57319ba626f51c754c99e9a",
+      "size": 398094,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/c3f77b2ac99362fce57319ba626f51c754c99e9a"
+    },
+    {
+      "path": "web/dev/media/shooting_unified_5fc1641e8c9c_base_ddee180fa546_003.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0c9d46663c48407d077a95ca7dd790d12a9ab8b",
+      "size": 502720,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/c0c9d46663c48407d077a95ca7dd790d12a9ab8b"
+    },
+    {
+      "path": "web/dev/media/shooting_unified_5fc1641e8c9c_base_ddee180fa546_004.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6bae87f82a29894716867e5769b10b47352ef924",
+      "size": 57010,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/6bae87f82a29894716867e5769b10b47352ef924"
+    },
+    {
+      "path": "web/dev/media/shooting_unified_5fc1641e8c9c_jev_31b23ef9bbd9_000.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3021ad8d4bd6b60e0aa366f2c391fcd8905d3361",
+      "size": 72042,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/3021ad8d4bd6b60e0aa366f2c391fcd8905d3361"
+    },
+    {
+      "path": "web/dev/media/shooting_unified_5fc1641e8c9c_jev_31b23ef9bbd9_001.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ba23938772a0759ef92a7239d6e3193c508bd76",
+      "size": 72272,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/9ba23938772a0759ef92a7239d6e3193c508bd76"
+    },
+    {
+      "path": "web/dev/media/shooting_unified_5fc1641e8c9c_jev_31b23ef9bbd9_002.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f932dc5039f413c05da71fb8875af449bcfb3bc",
+      "size": 516070,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/1f932dc5039f413c05da71fb8875af449bcfb3bc"
+    },
+    {
+      "path": "web/dev/media/shooting_unified_5fc1641e8c9c_jev_31b23ef9bbd9_003.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1594915e2bbbbdbd096a5587e7fe3ff9c8ac3691",
+      "size": 520940,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/1594915e2bbbbdbd096a5587e7fe3ff9c8ac3691"
+    },
+    {
+      "path": "web/dev/media/shooting_unified_5fc1641e8c9c_jev_31b23ef9bbd9_004.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "880ef89d09de0d4c93281069bbbaf9fa759c86a4",
+      "size": 209710,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/880ef89d09de0d4c93281069bbbaf9fa759c86a4"
+    },
+    {
+      "path": "web/dev/media/shooting_unified_5fc1641e8c9c_jev_3917625ee4a3_000.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f4f04c11d0f5198b18f8c5cc0d393a1fc699e8d",
+      "size": 346750,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/4f4f04c11d0f5198b18f8c5cc0d393a1fc699e8d"
+    },
+    {
+      "path": "web/dev/media/shooting_unified_5fc1641e8c9c_jev_3917625ee4a3_001.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "efba86cffef005f654a200e079c86dcb6f04ab69",
+      "size": 576784,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/efba86cffef005f654a200e079c86dcb6f04ab69"
+    },
+    {
+      "path": "web/dev/media/shooting_unified_5fc1641e8c9c_jev_3917625ee4a3_002.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db9754c33c9bfeeb4496a1752f5e5497e91b6a6d",
+      "size": 478122,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/db9754c33c9bfeeb4496a1752f5e5497e91b6a6d"
+    },
+    {
+      "path": "web/dev/media/shooting_unified_5fc1641e8c9c_jev_3917625ee4a3_003.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3af37e4444ae46cd38affecfdd1f93bab23f136a",
+      "size": 78016,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/3af37e4444ae46cd38affecfdd1f93bab23f136a"
+    },
+    {
+      "path": "web/dev/media/shooting_unified_5fc1641e8c9c_jev_3917625ee4a3_004.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87db7d156d93b8fc0eb91c525823ee841aff40be",
+      "size": 53962,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/87db7d156d93b8fc0eb91c525823ee841aff40be"
+    },
+    {
+      "path": "web/dev/media/shooting_unified_5fc1641e8c9c_jev_ddee180fa546_000.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4d9ac48b07b7339f7ddf5adec66613573e8778a",
+      "size": 71144,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/f4d9ac48b07b7339f7ddf5adec66613573e8778a"
+    },
+    {
+      "path": "web/dev/media/shooting_unified_5fc1641e8c9c_jev_ddee180fa546_001.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c194c7ea90d71e69a3a1751ea6ade5129fddd8ac",
+      "size": 71482,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/c194c7ea90d71e69a3a1751ea6ade5129fddd8ac"
+    },
+    {
+      "path": "web/dev/media/shooting_unified_5fc1641e8c9c_jev_ddee180fa546_002.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3f77b2ac99362fce57319ba626f51c754c99e9a",
+      "size": 398094,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/c3f77b2ac99362fce57319ba626f51c754c99e9a"
+    },
+    {
+      "path": "web/dev/media/shooting_unified_5fc1641e8c9c_jev_ddee180fa546_003.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0c9d46663c48407d077a95ca7dd790d12a9ab8b",
+      "size": 502720,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/c0c9d46663c48407d077a95ca7dd790d12a9ab8b"
+    },
+    {
+      "path": "web/dev/media/shooting_unified_5fc1641e8c9c_jev_ddee180fa546_004.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6bae87f82a29894716867e5769b10b47352ef924",
+      "size": 57010,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/6bae87f82a29894716867e5769b10b47352ef924"
+    },
+    {
+      "path": "web/dev/media/shooting_unified_5fc1641e8c9c_nanojev_31b23ef9bbd9_000.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a889ec12a312fddfa0f40a26954e93438759bc9a",
+      "size": 614664,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/a889ec12a312fddfa0f40a26954e93438759bc9a"
+    },
+    {
+      "path": "web/dev/media/shooting_unified_5fc1641e8c9c_nanojev_3917625ee4a3_000.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eec1926a7aa18e67570794015d812b6f9df1700f",
+      "size": 570706,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/eec1926a7aa18e67570794015d812b6f9df1700f"
+    },
+    {
+      "path": "web/dev/media/shooting_unified_5fc1641e8c9c_nanojev_ddee180fa546_000.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1cb8afd87bbdb07206dad93861dd48d062011b8",
+      "size": 484594,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/d1cb8afd87bbdb07206dad93861dd48d062011b8"
+    },
+    {
+      "path": "web/dev/predict-position.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2cd1cd169403d24a9ca15bcf719f23ac5156db25",
+      "size": 6170,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/2cd1cd169403d24a9ca15bcf719f23ac5156db25"
+    },
+    {
+      "path": "web/dev/predict-position.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a27536b21d1b15cc671641df9196f28c5220f32",
+      "size": 8199,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/9a27536b21d1b15cc671641df9196f28c5220f32"
+    },
+    {
+      "path": "web/dev/predict-position.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c2e5aadb53abf056096bf4695f7bdabb7cd699a0",
+      "size": 5442,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/c2e5aadb53abf056096bf4695f7bdabb7cd699a0"
+    },
+    {
+      "path": "web/dev/predict_position_results.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "625909b2495bc8806ae9188841234f23e6c0e095",
+      "size": 279996,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/625909b2495bc8806ae9188841234f23e6c0e095"
+    },
+    {
+      "path": "web/dev/shooting.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a48a76307c3d2553ade84ec46f219104cd9554d2",
+      "size": 17705,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/a48a76307c3d2553ade84ec46f219104cd9554d2"
+    },
+    {
+      "path": "web/dev/shooting.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca86b267112f0730861ffef93135aff845d63b49",
+      "size": 20851,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/ca86b267112f0730861ffef93135aff845d63b49"
+    },
+    {
+      "path": "web/dev/shooting_results.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3937b656b1c7e5b50898c9da1e78a378e3e396f",
+      "size": 792622,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/b3937b656b1c7e5b50898c9da1e78a378e3e396f"
+    },
+    {
+      "path": "web/dev/side-by-side.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "806a1f7f41c98822b4e798f6715b04ad135fbc9d",
+      "size": 12902,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/806a1f7f41c98822b4e798f6715b04ad135fbc9d"
+    },
+    {
+      "path": "web/dev/side-by-side.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c44d87543237577c1bbe47fd3b7de89260e2dda4",
+      "size": 5588,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/c44d87543237577c1bbe47fd3b7de89260e2dda4"
+    },
+    {
+      "path": "web/dev/side-by-side.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cbe084cba8a645abb2df9dfc89a2b8a8eff719b3",
+      "size": 20975,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/cbe084cba8a645abb2df9dfc89a2b8a8eff719b3"
+    },
+    {
+      "path": "web/dev/side_by_side_results.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b044dcc35140baca9e5aad64e48637e9a086a1e",
+      "size": 2122479,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/0b044dcc35140baca9e5aad64e48637e9a086a1e"
+    },
+    {
+      "path": "web/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a868060f3ac1ece711c6d3c251bb5517d3c86039",
+      "size": 8788,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/a868060f3ac1ece711c6d3c251bb5517d3c86039"
+    },
+    {
+      "path": "web/side-by-side.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ebde2a311b13584861eb811c63feb364a8ef86e2",
+      "size": 12314,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/ebde2a311b13584861eb811c63feb364a8ef86e2"
+    },
+    {
+      "path": "web/side-by-side.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf179b757c4f91ec724477ed87db311dbac44524",
+      "size": 5408,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/cf179b757c4f91ec724477ed87db311dbac44524"
+    },
+    {
+      "path": "web/side-by-side.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2e4d63353205056bf657147c1f2f81adbbfcac3",
+      "size": 20563,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/f2e4d63353205056bf657147c1f2f81adbbfcac3"
+    },
+    {
+      "path": "web/side_by_side_results.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76e64f50fd57cbf9449ddf68f8876e73a68f8921",
+      "size": 2124143,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/76e64f50fd57cbf9449ddf68f8876e73a68f8921"
+    },
+    {
+      "path": "web/style.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b49a86a8b137b89ebd0205bb9160577b2d87487c",
+      "size": 15020,
+      "url": "https://api.github.com/repos/TianyuCodings/NanoJev/git/blobs/b49a86a8b137b89ebd0205bb9160577b2d87487c"
+    }
+  ],
+  "truncated": false
+}
