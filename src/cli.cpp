@@ -556,7 +556,7 @@ int cmd_query(const std::vector<std::string>& args, std::string* current) {
         for (const Edge& e : g.edges) {
             if (g.edge_visit_count(e.from, e.to) == 0) {
                 const Node* tn = g.find_node(e.to);
-                std::string tdesc = tn ? expand_refs(tn->desc.substr(0, 60), store()) : "";
+                std::string tdesc = tn ? os::trunc_utf8(expand_refs(tn->desc, store()), 80) : "";
                 std::cout << "  " << e.from << " -> " << e.to
                           << (e.label.empty() ? "" : " | " + e.label)
                           << "\n      " << tdesc << "\n";
@@ -605,7 +605,7 @@ int cmd_query(const std::vector<std::string>& args, std::string* current) {
                 seen[e->to] = true;
                 const Node* tn = g.find_node(e->to);
                 std::cout << "  " << queue[qi] << " -> " << e->to
-                          << (tn ? " | " + expand_refs(tn->desc.substr(0, 50), store()) : "")
+                          << (tn ? " | " + os::trunc_utf8(expand_refs(tn->desc, store()), 70) : "")
                           << "\n";
                 queue.push_back(e->to);
             }
@@ -616,7 +616,7 @@ int cmd_query(const std::vector<std::string>& args, std::string* current) {
         int n = 0;
         for (const Node& nd : g.nodes) {
             if (nd.result == "refuted") {
-                std::cout << "  " << nd.id << " | " << expand_refs(nd.desc.substr(0, 70), store()) << "\n";
+                std::cout << "  " << nd.id << " | " << os::trunc_utf8(expand_refs(nd.desc, store()), 90) << "\n";
                 ++n;
             }
         }
@@ -627,7 +627,7 @@ int cmd_query(const std::vector<std::string>& args, std::string* current) {
         int n = 0;
         for (const Node& nd : g.nodes) {
             if (nd.result == "pending" || nd.result.empty()) {
-                std::cout << "  " << nd.id << " | " << expand_refs(nd.desc.substr(0, 70), store()) << "\n";
+                std::cout << "  " << nd.id << " | " << os::trunc_utf8(expand_refs(nd.desc, store()), 90) << "\n";
                 ++n;
             }
         }
@@ -684,7 +684,7 @@ int cmd_context(const std::vector<std::string>& args, std::string* current) {
               << ", " << g.nodes.size() << " nodes / " << g.edges.size() << " edges) ==\n";
     // 1. entry description
     if (const Node* en = g.find_node(entry)) {
-        std::cout << "entry: " << entry << " | " << expand_refs(os::trunc_utf8(en->desc, 150), store()) << "\n\n";
+        std::cout << "entry: " << entry << " | " << os::trunc_utf8(expand_refs(en->desc, store()), 200) << "\n\n";
     }
     // 2. reachable nodes (BFS)
     std::vector<std::string> queue = {entry};
@@ -697,7 +697,7 @@ int cmd_context(const std::vector<std::string>& args, std::string* current) {
             seen[e->to] = true;
             const Node* tn = g.find_node(e->to);
             std::cout << "  " << e->to
-                      << (tn ? " | " + expand_refs(os::trunc_utf8(tn->desc, 60), store()) : "")
+                      << (tn ? " | " + os::trunc_utf8(expand_refs(tn->desc, store()), 90) : "")
                       << (tn && !tn->result.empty() ? " [" + tn->result + "]" : "")
                       << "\n";
             queue.push_back(e->to);
@@ -716,7 +716,7 @@ int cmd_context(const std::vector<std::string>& args, std::string* current) {
     for (const Node& nd : g.nodes) {
         if (nd.result.empty()) continue;
         std::cout << "\n  " << nd.id << " [" << nd.result << "] "
-                  << expand_refs(os::trunc_utf8(nd.desc, 70), store());
+                  << os::trunc_utf8(expand_refs(nd.desc, store()), 100);
         ++nv;
     }
     if (!nv) std::cout << " (none)";

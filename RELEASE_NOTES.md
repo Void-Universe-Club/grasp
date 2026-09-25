@@ -3,6 +3,18 @@
 Append a section per release; the Release workflow injects the section matching
 the tag name into the GitHub Release body. Keep entries at `## vX.Y.Z` level.
 
+## v0.1.10
+
+### Bug fixes
+
+- Fork summaries truncated descriptions **before** expanding `[[sid:node]]`
+  references, so lesson payloads were clipped to their first ~40 bytes (and
+  `substr` could cut mid-UTF-8 char). All 10 display sites now expand first,
+  then truncate UTF-8-safely with a budget sized for expanded text;
+  `expand_refs` internals are now multi-byte safe too.
+- New regression test (suite section 20) asserting the expanded payload is
+  visible in a fork summary.
+
 ## v0.1.9
 
 ### Docs

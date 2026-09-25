@@ -361,8 +361,10 @@ std::string session_walk(Session& s, const std::string& from, int choose,
                                                          : (t ? t->desc : es[i]->to);
                 stmt << (i + 1) << ". " << opt;
                 // decision aid (2026-08-24): target-node summary + edge visit count
+                // expand [[refs]] BEFORE truncating: the raw desc is tiny next to the
+                // expanded lesson text, so truncate-after-expand would drop the payload
                 if (t) {
-                    std::string sum = expand_refs(os::trunc_utf8(t->desc, 40), *store);
+                    std::string sum = os::trunc_utf8(expand_refs(t->desc, *store), 120);
                     stmt << " [" << sum << "]";
                 }
                 if (s.graph.edge_visit_count(cur, es[i]->to) == 0) {
@@ -594,7 +596,7 @@ std::string expand_refs(const std::string& desc, SessionStore& store) {
             try {
                 Session rs = store.load(rsid);
                 const Node* rn = rs.graph.find_node(rnode);
-                if (rn) replacement = "[" + rnode + ": " + rn->desc.substr(0, 60) + "]";
+                if (rn) replacement = "[" + rnode + ": " + os::trunc_utf8(rn->desc, 60) + "]";
             } catch (...) {
                 // keep the raw reference text when the target session is missing
             }
